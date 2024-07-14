@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: 'heading';
+    src: url(../font/FlatlineSerif-SemiBold.otf);
+}
+
+.font-primary{
+    font-family: "Nanum Myeongjo", serif !important;
+}
+.grey-color{
+    color: #B19D7D !important;
+}
+.bg-grey-old{
+    background: #B56F67 !important;
+}
+.px-45{
+    padding-left: 2.3rem !important;
+    padding-right: 2.3rem !important;
+}
+.fs-05{
+    font-size: 2.8rem !important;
+}
+.mySwiper{
+    height: 85vh !important;
+}
+.swiper-wrapper{
+    padding-bottom: 3rem !important;
+}
+.bg-custom{
+    background-size: cover;
+    background-position: center;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+}
+.fs-big{
+    font-size: 7.5rem !important;
+}
+.font-heading{
+    font-family: 'heading';
+}
+.w-40{
+    width: 40% !important;
+}
+.poppins{
+    font-family: "Poppins", sans-serif !important;
+}
+.red-shadow{
+    box-shadow: 0px 15px 34px 0px #C3282842 !important;
+}
+.swiper-pagination-bullet{
+    width: 2rem !important;
+    height: .3rem !important;
+    display: inline-block;
+    border-radius: 100vw !important;
+    background: var(--swiper-pagination-bullet-inactive-color, #000);
+    opacity: var(--swiper-pagination-bullet-inactive-opacity, .2);
+}
+.swiper-pagination-bullet-active{
+    background: #B19D7D !important;
+}
+
+.bg-silver{
+    background: #F2F4F7 !important;
+}
+.myPromo .swiper-slide{
+    width: max-content !important;
+}
+.myPromo .swiper-wrapper{
+    padding-bottom: 1rem !important;
+}
+.myPromo .swiper-horizontal> .myPromo  .swiper-pagination-bullets, .myPromo  .swiper-pagination-bullets.swiper-pagination-horizontal,.myPromo  .swiper-pagination-custom,.myPromo  .swiper-pagination-fraction{
+    left: unset !important;
+    right: 43% !important;
+}
+.myPromo .swiper-pagination-bullet{
+    width: .9rem !important;
+    height: .9rem !important;
+    display: inline-block;
+    border-radius: 100vw !important;
+    background: var(--swiper-pagination-bullet-inactive-color, #000);
+    opacity: .1 !important;
+}
+.myPromo .swiper-pagination-bullet-active{
+    background: #8E623A !important;
+    opacity: 1 !important;
+    width: 4rem !important;
+}
+.myTestimoni .swiper-pagination-bullet{
+    width: .9rem !important;
+    height: .9rem !important;
+    display: inline-block;
+    border-radius: 100vw !important;
+    background: var(--swiper-pagination-bullet-inactive-color, #000);
+    opacity: .1 !important;
+}
+.myTestimoni .swiper-pagination-bullet-active{
+    background: #8E623A !important;
+    opacity: 1 !important;
+    width: 4rem !important;
+}
+.img_custom{
+    width: 100% !important;
+    background-color: #8E623A !important;
+    height: 19rem !important;
+    position: relative !important;
+    border-radius: 3vw;
+    overflow: hidden;
+}
+.img_custom img{
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+}
+
+.fs-6{
+    font-size: .9rem !important;
+}
+
+.img-small-custom{
+    width: 5rem;
+    height: 5rem;
+    position: relative;
+    border-radius: 100vw;
+    overflow: hidden;
+    margin: auto;
+}
+.img-small-custom img{
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+}
+
+.bg-footer{
+    background-image: url(../images/footer.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.py-13{
+    padding-top: 6rem !important;
+    padding-bottom: 6rem !important;
+}
+
+.letter-spacing-1{
+    letter-spacing: .5rem;
+}
+
+.w-custom{
+    width: 75% !important;
+    margin: auto !important;
+}
