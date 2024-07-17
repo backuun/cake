@@ -39,6 +39,9 @@
 .fs-big{
     font-size: 7.5rem !important;
 }
+.fs-small{
+    font-size: .8rem !important;
+}
 .font-heading{
     font-family: 'heading';
 }
@@ -148,7 +151,7 @@
     background-size: cover;
 }
 
-.py-13{
+.py-md-13{
     padding-top: 6rem !important;
     padding-bottom: 6rem !important;
 }
@@ -160,4 +163,142 @@
 .w-custom{
     width: 75% !important;
     margin: auto !important;
+}
+
+.offcanvas.offcanvas-end{
+    width: 30rem !important;
+}
+
+.max-content{
+    width: max-content !important;
+}
+
+.outline-none{
+    outline: none !important;
+}
+
+.height-full{
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+.height-custom{
+    max-height: 20vh !important;
+}
+
+.navbar-brand-responsive{
+    margin-right: var(--bs-navbar-brand-margin-end);
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+.image-size-custom{
+    max-height: 120px;
+}
+.custom-placeholder::placeholder{
+    color: #b56f6762;
+}
+.custom-size-font{
+    font-size: 1.25rem !important;
+}
+@media (max-width:768px) {
+    .navbar-brand-responsive{
+        margin-right: 0 !important;
+    }
+    .navbar-brand-responsive .img-fluid {
+        max-width: inherit !important;
+        width: 100% !important;
+        height: auto;
+        object-fit: contain;
+    }
+    .image-size-custom{
+        max-height: 70px;
+    }
+    .fs-05{
+        font-size: 1.8rem !important;
+    }
+    .fixed-menu {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important; 
+        bottom: 0 !important;
+        width: 100%; /* adjust this value to the width of your menu */
+        background-color: #fff !important; /* adjust this value to your menu background color */
+        transition: 1s all!important;
+        z-index: 1050 !important;
+        transform: translateX(-150%) !important;
+        border-right: .12vw solid #8E623A !important;
+    }
+
+    .fixed-menu.show {
+        transform: translateX(0) !important;
+        width: 60%;
+       
+    }
+
+    .fixed-menu .nav-link {
+        color: #B56F67; /* change link color as needed */
+    }
+
+    .offcanvas.offcanvas-end{
+        width: 20rem !important;
+    }
+    .fs-big{
+        font-size: 2.5rem !important;
+    }
+
+    .w-40{
+        width: 100% !important;
+    }
+
+    .bg-custom{
+        background-size: cover;
+        background-position: right center;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        flex-direction: column !important;
+    }
+
+    .custom-size-font{
+        font-size: .86rem !important;
+    }
+
+    .myPromo .swiper-wrapper{
+        padding-bottom: 2rem !important;
+    }
+
+    .myPromo .swiper-horizontal> .myPromo  .swiper-pagination-bullets, .myPromo  .swiper-pagination-bullets.swiper-pagination-horizontal,.myPromo  .swiper-pagination-custom,.myPromo  .swiper-pagination-fraction{
+        left: unset !important;
+        right: 35% !important;
+    }
+    .myPromo .swiper-slide{
+        width: 100% !important;
+    }
+    .myPromo .swiper-pagination-bullet{
+        width: .6rem !important;
+        height: .6rem !important;
+        display: inline-block;
+        border-radius: 100vw !important;
+        background: var(--swiper-pagination-bullet-inactive-color, #000);
+        opacity: .1 !important;
+    }
+    .myPromo .swiper-pagination-bullet-active{
+        background: #8E623A !important;
+        opacity: 1 !important;
+        width: 2rem !important;
+    }
+    .img_custom{
+        width: 100% !important;
+        background-color: #8E623A !important;
+        height: 19rem !important;
+        position: relative !important;
+        border-radius: 10vw;
+        overflow: hidden;
+    }
+    .w-custom{
+        width: 85% !important;
+        margin: auto !important;
+    }
 }
