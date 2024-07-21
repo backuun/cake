@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Kue</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .bg-custom{
+            background-image: url(images/bg-banner.png) !important;
+        }
+            input[type="date"]::-webkit-calendar-picker-indicator {
+            display: none;
+        }
+
+        /* Untuk Firefox */
+        input[type="date"]::-moz-calendar-picker-indicator {
+            display: none;
+        }
+
+        /* Untuk Internet Explorer 10+ dan Microsoft Edge */
+        input[type="date"]::-ms-clear {
+            display: none;
+        }
+        @media (max-width:768px) {
+            .bg-custom{
+            background-image: url(images/bg-banner-mobile.png) !important;
+        }
+        }
+    </style>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-transparent px-2 py-3 px-md-5 py-md-4">
+        <div class="container-fluid bg-transparent d-flex justify-content-between align-items-center flex-column flex-md-row">
+            <div class="d-flex flex-column flex-md-row justify-content-between col">
+                <a class="navbar-brand navbar-brand-responsive" href="#">
+                    <img src="images/logo.png" alt="Logo" class="img-fluid mt-0 mt-md-4 image-size-custom">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse col-3 fixed-menu " id="navbarSupportedContent">
+                <ul class="navbar-nav font-primary justify-content-between w-100 fw-semibold mb-5 mb-lg-0 fs-2 d-flex p-4 p-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link grey-color active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link grey-color" aria-current="page" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link grey-color" aria-current="page" href="#">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link grey-color" aria-current="page" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link grey-color" aria-current="page" href="#">CSR</a>
+                    </li>
+                    <li class="nav-item d-block d-md-none mt-5">
+                        <a href="#" class="nav-link"><button class="w-100 border-0 outline-none bg-grey-old fs-5 text-light py-2 rounded-3 poppins">Login</button></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col d-flex justify-content-between justify-content-md-end align-items-center mt-3 mt-md-0 gap-3 gap-md-4 w-100">
+                <button class="nav-link fs-05 d-flex align-items-center justify-content-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><iconify-icon icon="solar:bag-5-linear" style="color: #B56F67"></iconify-icon></button>
+                <button class="nav-link fs-05 d-none d-md-flex align-items-center justify-content-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><iconify-icon icon="mingcute:search-line" style="color: #B56F67"></iconify-icon></button>
+                <!-- Search khusus di tampilan mobile -->
+                <div class="d-block d-md-none w-100" >
+                    <input type="text" class="w-100 poppins px-3 py-2 rounded-4 border outline-none custom-placeholder" placeholder="Search" style="border-color: #B56F67 !important; color:#B56F67 ;">
+                </div>
+                <button type="button" class="font-primary d-none d-md-block fs-4 btn btn-primary py-2 px-45 rounded-4 ms-2 bg-grey-old border-0 outline-0">Login</button>
+                <button class="btn-custom-click mt-md-0 bg-transparent fs-05 d-flex p-0 m-0 d-md-none align-items-center justify-content-center border-0 outline-none" type="button" data-bs-target="#navbarSupportedContent">
+                    <iconify-icon id="toggleIcon" icon="quill:hamburger" style="color: #B56F67"></iconify-icon>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- Popup Search khusus di tampilan dekstop -->
+    <div class="height-custom offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+        <div class="offcanvas-body d-flex align-items-center justify-content-center ">
+          <div class="d-flex justify-content-center align-items-center">
+            <div class="d-flex align-items-center justify-content-between border p-3 px-4 rounded-4 gap-2" style="border-color: #604A33 !important;">
+                <input type="text" class="fs-2 border-0 outline-none poppins" placeholder="Search"/><iconify-icon style="color: #AF9771;" icon="ri:search-line" class="fs-2"></iconify-icon>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Popup Cart -->
+    <div class="offcanvas offcanvas-end p-2" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header d-flex justify-content-between border-bottom border-2" style="border-color: #604A33 !important;">
+          <h2 class="offcanvas-title fs-4 poppins fw-bold" id="offcanvasRightLabel" style="color: #604A33;">Your Cart</h2>
+          <a href="#" class="font-primary fs-13 text-decoration-none fw-semibold" style="color: #604A33;">View Details</a>
+        </div>
+        <div class="offcanvas-body py-1 px-3">
+            <div class="row border-bottom py-3 px-2" style="border-color: #604A33 !important;">
+                <div class="col-sm-3 p-0 mb-3 mb-md-0">
+                    <img src="images/promosi-4.png" class="img-fluid height-full rounded-4" alt="Kue">
+                </div>
+                <div class="col-sm-4">
+                    <h3 class="poppins fs-6 fw-bold mb-1 text-truncate" style="color: #AF9771;">Ovo Milo</h3>
+                    <p class="font-primary fs-small" style="color: #604A33;">Size : 20cm x 30cm</p>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="d-flex border max-content py-0 rounded-pill p-3 align-items-center" style="border-color: #AF9771 !important;">
+                            <button class="bg-transparent border-0 p-0 fs-6 d-flex align-items-center" style="color: #604A33;" type="button" id="decrement"><iconify-icon icon="ic:outline-minus"></iconify-icon></button>
+                            <input type="text" class="p-0 text-center border-0 poppins fs-5 outline-none lh-0" id="quantity" style="width: 2.3rem !important; color: #604A33;" value="1" readonly>
+                            <button class="bg-transparent border-0 px-0 p-0 fs-6 d-flex align-items-center" style="color: #604A33;" type="button" id="increment"><iconify-icon icon="ic:outline-plus"></iconify-icon></button>
+                        </div>
+                        <button class="border-0 outline-none bg-transparent fs-3 p-0 m-0 d-flex align-items-center"><iconify-icon style="color: #604A33;" icon="ph:trash"></iconify-icon></button>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <h3 class="poppins fs-5 fw-bold mt-3 mt-md-0" style="color: #604A33;">RP. 1.500.000 ,-</h3>
+                </div>
+            </div>
+            <div class="row border-bottom py-3 px-2" style="border-color: #604A33 !important;">
+                <div class="col-sm-3 p-0 mb-3 mb-md-0">
+                    <img src="images/promosi-4.png" class="img-fluid height-full rounded-4" alt="Kue">
+                </div>
+                <div class="col-sm-4">
+                    <h3 class="poppins fs-6 fw-bold mb-1 text-truncate" style="color: #AF9771;">Ovo Milo</h3>
+                    <p class="font-primary fs-small" style="color: #604A33;">Size : 20cm x 30cm</p>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="d-flex border max-content py-0 rounded-pill p-3 align-items-center" style="border-color: #AF9771 !important;">
+                            <button class="bg-transparent border-0 p-0 fs-6 d-flex align-items-center" style="color: #604A33;" type="button" id="decrement"><iconify-icon icon="ic:outline-minus"></iconify-icon></button>
+                            <input type="text" class="p-0 text-center border-0 poppins fs-5 outline-none lh-0" id="quantity" style="width: 2.3rem !important; color: #604A33;" value="1" readonly>
+                            <button class="bg-transparent border-0 px-0 p-0 fs-6 d-flex align-items-center" style="color: #604A33;" type="button" id="increment"><iconify-icon icon="ic:outline-plus"></iconify-icon></button>
+                        </div>
+                        <button class="border-0 outline-none bg-transparent fs-3 p-0 m-0 d-flex align-items-center"><iconify-icon style="color: #604A33;" icon="ph:trash"></iconify-icon></button>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <h3 class="poppins fs-5 fw-bold mt-3 mt-md-0" style="color: #604A33;">RP. 1.500.000 ,-</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row px-5 py-4 w-100 pb-5">
+        <div class="col-sm-7 px-5">
+            <h1 class="ps-4 fs-05 poppins fw-bold mb-3" style="color: #604A33;">Cart Detail</h1>
+            <div class="row border-bottom py-4 px-2" style="border-color: #604A33 !important;">
+                <div class="col-sm-3 p-0 mb-3 mb-md-0">
+                    <img src="images/promosi-4.png" class="img-fluid height-full rounded-5" alt="Kue">
+                </div>
+                <div class="col-sm-4 ps-4 py-2">
+                    <h3 class="poppins fs-3 fw-bold mb-1 text-truncate" style="color: #AF9771;">Ovo Milo</h3>
+                    <p class="font-primary fs-5 fw-semibold" style="color: #604A33;">Size : 20cm x 30cm</p>
+                    <div class="d-flex align-items-center gap-2 mt-5">
+                        <div class="d-flex border max-content py-1 rounded-pill p-3 align-items-center" style="border-color: #AF9771 !important;">
+                            <button class="bg-transparent border-0 p-0 fs-4 d-flex align-items-center" style="color: #604A33;" type="button" id="decrement"><iconify-icon icon="ic:outline-minus"></iconify-icon></button>
+                            <input type="text" class="p-0 text-center border-0 poppins fs-4 outline-none lh-0" id="quantity" style="width: 3.3rem !important; color: #604A33;" value="1" readonly>
+                            <button class="bg-transparent border-0 px-0 p-0 fs-4 d-flex align-items-center" style="color: #604A33;" type="button" id="increment"><iconify-icon icon="ic:outline-plus"></iconify-icon></button>
+                        </div>
+                        <button class="border-0 outline-none bg-transparent fs-1 p-0 m-0 d-flex align-items-center"><iconify-icon style="color: #604A33;" icon="ph:trash"></iconify-icon></button>
+                    </div>
+                </div>
+                <div class="col-sm-5 text-end pt-3">
+                    <h3 class="poppins fs-1 fw-bold mt-3 mt-md-0" style="color: #604A33;">RP. 1.500.000 ,-</h3>
+                </div>
+            </div>
+            <div class="row border-bottom py-4 px-2" style="border-color: #604A33 !important;">
+                <div class="col-sm-3 p-0 mb-3 mb-md-0">
+                    <img src="images/promosi-4.png" class="img-fluid height-full rounded-5" alt="Kue">
+                </div>
+                <div class="col-sm-4 ps-4 py-2">
+                    <h3 class="poppins fs-3 fw-bold mb-1 text-truncate" style="color: #AF9771;">Ovo Milo</h3>
+                    <p class="font-primary fs-5 fw-semibold" style="color: #604A33;">Size : 20cm x 30cm</p>
+                    <div class="d-flex align-items-center gap-2 mt-5">
+                        <div class="d-flex border max-content py-1 rounded-pill p-3 align-items-center" style="border-color: #AF9771 !important;">
+                            <button class="bg-transparent border-0 p-0 fs-4 d-flex align-items-center" style="color: #604A33;" type="button" id="decrement"><iconify-icon icon="ic:outline-minus"></iconify-icon></button>
+                            <input type="text" class="p-0 text-center border-0 poppins fs-4 outline-none lh-0" id="quantity" style="width: 3.3rem !important; color: #604A33;" value="1" readonly>
+                            <button class="bg-transparent border-0 px-0 p-0 fs-4 d-flex align-items-center" style="color: #604A33;" type="button" id="increment"><iconify-icon icon="ic:outline-plus"></iconify-icon></button>
+                        </div>
+                        <button class="border-0 outline-none bg-transparent fs-1 p-0 m-0 d-flex align-items-center"><iconify-icon style="color: #604A33;" icon="ph:trash"></iconify-icon></button>
+                    </div>
+                </div>
+                <div class="col-sm-5 text-end pt-3">
+                    <h3 class="poppins fs-1 fw-bold mt-3 mt-md-0" style="color: #604A33;">RP. 1.500.000 ,-</h3>
+                </div>
+            </div>
+            <div class="row border-bottom py-4 px-2" style="border-color: #604A33 !important;">
+                <div class="col-sm-3 p-0 mb-3 mb-md-0">
+                    <img src="images/promosi-4.png" class="img-fluid height-full rounded-5" alt="Kue">
+                </div>
+                <div class="col-sm-4 ps-4 py-2">
+                    <h3 class="poppins fs-3 fw-bold mb-1 text-truncate" style="color: #AF9771;">Ovo Milo</h3>
+                    <p class="font-primary fs-5 fw-semibold" style="color: #604A33;">Size : 20cm x 30cm</p>
+                    <div class="d-flex align-items-center gap-2 mt-5">
+                        <div class="d-flex border max-content py-1 rounded-pill p-3 align-items-center" style="border-color: #AF9771 !important;">
+                            <button class="bg-transparent border-0 p-0 fs-4 d-flex align-items-center" style="color: #604A33;" type="button" id="decrement"><iconify-icon icon="ic:outline-minus"></iconify-icon></button>
+                            <input type="text" class="p-0 text-center border-0 poppins fs-4 outline-none lh-0" id="quantity" style="width: 3.3rem !important; color: #604A33;" value="1" readonly>
+                            <button class="bg-transparent border-0 px-0 p-0 fs-4 d-flex align-items-center" style="color: #604A33;" type="button" id="increment"><iconify-icon icon="ic:outline-plus"></iconify-icon></button>
+                        </div>
+                        <button class="border-0 outline-none bg-transparent fs-1 p-0 m-0 d-flex align-items-center"><iconify-icon style="color: #604A33;" icon="ph:trash"></iconify-icon></button>
+                    </div>
+                </div>
+                <div class="col-sm-5 text-end pt-3">
+                    <h3 class="poppins fs-1 fw-bold mt-3 mt-md-0" style="color: #604A33;">RP. 1.500.000 ,-</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-5 px-4">
+            <h1 class="fs-05 poppins fw-bold mb-3" style="color: #604A33;">Order Summary</h1>
+            <div class="col rounded-4 p-4" style="background-color: #F2F4F7;">
+                <div class="d-flex w-100 justify-content-between align-items-center border-bottom border-1 pb-2" style="border-color: #604A33 !important;">
+                    <span class="poppins fs-5 fw-semibold">Add order note</span>
+                    <iconify-icon icon="majesticons:plus" class="fs-2" style="color: #604A33;"></iconify-icon>
+                </div>
+                <textarea class="w-100 my-3 mb-2 height-input-custom rounded-5 border-1 outline-none poppins px-4 py-3" style="resize: none; border-color: #604A33 !important;"></textarea>
+                <div class="d-flex w-100 justify-content-between align-items-center border-bottom border-1 pb-2" style="border-color: #604A33 !important;">
+                    <span class="poppins fs-5 fw-semibold">Tax included, shipping calculated at checkout.</span>
+                </div>
+                <div class="d-flex border-bottom border-1 py-3 w-100" style="border-color: #604A33 !important;">
+                    <div class="col-5">
+                        <h3 class="fw-bold poppins fs-2" style="color: #604A33;">Subtotal</h3>
+                    </div>
+                    <div class="col-7 text-end">
+                        <h1 class="fw-bold poppins fs-1" style="color: #604A33;">Rp. 1.500.000,-</h1>
+                    </div>
+                </div>
+                <div class="col mt-3">
+                    <h5 class="poppins mb-3 fs-5 fw-semibold" style="color: #604A33;">Delivery</h5>
+                    <div class="row">
+                        <div class="col">
+                            <textarea class="height-input-custom rounded-4 w-100 outline-none border-1 px-3 py-3 poppins" style="resize: none; border-color: #604A33 !important;"></textarea>
+                        </div>
+                        <div class="col">
+                            <textarea class="height-input-custom rounded-4 w-100 outline-none border-1 px-3 py-3 poppins" style="resize: none; border-color: #604A33 !important;"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mt-3">
+                    <h5 class="poppins mb-3 fs-5 fw-semibold" style="color: #604A33;">Select your preferred date and time for delivery:</h5>
+                    <div class="col">
+                        <div class="col d-flex align-items-center gap-3 border rounded-4 border-1 bg-light py-3 px-4 mb-4" style="border-color: #604A33 !important;">
+                            <iconify-icon for="dateInput" icon="fa:calendar" class="fs-4"></iconify-icon>
+                            <input type="date" class="w-100 poppins bg-transparent border-0 outline-none fs-5">
+                        </div>
+                        <div class="col d-flex align-items-center gap-3 border rounded-4 border-1 bg-light py-3 px-4" style="border-color: #604A33 !important;">
+                            <iconify-icon icon="bytesize:clock" class="fs-4"></iconify-icon>
+                            <select id="time-range" class="w-100 poppins fs-5 border-0 outline-none bg-transparent">
+                                <option value="00:00-01:00">00:00 - 01:00</option>
+                                <option value="01:00-02:00">01:00 - 02:00</option>
+                                <option value="02:00-03:00">02:00 - 03:00</option>
+                                <option value="03:00-04:00">03:00 - 04:00</option>
+                                <option value="04:00-05:00">04:00 - 05:00</option>
+                                <option value="05:00-06:00">05:00 - 06:00</option>
+                                <option value="06:00-07:00">06:00 - 07:00</option>
+                                <option value="07:00-08:00">07:00 - 08:00</option>
+                                <option value="08:00-09:00">08:00 - 09:00</option>
+                                <option value="09:00-10:00">09:00 - 10:00</option>
+                                <option value="10:00-11:00">10:00 - 11:00</option>
+                                <option value="11:00-12:00">11:00 - 12:00</option>
+                                <option value="12:00-13:00">12:00 - 13:00</option>
+                                <option value="13:00-14:00">13:00 - 14:00</option>
+                                <option value="14:00-15:00">14:00 - 15:00</option>
+                                <option value="15:00-16:00">15:00 - 16:00</option>
+                                <option value="16:00-17:00">16:00 - 17:00</option>
+                                <option value="17:00-18:00">17:00 - 18:00</option>
+                                <option value="18:00-19:00">18:00 - 19:00</option>
+                                <option value="19:00-20:00">19:00 - 20:00</option>
+                                <option value="20:00-21:00">20:00 - 21:00</option>
+                                <option value="21:00-22:00">21:00 - 22:00</option>
+                                <option value="22:00-23:00">22:00 - 23:00</option>
+                                <option value="23:00-00:00">23:00 - 00:00</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mt-3">
+                    <h5 class="poppins mb-3 fs-5 fw-semibold" style="color: #604A33;">Please enter delivery instructions (optional) :</h5>
+                    <div class="col">
+                        <textarea class="height-input-custom rounded-4 w-100 outline-none border-1 px-3 py-3 poppins" style="resize: none; border-color: #604A33 !important;"></textarea>
+                    </div>
+                </div>
+                <div class="col mt-3">
+                    <button class="w-100 border-0 outline-none poppins text-light fs-3 py-3 rounded-pill" style="background-color: #604A33;">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class=" bg-footer text-center py-md-13">
+        <h1 class="text-light text-uppercase fs-1 fw-light poppins letter-spacing-1 mb-3">Priority Gift For Priority People</h1>
+        <p class="w-custom text-light poppins fs-13">We are a patisserie that believe qualities bring the best out of a product, people and our valuable Customers. We use premium ingredients and contribute long hours to put the little details to satisfy our crave, using a combination of culinary ability and creativity in baking, decorating and flavoring.</p>
+        <a href="#"><button class="btn btn-light mt-5 rounded-pill text-light poppins text-uppercase px-5 bg-transparent py-2 py-md-3">Get Your Cake</button></a>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const toggleButton = document.querySelector('.btn-custom-click');
+        const toggleIcon = document.getElementById('toggleIcon');
+        const menu = document.getElementById('navbarSupportedContent');
+
+        toggleButton.addEventListener('click', function () {
+            menu.classList.toggle('show');
+
+            if (menu.classList.contains('show')) {
+                // Toggle to close icon
+                toggleIcon.setAttribute('icon', 'mingcute:close-line');
+            } else {
+                // Toggle back to open icon
+                toggleIcon.setAttribute('icon', 'quill:hamburger');
+            }
+        });
+    </script>
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
