@@ -43,7 +43,7 @@
             <div class="collapse navbar-collapse col-3 fixed-menu " id="navbarSupportedContent">
                 <ul class="navbar-nav font-primary justify-content-between w-100 fw-semibold mb-5 mb-lg-0 fs-2 d-flex p-4 p-md-0">
                     <li class="nav-item">
-                        <a class="nav-link grey-color active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link grey-color active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link grey-color" aria-current="page" href="#">Shop</a>
@@ -87,51 +87,100 @@
         </div>
     </div>
     <!-- Popup Cart -->
-    <div class="offcanvas offcanvas-end p-2" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas offcanvas-start p-2" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header d-flex justify-content-between border-bottom border-2" style="border-color: #604A33 !important;">
           <h2 class="offcanvas-title fs-4 poppins fw-bold" id="offcanvasRightLabel" style="color: #604A33;">Your Cart</h2>
-          <a href="#" class="font-primary fs-13 text-decoration-none fw-semibold" style="color: #604A33;">View Details</a>
+          <a href="cart-detail.html" class="font-primary fs-13 text-decoration-none fw-semibold" style="color: #604A33;">View Details</a>
         </div>
-        <div class="offcanvas-body py-1 px-3">
-            <div class="row border-bottom py-3 px-2" style="border-color: #604A33 !important;">
-                <div class="col-sm-3 p-0 mb-3 mb-md-0">
-                    <img src="images/promosi-4.png" class="img-fluid height-full rounded-4" alt="Kue">
-                </div>
-                <div class="col-sm-4">
-                    <h3 class="poppins fs-6 fw-bold mb-1 text-truncate" style="color: #AF9771;">Ovo Milo</h3>
-                    <p class="font-primary fs-small" style="color: #604A33;">Size : 20cm x 30cm</p>
-                    <div class="d-flex align-items-center gap-1">
-                        <div class="d-flex border max-content py-0 rounded-pill p-3 align-items-center" style="border-color: #AF9771 !important;">
-                            <button class="bg-transparent border-0 p-0 fs-6 d-flex align-items-center" style="color: #604A33;" type="button" id="decrement"><iconify-icon icon="ic:outline-minus"></iconify-icon></button>
-                            <input type="text" class="p-0 text-center border-0 poppins fs-5 outline-none lh-0" id="quantity" style="width: 2.3rem !important; color: #604A33;" value="1" readonly>
-                            <button class="bg-transparent border-0 px-0 p-0 fs-6 d-flex align-items-center" style="color: #604A33;" type="button" id="increment"><iconify-icon icon="ic:outline-plus"></iconify-icon></button>
+        <div class="offcanvas-body py-1 px-3 d-flex flex-column justify-content-between">
+            <div>
+                <div class="row border-bottom py-3 px-2" style="border-color: #604A33 !important;">
+                    <div class="col-sm-3 p-0 mb-3 mb-md-0">
+                        <img src="images/promosi-4.png" class="img-fluid height-full rounded-4" alt="Kue">
+                    </div>
+                    <div class="col-sm-4">
+                        <h3 class="poppins fs-6 fw-bold mb-1 text-truncate" style="color: #AF9771;">Ovo Milo</h3>
+                        <p class="font-primary fs-small" style="color: #604A33;">Size : 20cm x 30cm</p>
+                        <div class="d-flex align-items-center gap-1">
+                            <div class="d-flex border max-content py-0 rounded-pill p-3 align-items-center" style="border-color: #AF9771 !important;">
+                                <button class="bg-transparent border-0 p-0 fs-6 d-flex align-items-center" style="color: #604A33;" type="button" id="decrement"><iconify-icon icon="ic:outline-minus"></iconify-icon></button>
+                                <input type="text" class="p-0 text-center border-0 poppins fs-5 outline-none lh-0" id="quantity" style="width: 2.3rem !important; color: #604A33;" value="1" readonly>
+                                <button class="bg-transparent border-0 px-0 p-0 fs-6 d-flex align-items-center" style="color: #604A33;" type="button" id="increment"><iconify-icon icon="ic:outline-plus"></iconify-icon></button>
+                            </div>
+                            <button class="border-0 outline-none bg-transparent fs-3 p-0 m-0 d-flex align-items-center"><iconify-icon style="color: #604A33;" icon="ph:trash"></iconify-icon></button>
                         </div>
-                        <button class="border-0 outline-none bg-transparent fs-3 p-0 m-0 d-flex align-items-center"><iconify-icon style="color: #604A33;" icon="ph:trash"></iconify-icon></button>
+                    </div>
+                    <div class="col-sm-5">
+                        <h3 class="poppins fs-5 fw-bold mt-3 mt-md-0" style="color: #604A33;">RP. 1.500.000 ,-</h3>
                     </div>
                 </div>
-                <div class="col-sm-5">
-                    <h3 class="poppins fs-5 fw-bold mt-3 mt-md-0" style="color: #604A33;">RP. 1.500.000 ,-</h3>
+                <div class="row border-bottom py-3 px-2" style="border-color: #604A33 !important;">
+                    <div class="col-sm-3 p-0 mb-3 mb-md-0">
+                        <img src="images/promosi-4.png" class="img-fluid height-full rounded-4" alt="Kue">
+                    </div>
+                    <div class="col-sm-4">
+                        <h3 class="poppins fs-6 fw-bold mb-1 text-truncate" style="color: #AF9771;">Ovo Milo</h3>
+                        <p class="font-primary fs-small" style="color: #604A33;">Size : 20cm x 30cm</p>
+                        <div class="d-flex align-items-center gap-1">
+                            <div class="d-flex border max-content py-0 rounded-pill p-3 align-items-center" style="border-color: #AF9771 !important;">
+                                <button class="bg-transparent border-0 p-0 fs-6 d-flex align-items-center" style="color: #604A33;" type="button" id="decrement"><iconify-icon icon="ic:outline-minus"></iconify-icon></button>
+                                <input type="text" class="p-0 text-center border-0 poppins fs-5 outline-none lh-0" id="quantity" style="width: 2.3rem !important; color: #604A33;" value="1" readonly>
+                                <button class="bg-transparent border-0 px-0 p-0 fs-6 d-flex align-items-center" style="color: #604A33;" type="button" id="increment"><iconify-icon icon="ic:outline-plus"></iconify-icon></button>
+                            </div>
+                            <button class="border-0 outline-none bg-transparent fs-3 p-0 m-0 d-flex align-items-center"><iconify-icon style="color: #604A33;" icon="ph:trash"></iconify-icon></button>
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <h3 class="poppins fs-5 fw-bold mt-3 mt-md-0" style="color: #604A33;">RP. 1.500.000 ,-</h3>
+                    </div>
                 </div>
             </div>
-            <div class="row border-bottom py-3 px-2" style="border-color: #604A33 !important;">
-                <div class="col-sm-3 p-0 mb-3 mb-md-0">
-                    <img src="images/promosi-4.png" class="img-fluid height-full rounded-4" alt="Kue">
-                </div>
-                <div class="col-sm-4">
-                    <h3 class="poppins fs-6 fw-bold mb-1 text-truncate" style="color: #AF9771;">Ovo Milo</h3>
-                    <p class="font-primary fs-small" style="color: #604A33;">Size : 20cm x 30cm</p>
-                    <div class="d-flex align-items-center gap-1">
-                        <div class="d-flex border max-content py-0 rounded-pill p-3 align-items-center" style="border-color: #AF9771 !important;">
-                            <button class="bg-transparent border-0 p-0 fs-6 d-flex align-items-center" style="color: #604A33;" type="button" id="decrement"><iconify-icon icon="ic:outline-minus"></iconify-icon></button>
-                            <input type="text" class="p-0 text-center border-0 poppins fs-5 outline-none lh-0" id="quantity" style="width: 2.3rem !important; color: #604A33;" value="1" readonly>
-                            <button class="bg-transparent border-0 px-0 p-0 fs-6 d-flex align-items-center" style="color: #604A33;" type="button" id="increment"><iconify-icon icon="ic:outline-plus"></iconify-icon></button>
-                        </div>
-                        <button class="border-0 outline-none bg-transparent fs-3 p-0 m-0 d-flex align-items-center"><iconify-icon style="color: #604A33;" icon="ph:trash"></iconify-icon></button>
+            <div class="pb-2">
+                <a href="cart-detail.html"><button class="w-100 poppins text-light rounded-pill fs-5 py-2" style="background-color: #604A33;">View Cart</button></a>
+            </div>
+        </div>
+    </div>
+    <!-- Popup Select Size -->
+    <div class="offcanvas offcanvas-start p-2" tabindex="-1" id="offcanvasLeft" aria-labelledby="offcanvasLeftLabel">
+        <div class="offcanvas-header d-flex justify-content-between border-bottom border-2" style="border-color: #604A33 !important;">
+          <h2 class="offcanvas-title fs-4 poppins fw-bold" id="offcanvasRightLabel" style="color: #604A33;">Select Size</h2>
+          <a href="cart-detail.html" class="font-primary fs-13 text-decoration-none fw-semibold" style="color: #604A33;">View Details</a>
+        </div>
+        <div class="offcanvas-body py-1 px-3 d-flex flex-column justify-content-between">
+            <div>
+                <div class="row py-3 px-2 mb-2">
+                    <div class="col-sm-5 p-0 mb-3 mb-md-0">
+                        <img src="images/promosi-4.png" class="img-fluid height-full rounded-4" alt="Kue">
+                    </div>
+                    <div class="col-sm-6 py-3">
+                        <h3 class="poppins fs-3 fw-bold mb-1 text-truncate" style="color: #AF9771;">Ovo Milo Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores nihil quam amet!</h3>
+                        <h4 class="poppins fs-4 fw-bold" style="color: #604A33;">Rp. 1.500.000,-</h4>
                     </div>
                 </div>
-                <div class="col-sm-5">
-                    <h3 class="poppins fs-5 fw-bold mt-3 mt-md-0" style="color: #604A33;">RP. 1.500.000 ,-</h3>
+                <div class="col">
+                    <h5 class="poppins fs-5 fw-bold" style="color: #604A33;">Size</h5>
+                    <div class="row row-cols-3 w-100-custom mb-2 gx-0">
+                        <div class="col"><button type="button" class="btn mb-4 border py-2 fs-6 poppins rounded-pill px-2 fw-medium" style="color: #604A33; border-color: #AF9771 !important;">20cm x 30cm</button></div>
+                        <div class="col"><button type="button" class="btn mb-4 border py-2 fs-6 poppins rounded-pill px-2 fw-medium" style="color: #604A33; border-color: #AF9771 !important;">20cm x 30cm</button></div>
+                        <div class="col"><button type="button" class="btn mb-4 border py-2 fs-6 poppins rounded-pill px-2 fw-medium" style="color: #604A33; border-color: #AF9771 !important;">20cm x 30cm</button></div>
+                        <div class="col"><button type="button" class="btn mb-4 border py-2 fs-6 poppins rounded-pill px-2 fw-medium" style="color: #604A33; border-color: #AF9771 !important;">20cm x 30cm</button></div>
+                        <div class="col"><button type="button" class="btn mb-4 border py-2 fs-6 poppins rounded-pill px-2 fw-medium" style="color: #604A33; border-color: #AF9771 !important;">20cm x 30cm</button></div>
+                        <div class="col"><button type="button" class="btn mb-4 border py-2 fs-6 poppins rounded-pill px-2 fw-medium" style="color: #604A33; border-color: #AF9771 !important;">20cm x 30cm</button></div>
+                    </div>
+                    <h5 class="poppins fs-5 fw-bold" style="color: #604A33;">Add Note</h5>
+                    <textarea class="w-100 my-2 mb-2 height-input-custom rounded-5 border-1 outline-none poppins px-4 py-3" style="resize: none; border-color: #AF9771 !important"></textarea>
                 </div>
+            </div>
+            <div class="row row-cols-3 w-100-custom gx-0 d-flex justify-content-center mb-2">
+                <div class="col text-center px-2">
+                    <div class="d-flex justify-content-center m-auto border w-100 py-1 rounded-pill p-1 gap-2 align-items-center" style="border-color: #AF9771 !important;">
+                        <button class="bg-transparent border-0 p-0 py-1 fs-6 d-flex align-items-center" style="color: #604A33;" type="button" id="decrement"><iconify-icon icon="ic:outline-minus"></iconify-icon></button>
+                        <input type="text" class="p-0 text-center border-0 poppins fw-bold fs-5 outline-none lh-0" id="quantity" style="width: 2.7rem !important; color: #604A33;" value="1" readonly>
+                        <button class="bg-transparent border-0 px-0 p-0 py-1 fs-6 d-flex align-items-center" style="color: #604A33;" type="button" id="increment"><iconify-icon icon="ic:outline-plus"></iconify-icon></button>
+                    </div>
+                </div>
+                <div class="col text-center px-2"><button type="button" class="btn border w-100 py-2 fs-6 poppins rounded-pill px-2 fw-medium" style="color: #604A33; border-color: #AF9771 !important; background-color: #F2F4F7;">Add To Cart</button></div>
+                <div class="col text-center px-2"><button type="button" class="btn border w-100 py-2 fs-6 poppins rounded-pill px-2 fw-medium" style="color: white; border-color: #604A33 !important; background-color: #604A33;">Buy Now</button></div>
             </div>
         </div>
     </div>
@@ -139,64 +188,100 @@
     <div class="row px-5 py-4 w-100 pb-5">
         <div class="col-sm-7 px-5">
             <h1 class="ps-4 fs-05 poppins fw-bold mb-3" style="color: #604A33;">Cart Detail</h1>
-            <div class="row border-bottom py-4 px-2" style="border-color: #604A33 !important;">
-                <div class="col-sm-3 p-0 mb-3 mb-md-0">
-                    <img src="images/promosi-4.png" class="img-fluid height-full rounded-5" alt="Kue">
-                </div>
-                <div class="col-sm-4 ps-4 py-2">
-                    <h3 class="poppins fs-3 fw-bold mb-1 text-truncate" style="color: #AF9771;">Ovo Milo</h3>
-                    <p class="font-primary fs-5 fw-semibold" style="color: #604A33;">Size : 20cm x 30cm</p>
-                    <div class="d-flex align-items-center gap-2 mt-5">
-                        <div class="d-flex border max-content py-1 rounded-pill p-3 align-items-center" style="border-color: #AF9771 !important;">
-                            <button class="bg-transparent border-0 p-0 fs-4 d-flex align-items-center" style="color: #604A33;" type="button" id="decrement"><iconify-icon icon="ic:outline-minus"></iconify-icon></button>
-                            <input type="text" class="p-0 text-center border-0 poppins fs-4 outline-none lh-0" id="quantity" style="width: 3.3rem !important; color: #604A33;" value="1" readonly>
-                            <button class="bg-transparent border-0 px-0 p-0 fs-4 d-flex align-items-center" style="color: #604A33;" type="button" id="increment"><iconify-icon icon="ic:outline-plus"></iconify-icon></button>
+            <div class="col mb-5 pb-5">
+                <div class="row border-bottom py-4 px-2" style="border-color: #604A33 !important;">
+                    <div class="col-sm-3 p-0 mb-3 mb-md-0">
+                        <img src="images/promosi-4.png" class="img-fluid height-full rounded-5" alt="Kue">
+                    </div>
+                    <div class="col-sm-4 ps-4 py-2">
+                        <h3 class="poppins fs-3 fw-bold mb-1 text-truncate" style="color: #AF9771;">Ovo Milo</h3>
+                        <p class="font-primary fs-5 fw-semibold" style="color: #604A33;">Size : 20cm x 30cm</p>
+                        <div class="d-flex align-items-center gap-2 mt-5">
+                            <div class="d-flex border max-content py-1 rounded-pill p-3 align-items-center" style="border-color: #AF9771 !important;">
+                                <button class="bg-transparent border-0 p-0 fs-4 d-flex align-items-center" style="color: #604A33;" type="button" id="decrement"><iconify-icon icon="ic:outline-minus"></iconify-icon></button>
+                                <input type="text" class="p-0 text-center border-0 poppins fs-4 outline-none lh-0" id="quantity" style="width: 3.3rem !important; color: #604A33;" value="1" readonly>
+                                <button class="bg-transparent border-0 px-0 p-0 fs-4 d-flex align-items-center" style="color: #604A33;" type="button" id="increment"><iconify-icon icon="ic:outline-plus"></iconify-icon></button>
+                            </div>
+                            <button class="border-0 outline-none bg-transparent fs-1 p-0 m-0 d-flex align-items-center"><iconify-icon style="color: #604A33;" icon="ph:trash"></iconify-icon></button>
                         </div>
-                        <button class="border-0 outline-none bg-transparent fs-1 p-0 m-0 d-flex align-items-center"><iconify-icon style="color: #604A33;" icon="ph:trash"></iconify-icon></button>
+                    </div>
+                    <div class="col-sm-5 text-end pt-3">
+                        <h3 class="poppins fs-1 fw-bold mt-3 mt-md-0" style="color: #604A33;">RP. 1.500.000 ,-</h3>
                     </div>
                 </div>
-                <div class="col-sm-5 text-end pt-3">
-                    <h3 class="poppins fs-1 fw-bold mt-3 mt-md-0" style="color: #604A33;">RP. 1.500.000 ,-</h3>
+                <div class="row border-bottom py-4 px-2" style="border-color: #604A33 !important;">
+                    <div class="col-sm-3 p-0 mb-3 mb-md-0">
+                        <img src="images/promosi-4.png" class="img-fluid height-full rounded-5" alt="Kue">
+                    </div>
+                    <div class="col-sm-4 ps-4 py-2">
+                        <h3 class="poppins fs-3 fw-bold mb-1 text-truncate" style="color: #AF9771;">Ovo Milo</h3>
+                        <p class="font-primary fs-5 fw-semibold" style="color: #604A33;">Size : 20cm x 30cm</p>
+                        <div class="d-flex align-items-center gap-2 mt-5">
+                            <div class="d-flex border max-content py-1 rounded-pill p-3 align-items-center" style="border-color: #AF9771 !important;">
+                                <button class="bg-transparent border-0 p-0 fs-4 d-flex align-items-center" style="color: #604A33;" type="button" id="decrement"><iconify-icon icon="ic:outline-minus"></iconify-icon></button>
+                                <input type="text" class="p-0 text-center border-0 poppins fs-4 outline-none lh-0" id="quantity" style="width: 3.3rem !important; color: #604A33;" value="1" readonly>
+                                <button class="bg-transparent border-0 px-0 p-0 fs-4 d-flex align-items-center" style="color: #604A33;" type="button" id="increment"><iconify-icon icon="ic:outline-plus"></iconify-icon></button>
+                            </div>
+                            <button class="border-0 outline-none bg-transparent fs-1 p-0 m-0 d-flex align-items-center"><iconify-icon style="color: #604A33;" icon="ph:trash"></iconify-icon></button>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 text-end pt-3">
+                        <h3 class="poppins fs-1 fw-bold mt-3 mt-md-0" style="color: #604A33;">RP. 1.500.000 ,-</h3>
+                    </div>
+                </div>
+                <div class="row border-bottom py-4 px-2" style="border-color: #604A33 !important;">
+                    <div class="col-sm-3 p-0 mb-3 mb-md-0">
+                        <img src="images/promosi-4.png" class="img-fluid height-full rounded-5" alt="Kue">
+                    </div>
+                    <div class="col-sm-4 ps-4 py-2">
+                        <h3 class="poppins fs-3 fw-bold mb-1 text-truncate" style="color: #AF9771;">Ovo Milo</h3>
+                        <p class="font-primary fs-5 fw-semibold" style="color: #604A33;">Size : 20cm x 30cm</p>
+                        <div class="d-flex align-items-center gap-2 mt-5">
+                            <div class="d-flex border max-content py-1 rounded-pill p-3 align-items-center" style="border-color: #AF9771 !important;">
+                                <button class="bg-transparent border-0 p-0 fs-4 d-flex align-items-center" style="color: #604A33;" type="button" id="decrement"><iconify-icon icon="ic:outline-minus"></iconify-icon></button>
+                                <input type="text" class="p-0 text-center border-0 poppins fs-4 outline-none lh-0" id="quantity" style="width: 3.3rem !important; color: #604A33;" value="1" readonly>
+                                <button class="bg-transparent border-0 px-0 p-0 fs-4 d-flex align-items-center" style="color: #604A33;" type="button" id="increment"><iconify-icon icon="ic:outline-plus"></iconify-icon></button>
+                            </div>
+                            <button class="border-0 outline-none bg-transparent fs-1 p-0 m-0 d-flex align-items-center"><iconify-icon style="color: #604A33;" icon="ph:trash"></iconify-icon></button>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 text-end pt-3">
+                        <h3 class="poppins fs-1 fw-bold mt-3 mt-md-0" style="color: #604A33;">RP. 1.500.000 ,-</h3>
+                    </div>
                 </div>
             </div>
-            <div class="row border-bottom py-4 px-2" style="border-color: #604A33 !important;">
-                <div class="col-sm-3 p-0 mb-3 mb-md-0">
-                    <img src="images/promosi-4.png" class="img-fluid height-full rounded-5" alt="Kue">
+
+            <div class="mt-5 pt-3">
+                <div class="col mt-5">
+                    <h2 class="fs-4 poppins text-md-start text-center fw-semibold mb-3" style="color: #8E623A">Produk yang serupa :</h2>
                 </div>
-                <div class="col-sm-4 ps-4 py-2">
-                    <h3 class="poppins fs-3 fw-bold mb-1 text-truncate" style="color: #AF9771;">Ovo Milo</h3>
-                    <p class="font-primary fs-5 fw-semibold" style="color: #604A33;">Size : 20cm x 30cm</p>
-                    <div class="d-flex align-items-center gap-2 mt-5">
-                        <div class="d-flex border max-content py-1 rounded-pill p-3 align-items-center" style="border-color: #AF9771 !important;">
-                            <button class="bg-transparent border-0 p-0 fs-4 d-flex align-items-center" style="color: #604A33;" type="button" id="decrement"><iconify-icon icon="ic:outline-minus"></iconify-icon></button>
-                            <input type="text" class="p-0 text-center border-0 poppins fs-4 outline-none lh-0" id="quantity" style="width: 3.3rem !important; color: #604A33;" value="1" readonly>
-                            <button class="bg-transparent border-0 px-0 p-0 fs-4 d-flex align-items-center" style="color: #604A33;" type="button" id="increment"><iconify-icon icon="ic:outline-plus"></iconify-icon></button>
+                <div class="col mt-4">
+                    <div class="row row-cols-2 row-cols-lg-3">
+                        <div class="col text-center mb-4 mb-md-5">
+                            <a href="detail-page.html">
+                                <div class="p-0 p-md-2">
+                                    <img src="images/promosi-1.png" class="img-fluid" alt="...">
+                                </div>
+                            </a>
+                            <button type="button" class="btn poppins px-4 px-md-5 py-1 py-md-2 rounded-5 mt-4 custom-size-font text-light" style="background: #8E623A;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">Add To Cart</button>
                         </div>
-                        <button class="border-0 outline-none bg-transparent fs-1 p-0 m-0 d-flex align-items-center"><iconify-icon style="color: #604A33;" icon="ph:trash"></iconify-icon></button>
-                    </div>
-                </div>
-                <div class="col-sm-5 text-end pt-3">
-                    <h3 class="poppins fs-1 fw-bold mt-3 mt-md-0" style="color: #604A33;">RP. 1.500.000 ,-</h3>
-                </div>
-            </div>
-            <div class="row border-bottom py-4 px-2" style="border-color: #604A33 !important;">
-                <div class="col-sm-3 p-0 mb-3 mb-md-0">
-                    <img src="images/promosi-4.png" class="img-fluid height-full rounded-5" alt="Kue">
-                </div>
-                <div class="col-sm-4 ps-4 py-2">
-                    <h3 class="poppins fs-3 fw-bold mb-1 text-truncate" style="color: #AF9771;">Ovo Milo</h3>
-                    <p class="font-primary fs-5 fw-semibold" style="color: #604A33;">Size : 20cm x 30cm</p>
-                    <div class="d-flex align-items-center gap-2 mt-5">
-                        <div class="d-flex border max-content py-1 rounded-pill p-3 align-items-center" style="border-color: #AF9771 !important;">
-                            <button class="bg-transparent border-0 p-0 fs-4 d-flex align-items-center" style="color: #604A33;" type="button" id="decrement"><iconify-icon icon="ic:outline-minus"></iconify-icon></button>
-                            <input type="text" class="p-0 text-center border-0 poppins fs-4 outline-none lh-0" id="quantity" style="width: 3.3rem !important; color: #604A33;" value="1" readonly>
-                            <button class="bg-transparent border-0 px-0 p-0 fs-4 d-flex align-items-center" style="color: #604A33;" type="button" id="increment"><iconify-icon icon="ic:outline-plus"></iconify-icon></button>
+                        <div class="col text-center mb-4 mb-md-5">
+                            <a href="detail-page.html">
+                                <div class="p-0 p-md-2">
+                                    <img src="images/promosi-2.png" class="img-fluid" alt="...">
+                                </div>
+                            </a>
+                            <button type="button" class="btn poppins px-4 px-md-5 py-1 py-md-2 rounded-5 mt-4 custom-size-font text-light" style="background: #8E623A;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">Add To Cart</button>
                         </div>
-                        <button class="border-0 outline-none bg-transparent fs-1 p-0 m-0 d-flex align-items-center"><iconify-icon style="color: #604A33;" icon="ph:trash"></iconify-icon></button>
+                        <div class="col text-center mb-4 mb-md-5">
+                            <a href="detail-page.html">
+                                <div class="p-0 p-md-2">
+                                    <img src="images/promosi-3.png" class="img-fluid" alt="...">
+                                </div>
+                            </a>
+                            <button type="button" class="btn poppins px-4 px-md-5 py-1 py-md-2 rounded-5 mt-4 custom-size-font text-light" style="background: #8E623A;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">Add To Cart</button>
+                        </div>
                     </div>
-                </div>
-                <div class="col-sm-5 text-end pt-3">
-                    <h3 class="poppins fs-1 fw-bold mt-3 mt-md-0" style="color: #604A33;">RP. 1.500.000 ,-</h3>
                 </div>
             </div>
         </div>
