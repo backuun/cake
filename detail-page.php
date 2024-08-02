@@ -49,12 +49,30 @@
             <div class="col">
                 <h3 class="poppins fs-5 mb-2 fw-bold" style="color: #604A33;">Size</h3>
                 <div class="row row-cols-3 w-63-custom">
-                    <div class="col"><button type="button" class="btn mb-4 border py-2 fs-6 poppins rounded-pill px-3 fw-medium" style="color: #604A33; border-color: #AF9771 !important;">20cm x 30cm</button></div>
-                    <div class="col"><button type="button" class="btn mb-4 border py-2 fs-6 poppins rounded-pill px-3 fw-medium" style="color: #604A33; border-color: #AF9771 !important;">20cm x 30cm</button></div>
-                    <div class="col"><button type="button" class="btn mb-4 border py-2 fs-6 poppins rounded-pill px-3 fw-medium" style="color: #604A33; border-color: #AF9771 !important;">20cm x 30cm</button></div>
-                    <div class="col"><button type="button" class="btn mb-4 border py-2 fs-6 poppins rounded-pill px-3 fw-medium" style="color: #604A33; border-color: #AF9771 !important;">20cm x 30cm</button></div>
-                    <div class="col"><button type="button" class="btn mb-4 border py-2 fs-6 poppins rounded-pill px-3 fw-medium" style="color: #604A33; border-color: #AF9771 !important;">20cm x 30cm</button></div>
-                    <div class="col"><button type="button" class="btn mb-4 border py-2 fs-6 poppins rounded-pill px-3 fw-medium" style="color: #604A33; border-color: #AF9771 !important;">20cm x 30cm</button></div>
+                  <div class="col btn-custom">
+                    <input type="radio" id="size10" name="size" value="20cm x 30cm" class="d-none" />
+                    <label for="size10" class="btn mb-4 border py-2 fs-6 poppins rounded-pill px-3 fw-medium" style="color: #604A33; border-color: #AF9771 !important;">20cm x 30cm</label>
+                  </div>
+                  <div class="col btn-custom">
+                    <input type="radio" id="size20" name="size" value="20cm x 30cm" class="d-none" />
+                    <label for="size20" class="btn mb-4 border py-2 fs-6 poppins rounded-pill px-3 fw-medium" style="color: #604A33; border-color: #AF9771 !important;">20cm x 30cm</label>
+                  </div>
+                  <div class="col btn-custom">
+                    <input type="radio" id="size30" name="size" value="20cm x 30cm" class="d-none" />
+                    <label for="size30" class="btn mb-4 border py-2 fs-6 poppins rounded-pill px-3 fw-medium" style="color: #604A33; border-color: #AF9771 !important;">20cm x 30cm</label>
+                  </div>
+                  <div class="col btn-custom">
+                    <input type="radio" id="size40" name="size" value="20cm x 30cm" class="d-none" />
+                    <label for="size40" class="btn mb-4 border py-2 fs-6 poppins rounded-pill px-3 fw-medium" style="color: #604A33; border-color: #AF9771 !important;">20cm x 30cm</label>
+                  </div>
+                  <div class="col btn-custom">
+                    <input type="radio" id="size50" name="size" value="20cm x 30cm" class="d-none" />
+                    <label for="size50" class="btn mb-4 border py-2 fs-6 poppins rounded-pill px-3 fw-medium" style="color: #604A33; border-color: #AF9771 !important;">20cm x 30cm</label>
+                  </div>
+                  <div class="col btn-custom">
+                    <input type="radio" id="size60" name="size" value="20cm x 30cm" class="d-none" />
+                    <label for="size60" class="btn mb-4 border py-2 fs-6 poppins rounded-pill px-3 fw-medium" style="color: #604A33; border-color: #AF9771 !important;">20cm x 30cm</label>
+                  </div>
                 </div>
             </div>
             <div class="col p-4 mt-2 me-5 rounded-4" style="background-color: #F2F4F7;">
