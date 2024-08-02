@@ -1,188 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toko Kue</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
-    <style>
-        .bg-custom{
-            background-image: url(images/bg-banner.png) !important;
-        }
-        @media (max-width:768px) {
-            .bg-custom{
-            background-image: url(images/bg-banner-mobile.png) !important;
-        }
-        }
-    </style>
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg bg-transparent d-flex flex-column px-0 py-3 px-md-0 py-md-0 w-100 border-bottom border-1" style="border-color: #A99685 !important;">
-        <div class="bg-transparent d-flex justify-content-between align-items-center m-auto flex-column flex-md-row pt-4" style="width: 79%;">
-            <div class="d-flex flex-column flex-md-row justify-content-between col">
-                <a class="navbar-brand navbar-brand-responsive" href="#">
-                    <img src="images/logo.png" alt="Logo" class="img-fluid mt-0 mt-md-0 image-size-custom">
-                </a>
-            </div>
-            <div class="col-7">
-                <div class="col w-100 d-flex gap-3 align-items-center border border-1 px-3 py-2 rounded-pill" style="border-color: #A99685 !important; background-color: #eeede99a;">
-                    <iconify-icon icon="iconamoon:search-light" class="fs-3 ms-1" style="color: #A99685;"></iconify-icon>
-                    <input type="text" placeholder="Cari produk disini" class="w-100 border-0 py-1 outline-none poppins fs-5 fw-light bg-transparent placeholder-grey" style="color: #A99685;">
-                </div>
-            </div>
-            <div class="col d-flex justify-content-between justify-content-md-end align-items-center mt-3 mt-md-0 gap-3 gap-md-4 w-100">
-                <button class="nav-link fs-3 p-3 border border-1 d-flex align-items-center justify-content-center rounded-circle" style="background-color: #eeede99a; border-color: #A99685 !important;"><iconify-icon icon="solar:user-outline" style="color: #A99685"></iconify-icon></button>
-                <button class="nav-link fs-3 p-3 border border-1 d-flex align-items-center justify-content-center rounded-circle" style="background-color: #eeede99a; border-color: #A99685 !important;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><iconify-icon icon="solar:bag-4-linear" style="color: #A99685"></iconify-icon></button>
-                <!-- <button class="nav-link fs-05 d-none d-md-flex align-items-center justify-content-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><iconify-icon icon="mingcute:search-line" style="color: #B56F67"></iconify-icon></button> -->
-                <!-- Search khusus di tampilan mobile -->
-                <div class="d-block d-md-none w-100" >
-                    <input type="text" class="w-100 poppins px-3 py-2 rounded-4 border outline-none custom-placeholder" placeholder="Search" style="border-color: #B56F67 !important; color:#B56F67 ;">
-                </div>
-                <!-- <button type="button" class="font-primary d-none d-md-block fs-4 btn btn-primary py-2 px-45 rounded-4 ms-2 bg-grey-old border-0 outline-0">Login</button> -->
-                <button class="btn-custom-click mt-md-0 bg-transparent fs-05 d-flex p-0 m-0 d-md-none align-items-center justify-content-center border-0 outline-none" type="button" data-bs-target="#navbarSupportedContent">
-                    <iconify-icon id="toggleIcon" icon="quill:hamburger" style="color: #B56F67"></iconify-icon>
-                </button>
-            </div>
-        </div>
-        <div class="collapse navbar-collapse col fixed-menu py-3" id="navbarSupportedContent">
-                <ul class="navbar-nav font-primary mb-5 mb-lg-0 fs-4 fw-regular text-uppercase gap-5 d-flex p-4 p-md-0">
-                    <li class="nav-item">
-                        <a class="nav-link grey-color active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link grey-color" aria-current="page" href="shop.html">Shop</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link grey-color" aria-current="page" href="#">Store</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link grey-color" aria-current="page" href="#">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link grey-color" aria-current="page" href="#">CSR</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link grey-color" aria-current="page" href="#">Corporate</a>
-                    </li>
-                    <li class="nav-item d-block d-md-none mt-5">
-                        <a href="#" class="nav-link"><button class="w-100 border-0 outline-none bg-grey-old fs-5 text-light py-2 rounded-3 poppins">Login</button></a>
-                    </li>
-                </ul>
-            </div>
-    </nav>
-    <!-- Popup Search khusus di tampilan dekstop -->
-    <div class="height-custom offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
-        <div class="offcanvas-body d-flex align-items-center justify-content-center ">
-          <div class="d-flex justify-content-center align-items-center">
-            <div class="d-flex align-items-center justify-content-between border p-3 px-4 rounded-4 gap-2" style="border-color: #604A33 !important;">
-                <input type="text" class="fs-2 border-0 outline-none poppins" placeholder="Search"/><iconify-icon style="color: #AF9771;" icon="ri:search-line" class="fs-2"></iconify-icon>
-            </div>
-          </div>
-        </div>
-    </div>
-    <!-- Popup Cart -->
-    <div class="offcanvas offcanvas-start p-2" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-        <div class="offcanvas-header d-flex justify-content-between border-bottom border-2" style="border-color: #604A33 !important;">
-          <h2 class="offcanvas-title fs-4 poppins fw-bold" id="offcanvasRightLabel" style="color: #604A33;">Your Cart</h2>
-          <a href="cart-detail.html" class="font-primary fs-13 text-decoration-none fw-semibold" style="color: #604A33;">View Details</a>
-        </div>
-        <div class="offcanvas-body py-1 px-3 d-flex flex-column justify-content-between">
-            <div>
-                <div class="row border-bottom py-3 px-2" style="border-color: #604A33 !important;">
-                    <div class="col-sm-3 p-0 mb-3 mb-md-0">
-                        <img src="images/promosi-4.png" class="img-fluid height-full rounded-4" alt="Kue">
-                    </div>
-                    <div class="col-sm-4">
-                        <h3 class="poppins fs-6 fw-bold mb-1 text-truncate" style="color: #AF9771;">Ovo Milo</h3>
-                        <p class="font-primary fs-small" style="color: #604A33;">Size : 20cm x 30cm</p>
-                        <div class="d-flex align-items-center gap-1">
-                            <div class="d-flex border max-content py-0 rounded-pill p-3 align-items-center" style="border-color: #AF9771 !important;">
-                                <button class="bg-transparent border-0 p-0 fs-6 d-flex align-items-center" style="color: #604A33;" type="button" id="decrement"><iconify-icon icon="ic:outline-minus"></iconify-icon></button>
-                                <input type="text" class="p-0 text-center border-0 poppins fs-5 outline-none lh-0" id="quantity" style="width: 2.3rem !important; color: #604A33;" value="1" readonly>
-                                <button class="bg-transparent border-0 px-0 p-0 fs-6 d-flex align-items-center" style="color: #604A33;" type="button" id="increment"><iconify-icon icon="ic:outline-plus"></iconify-icon></button>
-                            </div>
-                            <button class="border-0 outline-none bg-transparent fs-3 p-0 m-0 d-flex align-items-center"><iconify-icon style="color: #604A33;" icon="ph:trash"></iconify-icon></button>
-                        </div>
-                    </div>
-                    <div class="col-sm-5">
-                        <h3 class="poppins fs-5 fw-bold mt-3 mt-md-0" style="color: #604A33;">RP. 1.500.000 ,-</h3>
-                    </div>
-                </div>
-                <div class="row border-bottom py-3 px-2" style="border-color: #604A33 !important;">
-                    <div class="col-sm-3 p-0 mb-3 mb-md-0">
-                        <img src="images/promosi-4.png" class="img-fluid height-full rounded-4" alt="Kue">
-                    </div>
-                    <div class="col-sm-4">
-                        <h3 class="poppins fs-6 fw-bold mb-1 text-truncate" style="color: #AF9771;">Ovo Milo</h3>
-                        <p class="font-primary fs-small" style="color: #604A33;">Size : 20cm x 30cm</p>
-                        <div class="d-flex align-items-center gap-1">
-                            <div class="d-flex border max-content py-0 rounded-pill p-3 align-items-center" style="border-color: #AF9771 !important;">
-                                <button class="bg-transparent border-0 p-0 fs-6 d-flex align-items-center" style="color: #604A33;" type="button" id="decrement"><iconify-icon icon="ic:outline-minus"></iconify-icon></button>
-                                <input type="text" class="p-0 text-center border-0 poppins fs-5 outline-none lh-0" id="quantity" style="width: 2.3rem !important; color: #604A33;" value="1" readonly>
-                                <button class="bg-transparent border-0 px-0 p-0 fs-6 d-flex align-items-center" style="color: #604A33;" type="button" id="increment"><iconify-icon icon="ic:outline-plus"></iconify-icon></button>
-                            </div>
-                            <button class="border-0 outline-none bg-transparent fs-3 p-0 m-0 d-flex align-items-center"><iconify-icon style="color: #604A33;" icon="ph:trash"></iconify-icon></button>
-                        </div>
-                    </div>
-                    <div class="col-sm-5">
-                        <h3 class="poppins fs-5 fw-bold mt-3 mt-md-0" style="color: #604A33;">RP. 1.500.000 ,-</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="pb-2">
-                <a href="cart-detail.html"><button class="w-100 poppins text-light rounded-pill fs-5 py-2" style="background-color: #604A33;">View Cart</button></a>
-            </div>
-        </div>
-    </div>
-    <!-- Popup Select Size -->
-    <div class="offcanvas offcanvas-start p-2" tabindex="-1" id="offcanvasLeft" aria-labelledby="offcanvasLeftLabel">
-        <div class="offcanvas-header d-flex justify-content-between border-bottom border-2" style="border-color: #604A33 !important;">
-          <h2 class="offcanvas-title fs-4 poppins fw-bold" id="offcanvasRightLabel" style="color: #604A33;">Select Size</h2>
-          <a href="cart-detail.html" class="font-primary fs-13 text-decoration-none fw-semibold" style="color: #604A33;">View Details</a>
-        </div>
-        <div class="offcanvas-body py-1 px-3 d-flex flex-column justify-content-between">
-            <div>
-                <div class="row py-3 px-2 mb-2">
-                    <div class="col-sm-5 p-0 mb-3 mb-md-0">
-                        <img src="images/promosi-4.png" class="img-fluid height-full rounded-4" alt="Kue">
-                    </div>
-                    <div class="col-sm-6 py-3">
-                        <h3 class="poppins fs-3 fw-bold mb-1 text-truncate" style="color: #AF9771;">Ovo Milo Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores nihil quam amet!</h3>
-                        <h4 class="poppins fs-4 fw-bold" style="color: #604A33;">Rp. 1.500.000,-</h4>
-                    </div>
-                </div>
-                <div class="col">
-                    <h5 class="poppins fs-5 fw-bold" style="color: #604A33;">Size</h5>
-                    <div class="row row-cols-3 w-100-custom mb-2 gx-0">
-                        <div class="col"><button type="button" class="btn mb-4 border py-2 fs-6 poppins rounded-pill px-2 fw-medium" style="color: #604A33; border-color: #AF9771 !important;">20cm x 30cm</button></div>
-                        <div class="col"><button type="button" class="btn mb-4 border py-2 fs-6 poppins rounded-pill px-2 fw-medium" style="color: #604A33; border-color: #AF9771 !important;">20cm x 30cm</button></div>
-                        <div class="col"><button type="button" class="btn mb-4 border py-2 fs-6 poppins rounded-pill px-2 fw-medium" style="color: #604A33; border-color: #AF9771 !important;">20cm x 30cm</button></div>
-                        <div class="col"><button type="button" class="btn mb-4 border py-2 fs-6 poppins rounded-pill px-2 fw-medium" style="color: #604A33; border-color: #AF9771 !important;">20cm x 30cm</button></div>
-                        <div class="col"><button type="button" class="btn mb-4 border py-2 fs-6 poppins rounded-pill px-2 fw-medium" style="color: #604A33; border-color: #AF9771 !important;">20cm x 30cm</button></div>
-                        <div class="col"><button type="button" class="btn mb-4 border py-2 fs-6 poppins rounded-pill px-2 fw-medium" style="color: #604A33; border-color: #AF9771 !important;">20cm x 30cm</button></div>
-                    </div>
-                    <h5 class="poppins fs-5 fw-bold" style="color: #604A33;">Add Note</h5>
-                    <textarea class="w-100 my-2 mb-2 height-input-custom rounded-5 border-1 outline-none poppins px-4 py-3" style="resize: none; border-color: #AF9771 !important"></textarea>
-                </div>
-            </div>
-            <div class="row row-cols-3 w-100-custom gx-0 d-flex justify-content-center mb-2">
-                <div class="col text-center px-2">
-                    <div class="d-flex justify-content-center m-auto border w-100 py-1 rounded-pill p-1 gap-2 align-items-center" style="border-color: #AF9771 !important;">
-                        <button class="bg-transparent border-0 p-0 py-1 fs-6 d-flex align-items-center" style="color: #604A33;" type="button" id="decrement"><iconify-icon icon="ic:outline-minus"></iconify-icon></button>
-                        <input type="text" class="p-0 text-center border-0 poppins fw-bold fs-5 outline-none lh-0" id="quantity" style="width: 2.7rem !important; color: #604A33;" value="1" readonly>
-                        <button class="bg-transparent border-0 px-0 p-0 py-1 fs-6 d-flex align-items-center" style="color: #604A33;" type="button" id="increment"><iconify-icon icon="ic:outline-plus"></iconify-icon></button>
-                    </div>
-                </div>
-                <div class="col text-center px-2"><button type="button" class="btn border w-100 py-2 fs-6 poppins rounded-pill px-2 fw-medium" style="color: #604A33; border-color: #AF9771 !important; background-color: #F2F4F7;">Add To Cart</button></div>
-                <div class="col text-center px-2"><button type="button" class="btn border w-100 py-2 fs-6 poppins rounded-pill px-2 fw-medium" style="color: white; border-color: #604A33 !important; background-color: #604A33;">Buy Now</button></div>
-            </div>
-        </div>
-    </div>
+<?php include 'template/header.php' ?>
     <div class="slide-layout">
         <section class="slideshow">
           <div class="slideshow-inner">
@@ -190,6 +6,7 @@
               <div class="slide-box is-active ">
                 <div class="slide-content">
                   <div class="caption">
+                    <!-- Jika title, text, button kosong maka hanya gambar saja -->
                     <div class="title">
                         <!-- <h1 class="font-heading text-dark">Exquisite taste <br/>for true <br/>connoisseurs</h1> -->
                     </div>
@@ -253,7 +70,7 @@
         <div class="col mt-4 px-3">
             <div class="row row-cols-2 row-cols-lg-4 flex-column flex-md-row gap-4 gap-md-0">
                 <div class="col text-center col-12">
-                    <a href="detail-page.html">
+                    <a href="detail-page.php">
                         <div class="p-4 pb-2">
                             <img src="images/best-seller-1.png" class="img-fluid rounded-circle border border-3" style="border-color: #A99685 !important;" alt="...">
                         </div>
@@ -261,7 +78,7 @@
                     <h2 class="text-uppercase fs-2 fw-bold mt-4 mb-3 mb-md-4 poppins" style="color: #604A33">Signature Cake</h2>
                 </div>
                 <div class="col text-center col-12">
-                    <a href="detail-page.html">
+                    <a href="detail-page.php">
                         <div class="p-4 pb-2">
                             <img src="images/best-seller-2.png" class="img-fluid rounded-circle border border-3" style="border-color: #A99685 !important;" alt="...">
                         </div>
@@ -269,7 +86,7 @@
                     <h2 class="text-uppercase fs-2 fw-bold mt-4 mb-3 mb-md-4 poppins" style="color: #604A33">CROISSANT</h2>
                 </div>
                 <div class="col text-center col-12">
-                    <a href="detail-page.html">
+                    <a href="detail-page.php">
                         <div class="p-4 pb-2">
                             <img src="images/best-seller-3.png" class="img-fluid rounded-circle border border-3" style="border-color: #A99685 !important;" alt="...">
                         </div>
@@ -277,7 +94,7 @@
                     <h2 class="text-uppercase fs-2 fw-bold mt-4 mb-3 mb-md-4 poppins" style="color: #604A33">Hampers</h2>
                 </div>
                 <div class="col text-center col-12">
-                    <a href="detail-page.html">
+                    <a href="detail-page.php">
                         <div class="p-4 pb-2">
                             <img src="images/best-seller-4.png" class="img-fluid rounded-circle border border-3" style="border-color: #A99685 !important;" alt="...">
                         </div>
@@ -294,9 +111,10 @@
         </div>
         <div class="swiper bestSeller mt-3 px-5">
             <div class="swiper-wrapper pb-0">
+              <!-- foreach disini -->
               <div class="swiper-slide">
                 <div class="text-center mb-4 border border-1 rounded-5" style="border-color: #A99685 !important;">
-                    <a href="detail-page.html">
+                    <a href="detail-page.php">
                         <div class="p-0 image-card-custom">
                             <img src="images/product-1.jpg" class="rounded-top-5" alt="...">
                             <img src="images/adeline.jpg" class="rounded-top-5 img-hover" alt="...">
@@ -311,7 +129,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="text-center mb-4 border border-1 rounded-5" style="border-color: #A99685 !important;">
-                    <a href="detail-page.html">
+                    <a href="detail-page.php">
                         <div class="p-0 image-card-custom">
                             <img src="images/product-1.jpg" class="rounded-top-5" alt="...">
                             <img src="images/adeline.jpg" class="rounded-top-5 img-hover" alt="...">
@@ -326,7 +144,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="text-center mb-4 border border-1 rounded-5" style="border-color: #A99685 !important;">
-                    <a href="detail-page.html">
+                    <a href="detail-page.php">
                         <div class="p-0 image-card-custom">
                             <img src="images/product-1.jpg" class="rounded-top-5" alt="...">
                             <img src="images/adeline.jpg" class="rounded-top-5 img-hover" alt="...">
@@ -341,7 +159,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="text-center mb-4 border border-1 rounded-5" style="border-color: #A99685 !important;">
-                    <a href="detail-page.html">
+                    <a href="detail-page.php">
                         <div class="p-0 image-card-custom">
                             <img src="images/product-1.jpg" class="rounded-top-5" alt="...">
                             <img src="images/adeline.jpg" class="rounded-top-5 img-hover" alt="...">
@@ -356,7 +174,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="text-center mb-4 border border-1 rounded-5" style="border-color: #A99685 !important;">
-                    <a href="detail-page.html">
+                    <a href="detail-page.php">
                         <div class="p-0 image-card-custom">
                             <img src="images/product-1.jpg" class="rounded-top-5" alt="...">
                             <img src="images/adeline.jpg" class="rounded-top-5 img-hover" alt="...">
@@ -369,6 +187,7 @@
                     </div>
                 </div>
               </div>
+              <!-- akhir foreach disini -->
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
@@ -381,9 +200,10 @@
         </div>
         <div class="swiper bestSeller mt-3 px-5">
             <div class="swiper-wrapper pb-0">
+              <!-- foreach disini -->
               <div class="swiper-slide">
                 <div class="text-center mb-4 border border-1 rounded-5" style="border-color: #A99685 !important;">
-                    <a href="detail-page.html">
+                    <a href="detail-page.php">
                         <div class="p-0 image-card-custom">
                             <img src="images/product-1.jpg" class="rounded-top-5" alt="...">
                             <img src="images/adeline.jpg" class="rounded-top-5 img-hover" alt="...">
@@ -398,7 +218,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="text-center mb-4 border border-1 rounded-5" style="border-color: #A99685 !important;">
-                    <a href="detail-page.html">
+                    <a href="detail-page.php">
                         <div class="p-0 image-card-custom">
                             <img src="images/product-1.jpg" class="rounded-top-5" alt="...">
                             <img src="images/adeline.jpg" class="rounded-top-5 img-hover" alt="...">
@@ -413,7 +233,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="text-center mb-4 border border-1 rounded-5" style="border-color: #A99685 !important;">
-                    <a href="detail-page.html">
+                    <a href="detail-page.php">
                         <div class="p-0 image-card-custom">
                             <img src="images/product-1.jpg" class="rounded-top-5" alt="...">
                             <img src="images/adeline.jpg" class="rounded-top-5 img-hover" alt="...">
@@ -428,7 +248,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="text-center mb-4 border border-1 rounded-5" style="border-color: #A99685 !important;">
-                    <a href="detail-page.html">
+                    <a href="detail-page.php">
                         <div class="p-0 image-card-custom">
                             <img src="images/product-1.jpg" class="rounded-top-5" alt="...">
                             <img src="images/adeline.jpg" class="rounded-top-5 img-hover" alt="...">
@@ -443,7 +263,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="text-center mb-4 border border-1 rounded-5" style="border-color: #A99685 !important;">
-                    <a href="detail-page.html">
+                    <a href="detail-page.php">
                         <div class="p-0 image-card-custom">
                             <img src="images/product-1.jpg" class="rounded-top-5" alt="...">
                             <img src="images/adeline.jpg" class="rounded-top-5 img-hover" alt="...">
@@ -456,6 +276,7 @@
                     </div>
                 </div>
               </div>
+              <!-- akhir foreach disini -->
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
@@ -468,9 +289,10 @@
         </div>
         <div class="swiper bestSeller mt-3 px-5">
             <div class="swiper-wrapper pb-0">
+              <!-- foreach disini -->
               <div class="swiper-slide">
                 <div class="text-center mb-4 border border-1 rounded-5" style="border-color: #A99685 !important;">
-                    <a href="detail-page.html">
+                    <a href="detail-page.php">
                         <div class="p-0 image-card-custom">
                             <img src="images/product-1.jpg" class="rounded-top-5" alt="...">
                             <img src="images/adeline.jpg" class="rounded-top-5 img-hover" alt="...">
@@ -485,7 +307,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="text-center mb-4 border border-1 rounded-5" style="border-color: #A99685 !important;">
-                    <a href="detail-page.html">
+                    <a href="detail-page.php">
                         <div class="p-0 image-card-custom">
                             <img src="images/product-1.jpg" class="rounded-top-5" alt="...">
                             <img src="images/adeline.jpg" class="rounded-top-5 img-hover" alt="...">
@@ -500,7 +322,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="text-center mb-4 border border-1 rounded-5" style="border-color: #A99685 !important;">
-                    <a href="detail-page.html">
+                    <a href="detail-page.php">
                         <div class="p-0 image-card-custom">
                             <img src="images/product-1.jpg" class="rounded-top-5" alt="...">
                             <img src="images/adeline.jpg" class="rounded-top-5 img-hover" alt="...">
@@ -515,7 +337,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="text-center mb-4 border border-1 rounded-5" style="border-color: #A99685 !important;">
-                    <a href="detail-page.html">
+                    <a href="detail-page.php">
                         <div class="p-0 image-card-custom">
                             <img src="images/product-1.jpg" class="rounded-top-5" alt="...">
                             <img src="images/adeline.jpg" class="rounded-top-5 img-hover" alt="...">
@@ -530,7 +352,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="text-center mb-4 border border-1 rounded-5" style="border-color: #A99685 !important;">
-                    <a href="detail-page.html">
+                    <a href="detail-page.php">
                         <div class="p-0 image-card-custom">
                             <img src="images/product-1.jpg" class="rounded-top-5" alt="...">
                             <img src="images/adeline.jpg" class="rounded-top-5 img-hover" alt="...">
@@ -543,6 +365,7 @@
                     </div>
                 </div>
               </div>
+              <!-- akhir foreach disini -->
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
@@ -572,7 +395,7 @@
             </div>
             <div class="row">
                 <div class="col-sm px-4 text-start mb-md-0 mb-3">
-                    <a href="detail-page.html">
+                    <a href="detail-page.php">
                         <div class="img_custom mb-4">
                             <img src="images/news-1.png" class="img-fluid"/>
                         </div>
@@ -581,7 +404,7 @@
                     <p class="poppins fs-6 pe-2" style="color: #C56542;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales purus id orci facilisis, ut auctor magna venenatis</p>
                 </div>
                 <div class="col-sm px-4 text-start mb-md-0 mb-3">
-                    <a href="detail-page.html">
+                    <a href="detail-page.php">
                         <div class="img_custom mb-4">
                             <img src="images/news-1.png" class="img-fluid"/>
                         </div>
@@ -590,7 +413,7 @@
                     <p class="poppins fs-6 pe-2" style="color: #C56542;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales purus id orci facilisis, ut auctor magna venenatis</p>
                 </div>
                 <div class="col-sm px-4 text-start mb-md-0 mb-3">
-                    <a href="detail-page.html">
+                    <a href="detail-page.php">
                         <div class="img_custom mb-4">
                             <img src="images/news-2.png" class="img-fluid"/>
                         </div>
@@ -650,156 +473,5 @@
         <p class="w-custom text-light poppins fs-13">We are a patisserie that believe qualities bring the best out of a product, people and our valuable Customers. We use premium ingredients and contribute long hours to put the little details to satisfy our crave, using a combination of culinary ability and creativity in baking, decorating and flavoring.</p>
         <a href="#"><button class="btn btn-light mt-5 rounded-pill text-light poppins text-uppercase px-5 bg-transparent py-2 py-md-3">Get Your Cake</button></a>
     </div>
-    <div class="border-top border-bottom border-1 m-5 mb-4 py-5" style="border-color: #604A33 !important;">
-        <div class="row">
-            <div class="col-3 px-5">
-              <img src="images/logo.png" class="img-fluid px-4"/>
-              <div class="social-media-costum">
-                <a href="#">
-                    <div class="social-media-box">
-                        <iconify-icon icon="hugeicons:instagram"></iconify-icon>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="social-media-box">
-                        <iconify-icon icon="ic:baseline-facebook"></iconify-icon>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="social-media-box">
-                        <iconify-icon icon="pajamas:twitter"></iconify-icon>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="social-media-box">
-                        <iconify-icon icon="mdi:youtube"></iconify-icon>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="social-media-box">
-                        <iconify-icon icon="flowbite:linkedin-solid"></iconify-icon>
-                    </div>
-                </a>
-              </div>
-            </div>
-            <div class="col">
-              <h3 class="poppins fs-5 text-uppercase mb-3 fw-bold grey-color">About Us</h3>
-              <ul class="list-group poppins">
-                <li class="list-group-item  p-0 border border-0 py-2">Our Story</li>
-                <li class="list-group-item  p-0 border border-0 py-2">Careers</li>
-                <li class="list-group-item  p-0 border border-0 py-2">Press & Media</li>
-                <li class="list-group-item  p-0 border border-0 py-2">Company Profile</li>
-              </ul>
-            </div>
-            <div class="col">
-                <h3 class="poppins fs-5 text-uppercase mb-3 fw-bold grey-color">Customer Service</h3>
-                <ul class="list-group poppins">
-                    <li class="list-group-item  p-0 border border-0 py-2">Shipping Information</li>
-                    <li class="list-group-item  p-0 border border-0 py-2">Returns & Exchanges</li>
-                    <li class="list-group-item  p-0 border border-0 py-2">FAQs</li>
-                    <li class="list-group-item  p-0 border border-0 py-2">Contact Us</li>
-                </ul>
-            </div>
-            <div class="col">
-                <h3 class="poppins fs-5 text-uppercase mb-3 fw-bold grey-color">Legal & Privacy</h3>
-                <ul class="list-group poppins">
-                    <li class="list-group-item  p-0 border border-0 py-2">Terms & Conditions</li>
-                    <li class="list-group-item  p-0 border border-0 py-2">Privacy Policy</li>
-                    <li class="list-group-item  p-0 border border-0 py-2">Cookie Policy</li>
-                </ul>
-            </div>
-            <div class="col">
-                <h3 class="poppins fs-5 text-uppercase mb-3 fw-bold grey-color">Special Programs</h3>
-                <ul class="list-group poppins">
-                    <li class="list-group-item  p-0 border border-0 py-2">Affiliate Program</li>
-                    <li class="list-group-item  p-0 border border-0 py-2">Student Discount</li>
-                </ul>
-            </div>
-            <div class="col">
-                <h3 class="poppins fs-5 text-uppercase mb-3 fw-bold grey-color">Resources</h3>
-                <ul class="list-group poppins">
-                    <li class="list-group-item  p-0 border border-0 py-2">Blog</li>
-                    <li class="list-group-item  p-0 border border-0 py-2">Site Map</li>
-                    <li class="list-group-item  p-0 border border-0 py-2">Testimoni</li>
-                </ul>
-            </div> 
-        </div>
-    </div>
-    <div class="text-center pb-4">
-        <span class="poppins fw-bold fs-5 grey-color">© Copyright Exquise Patisserie PT EXQUISE BOGA MULIA</span>
-    </div>
     
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        const toggleButton = document.querySelector('.btn-custom-click');
-        const toggleIcon = document.getElementById('toggleIcon');
-        const menu = document.getElementById('navbarSupportedContent');
-
-        toggleButton.addEventListener('click', function () {
-            menu.classList.toggle('show');
-
-            if (menu.classList.contains('show')) {
-                // Toggle to close icon
-                toggleIcon.setAttribute('icon', 'mingcute:close-line');
-            } else {
-                // Toggle back to open icon
-                toggleIcon.setAttribute('icon', 'quill:hamburger');
-            }
-        });
-    </script>
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            spaceBetween: 50,
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-        });
-    </script>
-    <script>
-        var swiper = new Swiper(".myTestimoni", {
-            spaceBetween: 50,
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-        });
-    </script>
-    <script>
-        var swiperPromo = new Swiper(".myPromo", {
-          slidesPerView:1,
-          spaceBetween: 30,
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          breakpoints: {
-            // when window width is <= 768px (mobile)
-            768: {
-              slidesPerView: 1,
-              spaceBetween: 20,
-            },
-            // when window width is > 768px (desktop and larger)
-            769: {
-              slidesPerView: "auto",
-              spaceBetween: 30,
-            }
-          }
-        });
-      </script>
-
-        <script>
-            var swiper = new Swiper(".bestSeller", {
-            slidesPerView: 4,
-            spaceBetween: 30,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            });
-        </script>
-      
-      <script src="js/slide.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
-</html>
+    <?php include 'template/footer.php' ?>

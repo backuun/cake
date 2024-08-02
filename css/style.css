@@ -611,7 +611,7 @@
 }
 .bestSeller .swiper-button-next, .bestSeller .swiper-button-prev {
   position: absolute;
-  top: 58%;
+  top: 54%;
   width: 3.6vw !important;
   height: 3.6vw !important;
   border-radius: 100vw !important;
@@ -642,7 +642,7 @@
 .image-card-custom{
   width: 100%;
   position: relative;
-  height: 20vw;
+  height: 16.8vw;
   border-bottom: .1vw solid #A99685;
 }
 .image-card-custom img{
@@ -686,6 +686,29 @@
   transform: translate(-50%, -50%);
   color: #8E623A;
 }
+
+.hover-submenu{
+  position: relative;
+}
+.submenu-custom {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  height: max-content;
+  z-index: 50;
+}
+
+
+.hover-submenu:hover{
+  color: red !important;
+}
+.hover-submenu:hover .submenu-custom {
+  display: block !important;
+}
+
 
 @media (max-width:768px) {
     .navbar-brand-responsive{
