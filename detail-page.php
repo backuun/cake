@@ -107,7 +107,7 @@
           </div>
           <div class="col d-flex gap-4 mt-4 row-cols-2 pe-5 me-3">
             <button class="fs-5 border border-1 px-4 py-3 fw-medium poppins outline-none rounded-pill bg-transparent" style="border-color: #1EB9A7 !important; color: #1EB9A7 !important;">Add To Cart</button>
-            <button class="fs-5 border border-1 px-4 py-3 fw-medium rounded-pill outline-none poppins text-light" style=" background-color: #1EB9A7;">Buy Now</button>
+            <a href="checkout.php"><button class="w-100 fs-5 border border-1 px-4 py-3 fw-medium rounded-pill outline-none poppins text-light" style=" background-color: #1EB9A7;">Buy Now</button></a>
           </div>
         </div>
     </div>
