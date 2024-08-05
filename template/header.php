@@ -50,12 +50,98 @@
                     <img src="images/logo.png" alt="Logo" class="img-fluid mt-0 mt-md-0 image-size-custom">
                 </a>
             </div>
-            <div class="col-7">
-                <div class="col w-100 d-flex gap-3 align-items-center border border-1 px-3 py-2 rounded-pill" style="border-color: #A99685 !important; background-color: #eeede99a;">
-                    <iconify-icon icon="iconamoon:search-light" class="fs-3 ms-1" style="color: #A99685;"></iconify-icon>
-                    <input type="text" placeholder="Cari produk disini" class="w-100 border-0 py-1 outline-none poppins fs-5 fw-light bg-transparent placeholder-grey" style="color: #A99685;">
+            <div class="col-7 search-custom" style="z-index:10 !important; position:relative;">
+                <form>
+                    <div class="col w-100 d-flex gap-1 align-items-center border border-1 px-3 py-2 rounded-pill" style="border-color: #A99685 !important; background-color: #eeede99a;">
+                        <iconify-icon icon="iconamoon:search-light" class="fs-3 ms-1" style="color: #A99685;"></iconify-icon>
+                        <input type="text" placeholder="Cari produk disini" class="w-100 border-0 py-1 outline-none poppins fs-5 fw-light bg-transparent placeholder-grey px-3 rounded-pill" style="color: #A99685;" id="searchInput">
+                    </div>
+                </form>
+                
+                <div class="col bg-light w-100 rounded-4 mt-2 border-top border-1 search-box-custom overflow-hidden" style="z-index:10 !important; position:absolute; top: 100%; left:0; display:none;" id="resultsPopup">
+                    <!-- popup untuk barang yang dicari tidak ada -->
+                    <!-- <div class="row m-0">
+                        <h1 class="poppins fs-6 fw-light grey-color p-4 pb-3">No results found for "barang".</h1>
+                    </div> -->
+                    <!-- popup untuk barang yang dicari ada -->
+                    <div class="row m-0">
+                        <div class="col-8 p-4">
+                            <ul class="nav nav-tabs border-0 mb-4 gap-4" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link border-0 p-0 poppins grey-color active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Products</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link border-0 p-0 poppins grey-color" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Collections</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link border-0 p-0 poppins grey-color" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Pages</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                    <ul class="list-group list-group-flush list-search">
+                                        <?php foreach ([1, 2, 3, 5, 6, 7, 8, 9, 10] as $index): ?>
+                                        <a href="#" class="text-decoration-none hover-link-custom border-0 rounded-4">
+                                            <li class="list-group-item p-0 py-2 poppins bg-transparent border-0">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <img src="images/adeline.jpg" class="img-fluid" alt="...">
+                                                    </div>
+                                                    <div class="col-10 p-0 px-1 pt-2">
+                                                        <h3 class="fs-5 fw-light">Adeline</h3>
+                                                        <span class="fs-6">Rp 350.000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </a>
+                                        <?php endforeach; ?>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                    <ul class="list-group list-group-flush list-search-collection">
+                                        <?php foreach ([1, 2, 3, 5, 6, 7, 8, 9, 10] as $index): ?>
+                                        <a href="#" class="text-decoration-none hover-link-custom border-0 rounded-4">
+                                            <li class="list-group-item p-0 py-2 poppins bg-transparent border-0">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <img src="images/adeline.jpg" class="img-fluid" alt="...">
+                                                    </div>
+                                                    <div class="col-10 p-0 px-1 pt-2">
+                                                        <h3 class="fs-5 fw-light">Cake Collections</h3>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </a>
+                                        <?php endforeach; ?>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                    <ul class="list-group list-group-flush list-search-page">
+                                        <?php foreach ([1, 2, 3, 5, 6, 7, 8, 9, 10] as $index): ?>
+                                        <a href="#" class="text-decoration-none hover-link-custom border-0 rounded-4">
+                                            <li class="list-group-item p-0 py-2 poppins bg-transparent border-0">
+                                                <div class="row">
+                                                    <div class="col-10 p-0 px-3 pt-2">
+                                                        <h3 class="fs-5 fw-light">Cake Collections</h3>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </a>
+                                        <?php endforeach; ?>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 p-4" style="background-color:#eeede99a !important;">
+                            <h1 class="poppins fs-6 grey-color mb-4">Suggestions</h1>
+                            <ul class="list-group list-group-flush bg-transparent">
+                                <li class="list-group-item p-0 poppins fs-6 bg-transparent">Cake</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="search-overlay" id="searchOverlay"></div>
             <div class="col d-flex justify-content-between justify-content-md-end align-items-center mt-3 mt-md-0 gap-3 gap-md-4 w-100">
                 <button class="nav-link fs-3 p-3 border border-1 d-flex align-items-center justify-content-center rounded-circle" style="background-color: #eeede99a; border-color: #A99685 !important;"><iconify-icon icon="solar:user-outline" style="color: #A99685"></iconify-icon></button>
                 <button class="nav-link fs-3 p-3 border border-1 d-flex align-items-center justify-content-center rounded-circle" style="background-color: #eeede99a; border-color: #A99685 !important;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><iconify-icon icon="solar:bag-4-linear" style="color: #A99685"></iconify-icon></button>
@@ -84,9 +170,9 @@
                                     </div>
                                     <!-- Jika di dalam submenu ada lagi kategori -->
                                      <div class="d-flex gap-2">
-                                        <a href=""><button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent">Tart</button></a>
-                                        <a href=""><button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent">Healthy Cakes</button></a>
-                                        <a href=""><button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent">Whole Cake</button></a>
+                                        <a href="shop.php"><button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent">Tart</button></a>
+                                        <a href="shop.php"><button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent">Healthy Cakes</button></a>
+                                        <a href="shop.php"><button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent">Whole Cake</button></a>
                                      </div>
                                 </li>
                                 <li class="list-group-item py-4 px-4 border-top-0 border-start-0 border-end-0 d-flex flex-column gap-2">
@@ -125,14 +211,12 @@
                                 <li class="list-group-item py-4 px-4 border-top-0 border-start-0 border-end-0 grey-color"><a href="#" class="text-decoration-none grey-color d-flex align-items-center gap-1">Savory<iconify-icon icon="system-uicons:chevron-right-circle" class="fs-5"></iconify-icon></a></li>
                             </ul>
                         </div>
-                    </li>
-                    <li class="nav-item">
+
                         <!-- submenu 2 -->
-                        <span class="nav-link grey-color submenu-button" style="cursor:pointer;">Store</span>
+                        <!-- <span class="nav-link grey-color submenu-button" style="cursor:pointer;">Shop</span>
                         <div class="submenu-custom px-5">
                             <ul class="list-group poppins text-capitalize fs-6 px-5">
                                 <li class="list-group-item py-4 px-4 border-top-0 border-start-0 border-end-0 d-flex flex-column gap-2">
-                                    <!-- Jika di dalam submenu ada lagi kategori -->
                                      <div class="d-flex gap-2">
                                         <a href=""><button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent">Hampers Cadeau</button></a>
                                         <a href=""><button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent">General Hampers</button></a>
@@ -143,13 +227,16 @@
                                      </div>
                                 </li>
                             </ul>
-                        </div>
+                        </div> -->
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link grey-color" aria-current="page" href="#">Contact</a>
+                        <a class="nav-link grey-color" aria-current="page" href="store.php">Store</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link grey-color" aria-current="page" href="#">CSR</a>
+                        <a class="nav-link grey-color" aria-current="page" href="contact.php">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link grey-color" aria-current="page" href="news.php">CSR</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link grey-color" aria-current="page" href="#">Corporate</a>
@@ -174,7 +261,7 @@
     <div class="offcanvas offcanvas-start p-2" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header d-flex justify-content-between border-bottom border-2" style="border-color: #604A33 !important;">
           <h2 class="offcanvas-title fs-4 poppins fw-bold" id="offcanvasRightLabel" style="color: #604A33;">Your Cart</h2>
-          <a href="cart-detail.html" class="font-primary fs-13 text-decoration-none fw-semibold" style="color: #604A33;">View Details</a>
+          <a href="cart-detail.php" class="font-primary fs-13 text-decoration-none fw-semibold" style="color: #604A33;">View Details</a>
         </div>
         <div class="offcanvas-body py-1 px-3 d-flex flex-column justify-content-between">
             <div>
@@ -228,7 +315,7 @@
     <div class="offcanvas offcanvas-start p-2" tabindex="-1" id="offcanvasLeft" aria-labelledby="offcanvasLeftLabel">
         <div class="offcanvas-header d-flex justify-content-between border-bottom border-2" style="border-color: #604A33 !important;">
           <h2 class="offcanvas-title fs-4 poppins fw-bold" id="offcanvasRightLabel" style="color: #604A33;">Select Size</h2>
-          <a href="cart-detail.html" class="font-primary fs-13 text-decoration-none fw-semibold" style="color: #604A33;">View Details</a>
+          <a href="cart-detail.php" class="font-primary fs-13 text-decoration-none fw-semibold" style="color: #604A33;">View Details</a>
         </div>
         <div class="offcanvas-body py-1 px-3 d-flex flex-column justify-content-between">
             <div>
@@ -244,29 +331,29 @@
                 <div class="col">
                     <h5 class="poppins fs-5 fw-bold" style="color: #604A33;">Size</h5>
                     <div class="row row-cols-3 w-100-custom mb-2 gx-0">
-                        <div class="col btn-custom">
+                        <div class="col btn-custom text-center px-1">
                             <input type="radio" id="size1" name="size" value="20cm x 30cm" class="d-none" />
-                            <label for="size1" class="btn mb-4 border py-2 fs-6 poppins rounded-pill px-2 fw-medium" style="color: #604A33; border-color: #AF9771 !important;">20cm x 30cm</label>
+                            <label for="size1" class="btn mb-4 border py-2 fs-6 poppins w-100 rounded-pill px-2 fw-medium" style="color: #604A33; border-color: #AF9771 !important;">20cm x 30cm</label>
                         </div>
-                        <div class="col btn-custom">
+                        <div class="col btn-custom text-center px-1">
                             <input type="radio" id="size2" name="size" value="20cm x 30cm" class="d-none" />
-                            <label for="size2" class="btn mb-4 border py-2 fs-6 poppins rounded-pill px-2 fw-medium" style="color: #604A33; border-color: #AF9771 !important;">20cm x 30cm</label>
+                            <label for="size2" class="btn mb-4 border py-2 fs-6 poppins w-100 rounded-pill px-2 fw-medium" style="color: #604A33; border-color: #AF9771 !important;">20cm x 30cm</label>
                         </div>
-                        <div class="col btn-custom">
+                        <div class="col btn-custom text-center px-1">
                             <input type="radio" id="size3" name="size" value="20cm x 30cm" class="d-none" />
-                            <label for="size3" class="btn mb-4 border py-2 fs-6 poppins rounded-pill px-2 fw-medium" style="color: #604A33; border-color: #AF9771 !important;">20cm x 30cm</label>
+                            <label for="size3" class="btn mb-4 border py-2 fs-6 poppins w-100 rounded-pill px-2 fw-medium" style="color: #604A33; border-color: #AF9771 !important;">20cm x 30cm</label>
                         </div>
-                        <div class="col btn-custom">
+                        <div class="col btn-custom text-center px-1">
                             <input type="radio" id="size4" name="size" value="20cm x 30cm" class="d-none" />
-                            <label for="size4" class="btn mb-4 border py-2 fs-6 poppins rounded-pill px-2 fw-medium" style="color: #604A33; border-color: #AF9771 !important;">20cm x 30cm</label>
+                            <label for="size4" class="btn mb-4 border py-2 fs-6 poppins w-100 rounded-pill px-2 fw-medium" style="color: #604A33; border-color: #AF9771 !important;">20cm x 30cm</label>
                         </div>
-                        <div class="col btn-custom">
+                        <div class="col btn-custom text-center px-1">
                             <input type="radio" id="size5" name="size" value="20cm x 30cm" class="d-none" />
-                            <label for="size5" class="btn mb-4 border py-2 fs-6 poppins rounded-pill px-2 fw-medium" style="color: #604A33; border-color: #AF9771 !important;">20cm x 30cm</label>
+                            <label for="size5" class="btn mb-4 border py-2 fs-6 poppins w-100 rounded-pill px-2 fw-medium" style="color: #604A33; border-color: #AF9771 !important;">20cm x 30cm</label>
                         </div>
-                        <div class="col btn-custom">
+                        <div class="col btn-custom text-center px-1">
                             <input type="radio" id="size6" name="size" value="20cm x 30cm" class="d-none" />
-                            <label for="size6" class="btn mb-4 border py-2 fs-6 poppins rounded-pill px-2 fw-medium" style="color: #604A33; border-color: #AF9771 !important;">20cm x 30cm</label>
+                            <label for="size6" class="btn mb-4 border py-2 fs-6 poppins w-100 rounded-pill px-2 fw-medium" style="color: #604A33; border-color: #AF9771 !important;">20cm x 30cm</label>
                         </div>
 
                     </div>

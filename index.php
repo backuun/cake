@@ -1,4 +1,19 @@
 <?php include 'template/header.php' ?>
+    <?php 
+        $dataPartner = ['images/partner_1.png', 'images/partner_2.png', 'images/partner_3.png',
+                        'images/partner_4.png', 'images/partner_5.png', 'images/partner_6.png',
+                        'images/partner_7.png', 'images/partner_8.png', 'images/partner_9.png',
+                        'images/partner_10.png', 'images/partner_11.png', 'images/partner_12.png',
+                        'images/partner_13.png', 'images/partner_14.png', 'images/partner_15.png',
+                        'images/partner_16.png', 'images/partner_17.png', 'images/partner_18.png',
+                        'images/partner_19.png', 'images/partner_20.png', 'images/partner_21.png',
+                        'images/partner_22.png', 'images/partner_23.png', 'images/partner_24.png',
+                        'images/partner_25.png', 'images/partner_26.png', 'images/partner_27.png',
+                        'images/partner_28.png', 'images/partner_29.png', 'images/partner_30.png',
+                        'images/partner_31.png', 'images/partner_32.png', 'images/partner_33.png',
+                        ]
+    ?>
+
     <div class="slide-layout">
         <section class="slideshow">
           <div class="slideshow-inner">
@@ -112,81 +127,23 @@
         <div class="swiper bestSeller mt-3 px-5">
             <div class="swiper-wrapper pb-0">
               <!-- foreach disini -->
-              <div class="swiper-slide">
-                <div class="text-center mb-4 border border-1 rounded-5" style="border-color: #A99685 !important;">
-                    <a href="detail-page.php">
-                        <div class="p-0 image-card-custom">
-                            <img src="images/product-1.jpg" class="rounded-top-5" alt="...">
-                            <img src="images/adeline.jpg" class="rounded-top-5 img-hover" alt="...">
+              <?php foreach ([1, 2, 3, 5, 6, 7, 8, 9, 10] as $index): ?>
+                <div class="swiper-slide">
+                    <div class="text-center mb-4 border border-1 rounded-5" style="border-color: #A99685 !important;">
+                        <a href="detail-page.php">
+                            <div class="p-0 image-card-custom">
+                                <img src="images/product-1.jpg" class="rounded-top-5" alt="...">
+                                <img src="images/adeline.jpg" class="rounded-top-5 img-hover" alt="...">
+                            </div>
+                        </a>
+                        <div class="p-3">
+                            <h3 class="poppins fs-4 grey-color">Mango Coconut</h3>
+                            <p class="poppins fs-6 grey-color">Start From Rp. 150.000</p>
+                            <button type="button" class="btn poppins px-4 px-md-2 py-1 py-md-2 rounded-5 mt-2 fs-6 text-light w-100" style="background: #1EB9A7;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">Add To Cart</button>
                         </div>
-                    </a>
-                    <div class="p-4">
-                        <h3 class="poppins fs-4 grey-color">Mango Coconut</h3>
-                        <p class="poppins fs-5 grey-color">Start From Rp. 150.000</p>
-                        <button type="button" class="btn poppins px-4 px-md-5 py-1 py-md-2 rounded-5 mt-2 fs-5 text-light w-100" style="background: #1EB9A7;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">Add To Cart</button>
                     </div>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="text-center mb-4 border border-1 rounded-5" style="border-color: #A99685 !important;">
-                    <a href="detail-page.php">
-                        <div class="p-0 image-card-custom">
-                            <img src="images/product-1.jpg" class="rounded-top-5" alt="...">
-                            <img src="images/adeline.jpg" class="rounded-top-5 img-hover" alt="...">
-                        </div>
-                    </a>
-                    <div class="p-4">
-                        <h3 class="poppins fs-4 grey-color">Mango Coconut</h3>
-                        <p class="poppins fs-5 grey-color">Start From Rp. 150.000</p>
-                        <button type="button" class="btn poppins px-4 px-md-5 py-1 py-md-2 rounded-5 mt-2 fs-5 text-light w-100" style="background: #1EB9A7;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">Add To Cart</button>
-                    </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="text-center mb-4 border border-1 rounded-5" style="border-color: #A99685 !important;">
-                    <a href="detail-page.php">
-                        <div class="p-0 image-card-custom">
-                            <img src="images/product-1.jpg" class="rounded-top-5" alt="...">
-                            <img src="images/adeline.jpg" class="rounded-top-5 img-hover" alt="...">
-                        </div>
-                    </a>
-                    <div class="p-4">
-                        <h3 class="poppins fs-4 grey-color">Mango Coconut</h3>
-                        <p class="poppins fs-5 grey-color">Start From Rp. 150.000</p>
-                        <button type="button" class="btn poppins px-4 px-md-5 py-1 py-md-2 rounded-5 mt-2 fs-5 text-light w-100" style="background: #1EB9A7;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">Add To Cart</button>
-                    </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="text-center mb-4 border border-1 rounded-5" style="border-color: #A99685 !important;">
-                    <a href="detail-page.php">
-                        <div class="p-0 image-card-custom">
-                            <img src="images/product-1.jpg" class="rounded-top-5" alt="...">
-                            <img src="images/adeline.jpg" class="rounded-top-5 img-hover" alt="...">
-                        </div>
-                    </a>
-                    <div class="p-4">
-                        <h3 class="poppins fs-4 grey-color">Mango Coconut</h3>
-                        <p class="poppins fs-5 grey-color">Start From Rp. 150.000</p>
-                        <button type="button" class="btn poppins px-4 px-md-5 py-1 py-md-2 rounded-5 mt-2 fs-5 text-light w-100" style="background: #1EB9A7;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">Add To Cart</button>
-                    </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="text-center mb-4 border border-1 rounded-5" style="border-color: #A99685 !important;">
-                    <a href="detail-page.php">
-                        <div class="p-0 image-card-custom">
-                            <img src="images/product-1.jpg" class="rounded-top-5" alt="...">
-                            <img src="images/adeline.jpg" class="rounded-top-5 img-hover" alt="...">
-                        </div>
-                    </a>
-                    <div class="p-4">
-                        <h3 class="poppins fs-4 grey-color">Mango Coconut</h3>
-                        <p class="poppins fs-5 grey-color">Start From Rp. 150.000</p>
-                        <button type="button" class="btn poppins px-4 px-md-5 py-1 py-md-2 rounded-5 mt-2 fs-5 text-light w-100" style="background: #1EB9A7;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">Add To Cart</button>
-                    </div>
-                </div>
-              </div>
+              <?php endforeach; ?>
               <!-- akhir foreach disini -->
             </div>
             <div class="swiper-button-next"></div>
@@ -201,81 +158,23 @@
         <div class="swiper bestSeller mt-3 px-5">
             <div class="swiper-wrapper pb-0">
               <!-- foreach disini -->
-              <div class="swiper-slide">
-                <div class="text-center mb-4 border border-1 rounded-5" style="border-color: #A99685 !important;">
-                    <a href="detail-page.php">
-                        <div class="p-0 image-card-custom">
-                            <img src="images/product-1.jpg" class="rounded-top-5" alt="...">
-                            <img src="images/adeline.jpg" class="rounded-top-5 img-hover" alt="...">
+              <?php foreach ([1, 2, 3, 5, 6, 7, 8, 9, 10] as $index): ?>
+                <div class="swiper-slide">
+                    <div class="text-center mb-4 border border-1 rounded-5" style="border-color: #A99685 !important;">
+                        <a href="detail-page.php">
+                            <div class="p-0 image-card-custom">
+                                <img src="images/product-1.jpg" class="rounded-top-5" alt="...">
+                                <img src="images/adeline.jpg" class="rounded-top-5 img-hover" alt="...">
+                            </div>
+                        </a>
+                        <div class="p-3">
+                            <h3 class="poppins fs-4 grey-color">Mango Coconut</h3>
+                            <p class="poppins fs-6 grey-color">Start From Rp. 150.000</p>
+                            <button type="button" class="btn poppins px-4 px-md-2 py-1 py-md-2 rounded-5 mt-2 fs-6 text-light w-100" style="background: #1EB9A7;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">Add To Cart</button>
                         </div>
-                    </a>
-                    <div class="p-4">
-                        <h3 class="poppins fs-4 grey-color">Mango Coconut</h3>
-                        <p class="poppins fs-5 grey-color">Start From Rp. 150.000</p>
-                        <button type="button" class="btn poppins px-4 px-md-5 py-1 py-md-2 rounded-5 mt-2 fs-5 text-light w-100" style="background: #1EB9A7;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">Add To Cart</button>
                     </div>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="text-center mb-4 border border-1 rounded-5" style="border-color: #A99685 !important;">
-                    <a href="detail-page.php">
-                        <div class="p-0 image-card-custom">
-                            <img src="images/product-1.jpg" class="rounded-top-5" alt="...">
-                            <img src="images/adeline.jpg" class="rounded-top-5 img-hover" alt="...">
-                        </div>
-                    </a>
-                    <div class="p-4">
-                        <h3 class="poppins fs-4 grey-color">Mango Coconut</h3>
-                        <p class="poppins fs-5 grey-color">Start From Rp. 150.000</p>
-                        <button type="button" class="btn poppins px-4 px-md-5 py-1 py-md-2 rounded-5 mt-2 fs-5 text-light w-100" style="background: #1EB9A7;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">Add To Cart</button>
-                    </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="text-center mb-4 border border-1 rounded-5" style="border-color: #A99685 !important;">
-                    <a href="detail-page.php">
-                        <div class="p-0 image-card-custom">
-                            <img src="images/product-1.jpg" class="rounded-top-5" alt="...">
-                            <img src="images/adeline.jpg" class="rounded-top-5 img-hover" alt="...">
-                        </div>
-                    </a>
-                    <div class="p-4">
-                        <h3 class="poppins fs-4 grey-color">Mango Coconut</h3>
-                        <p class="poppins fs-5 grey-color">Start From Rp. 150.000</p>
-                        <button type="button" class="btn poppins px-4 px-md-5 py-1 py-md-2 rounded-5 mt-2 fs-5 text-light w-100" style="background: #1EB9A7;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">Add To Cart</button>
-                    </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="text-center mb-4 border border-1 rounded-5" style="border-color: #A99685 !important;">
-                    <a href="detail-page.php">
-                        <div class="p-0 image-card-custom">
-                            <img src="images/product-1.jpg" class="rounded-top-5" alt="...">
-                            <img src="images/adeline.jpg" class="rounded-top-5 img-hover" alt="...">
-                        </div>
-                    </a>
-                    <div class="p-4">
-                        <h3 class="poppins fs-4 grey-color">Mango Coconut</h3>
-                        <p class="poppins fs-5 grey-color">Start From Rp. 150.000</p>
-                        <button type="button" class="btn poppins px-4 px-md-5 py-1 py-md-2 rounded-5 mt-2 fs-5 text-light w-100" style="background: #1EB9A7;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">Add To Cart</button>
-                    </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="text-center mb-4 border border-1 rounded-5" style="border-color: #A99685 !important;">
-                    <a href="detail-page.php">
-                        <div class="p-0 image-card-custom">
-                            <img src="images/product-1.jpg" class="rounded-top-5" alt="...">
-                            <img src="images/adeline.jpg" class="rounded-top-5 img-hover" alt="...">
-                        </div>
-                    </a>
-                    <div class="p-4">
-                        <h3 class="poppins fs-4 grey-color">Mango Coconut</h3>
-                        <p class="poppins fs-5 grey-color">Start From Rp. 150.000</p>
-                        <button type="button" class="btn poppins px-4 px-md-5 py-1 py-md-2 rounded-5 mt-2 fs-5 text-light w-100" style="background: #1EB9A7;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">Add To Cart</button>
-                    </div>
-                </div>
-              </div>
+              <?php endforeach; ?>
               <!-- akhir foreach disini -->
             </div>
             <div class="swiper-button-next"></div>
@@ -290,81 +189,23 @@
         <div class="swiper bestSeller mt-3 px-5">
             <div class="swiper-wrapper pb-0">
               <!-- foreach disini -->
-              <div class="swiper-slide">
-                <div class="text-center mb-4 border border-1 rounded-5" style="border-color: #A99685 !important;">
-                    <a href="detail-page.php">
-                        <div class="p-0 image-card-custom">
-                            <img src="images/product-1.jpg" class="rounded-top-5" alt="...">
-                            <img src="images/adeline.jpg" class="rounded-top-5 img-hover" alt="...">
+              <?php foreach ([1, 2, 3, 5, 6, 7, 8, 9, 10] as $index): ?>
+                <div class="swiper-slide">
+                    <div class="text-center mb-4 border border-1 rounded-5" style="border-color: #A99685 !important;">
+                        <a href="detail-page.php">
+                            <div class="p-0 image-card-custom">
+                                <img src="images/product-1.jpg" class="rounded-top-5" alt="...">
+                                <img src="images/adeline.jpg" class="rounded-top-5 img-hover" alt="...">
+                            </div>
+                        </a>
+                        <div class="p-3">
+                            <h3 class="poppins fs-4 grey-color">Mango Coconut</h3>
+                            <p class="poppins fs-6 grey-color">Start From Rp. 150.000</p>
+                            <button type="button" class="btn poppins px-4 px-md-2 py-1 py-md-2 rounded-5 mt-2 fs-6 text-light w-100" style="background: #1EB9A7;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">Add To Cart</button>
                         </div>
-                    </a>
-                    <div class="p-4">
-                        <h3 class="poppins fs-4 grey-color">Mango Coconut</h3>
-                        <p class="poppins fs-5 grey-color">Start From Rp. 150.000</p>
-                        <button type="button" class="btn poppins px-4 px-md-5 py-1 py-md-2 rounded-5 mt-2 fs-5 text-light w-100" style="background: #1EB9A7;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">Add To Cart</button>
                     </div>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="text-center mb-4 border border-1 rounded-5" style="border-color: #A99685 !important;">
-                    <a href="detail-page.php">
-                        <div class="p-0 image-card-custom">
-                            <img src="images/product-1.jpg" class="rounded-top-5" alt="...">
-                            <img src="images/adeline.jpg" class="rounded-top-5 img-hover" alt="...">
-                        </div>
-                    </a>
-                    <div class="p-4">
-                        <h3 class="poppins fs-4 grey-color">Mango Coconut</h3>
-                        <p class="poppins fs-5 grey-color">Start From Rp. 150.000</p>
-                        <button type="button" class="btn poppins px-4 px-md-5 py-1 py-md-2 rounded-5 mt-2 fs-5 text-light w-100" style="background: #1EB9A7;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">Add To Cart</button>
-                    </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="text-center mb-4 border border-1 rounded-5" style="border-color: #A99685 !important;">
-                    <a href="detail-page.php">
-                        <div class="p-0 image-card-custom">
-                            <img src="images/product-1.jpg" class="rounded-top-5" alt="...">
-                            <img src="images/adeline.jpg" class="rounded-top-5 img-hover" alt="...">
-                        </div>
-                    </a>
-                    <div class="p-4">
-                        <h3 class="poppins fs-4 grey-color">Mango Coconut</h3>
-                        <p class="poppins fs-5 grey-color">Start From Rp. 150.000</p>
-                        <button type="button" class="btn poppins px-4 px-md-5 py-1 py-md-2 rounded-5 mt-2 fs-5 text-light w-100" style="background: #1EB9A7;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">Add To Cart</button>
-                    </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="text-center mb-4 border border-1 rounded-5" style="border-color: #A99685 !important;">
-                    <a href="detail-page.php">
-                        <div class="p-0 image-card-custom">
-                            <img src="images/product-1.jpg" class="rounded-top-5" alt="...">
-                            <img src="images/adeline.jpg" class="rounded-top-5 img-hover" alt="...">
-                        </div>
-                    </a>
-                    <div class="p-4">
-                        <h3 class="poppins fs-4 grey-color">Mango Coconut</h3>
-                        <p class="poppins fs-5 grey-color">Start From Rp. 150.000</p>
-                        <button type="button" class="btn poppins px-4 px-md-5 py-1 py-md-2 rounded-5 mt-2 fs-5 text-light w-100" style="background: #1EB9A7;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">Add To Cart</button>
-                    </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="text-center mb-4 border border-1 rounded-5" style="border-color: #A99685 !important;">
-                    <a href="detail-page.php">
-                        <div class="p-0 image-card-custom">
-                            <img src="images/product-1.jpg" class="rounded-top-5" alt="...">
-                            <img src="images/adeline.jpg" class="rounded-top-5 img-hover" alt="...">
-                        </div>
-                    </a>
-                    <div class="p-4">
-                        <h3 class="poppins fs-4 grey-color">Mango Coconut</h3>
-                        <p class="poppins fs-5 grey-color">Start From Rp. 150.000</p>
-                        <button type="button" class="btn poppins px-4 px-md-5 py-1 py-md-2 rounded-5 mt-2 fs-5 text-light w-100" style="background: #1EB9A7;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">Add To Cart</button>
-                    </div>
-                </div>
-              </div>
+              <?php endforeach; ?>
               <!-- akhir foreach disini -->
             </div>
             <div class="swiper-button-next"></div>
@@ -373,99 +214,67 @@
     </div>
     <div class="swiper myPromo p-3 p-md-5">
         <div class="swiper-wrapper">
+        <?php foreach ([1, 2, 3,] as $index): ?>
           <div class="swiper-slide">
-            <img src="images/promo-1.png" style="width: 100%;"/>
+            <img src="images/promo-1.png" class="w-100"/>
           </div>
-          <div class="swiper-slide">
-            <img src="images/promo-1.png" style="width: 100%;"/>
-          </div>
-          <div class="swiper-slide">
-            <img src="images/promo-1.png" style="width: 100%;"/>
-          </div>
-          <div class="swiper-slide">
-            <img src="images/promo-1.png" style="width: 100%;"/>
-          </div>
+        <?php endforeach; ?>
         </div>
         <div class="swiper-pagination"></div>
     </div>
-    <div class="row g-0 text-center m-3 mt-5 m-md-5">
-        <div class="col-sm-8 pe-0 pe-md-5">
-            <div class="col text-start mb-2">
-                <h2 class="fs-05 poppins text-md-start text-center fw-semibold mb-4" style="color: #8E623A">News & CSR</h2>
-            </div>
-            <div class="row">
-                <div class="col-sm px-4 text-start mb-md-0 mb-3">
-                    <a href="detail-page.php">
-                        <div class="img_custom mb-4">
-                            <img src="images/news-1.png" class="img-fluid"/>
-                        </div>
-                    </a>
-                    <h4 class="text-uppercase poppins fw-bold" style="color: #604A33;">Signature Cake</h4>
-                    <p class="poppins fs-6 pe-2" style="color: #C56542;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales purus id orci facilisis, ut auctor magna venenatis</p>
-                </div>
-                <div class="col-sm px-4 text-start mb-md-0 mb-3">
-                    <a href="detail-page.php">
-                        <div class="img_custom mb-4">
-                            <img src="images/news-1.png" class="img-fluid"/>
-                        </div>
-                    </a>
-                    <h4 class="text-uppercase poppins fw-bold" style="color: #604A33;">Signature Cake</h4>
-                    <p class="poppins fs-6 pe-2" style="color: #C56542;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales purus id orci facilisis, ut auctor magna venenatis</p>
-                </div>
-                <div class="col-sm px-4 text-start mb-md-0 mb-3">
-                    <a href="detail-page.php">
-                        <div class="img_custom mb-4">
-                            <img src="images/news-2.png" class="img-fluid"/>
-                        </div>
-                    </a>
-                    <h4 class="text-uppercase poppins fw-bold" style="color: #604A33;">Signature Cake</h4>
-                    <p class="poppins fs-6 pe-2" style="color: #C56542;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales purus id orci facilisis, ut auctor magna venenatis</p>
-                </div>
-            </div>
-          </div>
-        <div class="col-sm-4 mt-4 mt-md-0">
-            <div class="col text-center text-md-start">
-                <h2 class="fs-05 poppins fw-semibold mb-4" style="color: #8E623A">Our Satisfied Customers</h2>
-            </div>
-            <div class="swiper myTestimoni">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="text-center p-4 p-md-5 rounded-5 bg-silver">
-                        <p class="fs-6 poppins mb-3 mb-md-5" style="color: #8E623A">" Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. "</p>
-                        <div class="text-center mt-4 mt-md-5">
-                            <div class="img-small-custom">
-                                <img src="images/man.png" alt="Cake"/>
+    <div class="pt-5 py-1 py-md-0 mt-5">
+        <div class="col px-5 d-flex align-items-center justify-content-between" style="position: relative;">
+            <h2 class="fs-05 poppins text-md-start text-center fw-semibold px-4" style="color: #8E623A; background: white !important; z-index: 5;">News & CSR</h2>
+            <div class="heading-divider"></div>
+        </div>
+        <div class="swiper bestSeller mt-3 px-5">
+            <div class="swiper-wrapper pb-0">
+              <!-- foreach disini -->
+                <?php foreach ([1, 2, 3, 4, 5, 6, 7] as $index): ?>
+                    <div class="swiper-slide">
+                        <div class="text-start mb-4 border border-1 rounded-5" style="border-color: #A99685 !important;">
+                            <a href="detail-page.php">
+                                <div class="p-0 image-card-custom">
+                                    <img src="images/news_artikel_1.jpg" class="rounded-top-5" alt="...">
+                                </div>
+                            </a>
+                            <div class="p-4">
+                                <h3 class="poppins fs-4 grey-color fw-semibold text-truncate">5 Kue Ulang Tahun Terfavorit</h3>
+                                <p class="poppins fs-6 grey-color truncate-3-row">Jakarta, 24 June 2023, Setiap tahun, kue ulang tahun menjadi pusat perhatian dalam perayaan yang meriah. Dengan beragam pilihan rasa</p>
+                                <button type="button" class="btn poppins px-4 px-md-4 py-1 py-md-2 rounded-5 mt-2 fs-6 text-light" style="background: #1EB9A7;">Selengkapnya</button>
                             </div>
-                            <h4 class="poppins mt-3 fs-5 fw-semibold" style="color: #8E623A">Muhamad Rafli</h4>
                         </div>
                     </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="text-center p-4 p-md-5 rounded-5 bg-silver">
-                        <p class="fs-6 poppins mb-3 mb-md-5" style="color: #8E623A">" Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. "</p>
-                        <div class="text-center mt-4 mt-md-5">
-                            <div class="img-small-custom">
-                                <img src="images/man.png" alt="Cake"/>
-                            </div>
-                            <h4 class="poppins mt-3 fs-5 fw-semibold" style="color: #8E623A">Muhamad Rafli</h4>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="text-center p-4 p-md-5 rounded-5 bg-silver">
-                        <p class="fs-6 poppins mb-3 mb-md-5" style="color: #8E623A">" Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. "</p>
-                        <div class="text-center mt-4 mt-md-5">
-                            <div class="img-small-custom">
-                                <img src="images/man.png" alt="Cake"/>
-                            </div>
-                            <h4 class="poppins mt-3 fs-5 fw-semibold" style="color: #8E623A">Muhamad Rafli</h4>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-pagination"></div>
+                <?php endforeach; ?>
+              <!-- akhir foreach disini -->
             </div>
-            
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+    <div class="pt-5 py-1 py-md-0 mt-5">
+        <div class="col px-5 d-flex align-items-center justify-content-between" style="position: relative;">
+            <h2 class="fs-05 poppins text-md-start text-center fw-semibold px-4" style="color: #8E623A; background: white !important; z-index: 5;">Our Satisfied Customers</h2>
+            <div class="heading-divider"></div>
+        </div>
+        <div class="swiper myPartner px-5 mt-3">
+            <div class="swiper-wrapper">
+                <?php 
+                $totalImages = count($dataPartner);
+                for ($i = 0; $i < $totalImages; $i += 2): 
+                    $image1 = $dataPartner[$i];
+                    $image2 = isset($dataPartner[$i + 1]) ? $dataPartner[$i + 1] : null;
+                ?>
+                    <div class="swiper-slide">
+                        <div class="d-flex flex-column gap-4">
+                            <img src="<?php echo htmlspecialchars($image1); ?>" alt="Partner Image" class="img-fluid">
+                            <?php if ($image2): ?>
+                                <img src="<?php echo htmlspecialchars($image2); ?>" alt="Partner Image" class="img-fluid">
+                            <?php endif; ?>
+                        </div>
+                    </div>
+                <?php endfor; ?>
+            </div>
         </div>
     </div>
     <div class=" bg-footer text-center py-md-13">

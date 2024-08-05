@@ -1,15 +1,16 @@
 <?php include 'template/header.php' ?>
 
     <div class="row px-5 py-4 w-100 pb-5 mt-5">
-        <div class="col-sm-7 px-5">
-            <h1 class="ps-4 fs-05 poppins fw-bold mb-3" style="color: #604A33;">Cart Detail</h1>
-            <div class="col mb-5 pb-1">
-                <div class="row border-bottom py-4 px-2" style="border-color: #604A33 !important;">
+        <div class="col-sm-7">
+            <h1 class="fs-05 font-primary fw-bold mb-3" style="color: #A99685 !important;">Cart Detail</h1>
+            <div class="col mb-5 pb-1 px-2 pe-5">
+                <?php foreach ([1, 2, 3] as $index): ?>
+                <div class="row border-bottom py-4 px-2" style="border-color: #A99685 !important;">
                     <div class="col-sm-3 p-0 mb-3 mb-md-0">
                         <img src="images/promosi-4.png" class="img-fluid height-full rounded-5" alt="Kue">
                     </div>
                     <div class="col-sm-4 ps-4 py-2">
-                        <h3 class="poppins fs-3 fw-bold mb-1 text-truncate" style="color: #AF9771;">Ovo Milo</h3>
+                        <h3 class="poppins fs-4 fw-semibold mb-1 text-truncate" style="color: #AF9771;">Ovo Milo</h3>
                         <p class="font-primary fs-5 fw-semibold" style="color: #604A33;">Size : 20cm x 30cm</p>
                         <div class="d-flex align-items-center gap-2 mt-5">
                             <div class="d-flex border max-content py-1 rounded-pill p-3 align-items-center" style="border-color: #AF9771 !important;">
@@ -21,87 +22,41 @@
                         </div>
                     </div>
                     <div class="col-sm-5 text-end pt-3">
-                        <h3 class="poppins fs-1 fw-bold mt-3 mt-md-0" style="color: #604A33;">RP. 1.500.000 ,-</h3>
+                        <h3 class="poppins fs-2 fw-bold mt-3 mt-md-0" style="color: #604A33;">RP. 1.500.000 ,-</h3>
                     </div>
                 </div>
-                <div class="row border-bottom py-4 px-2" style="border-color: #604A33 !important;">
-                    <div class="col-sm-3 p-0 mb-3 mb-md-0">
-                        <img src="images/promosi-4.png" class="img-fluid height-full rounded-5" alt="Kue">
-                    </div>
-                    <div class="col-sm-4 ps-4 py-2">
-                        <h3 class="poppins fs-3 fw-bold mb-1 text-truncate" style="color: #AF9771;">Ovo Milo</h3>
-                        <p class="font-primary fs-5 fw-semibold" style="color: #604A33;">Size : 20cm x 30cm</p>
-                        <div class="d-flex align-items-center gap-2 mt-5">
-                            <div class="d-flex border max-content py-1 rounded-pill p-3 align-items-center" style="border-color: #AF9771 !important;">
-                                <button class="bg-transparent border-0 p-0 fs-4 d-flex align-items-center" style="color: #604A33;" type="button" id="decrement"><iconify-icon icon="ic:outline-minus"></iconify-icon></button>
-                                <input type="text" class="p-0 text-center border-0 poppins fs-4 outline-none lh-0" id="quantity" style="width: 3.3rem !important; color: #604A33;" value="1" readonly>
-                                <button class="bg-transparent border-0 px-0 p-0 fs-4 d-flex align-items-center" style="color: #604A33;" type="button" id="increment"><iconify-icon icon="ic:outline-plus"></iconify-icon></button>
-                            </div>
-                            <button class="border-0 outline-none bg-transparent fs-1 p-0 m-0 d-flex align-items-center"><iconify-icon style="color: #604A33;" icon="ph:trash"></iconify-icon></button>
-                        </div>
-                    </div>
-                    <div class="col-sm-5 text-end pt-3">
-                        <h3 class="poppins fs-1 fw-bold mt-3 mt-md-0" style="color: #604A33;">RP. 1.500.000 ,-</h3>
-                    </div>
-                </div>
-                <div class="row border-bottom py-4 px-2" style="border-color: #604A33 !important;">
-                    <div class="col-sm-3 p-0 mb-3 mb-md-0">
-                        <img src="images/promosi-4.png" class="img-fluid height-full rounded-5" alt="Kue">
-                    </div>
-                    <div class="col-sm-4 ps-4 py-2">
-                        <h3 class="poppins fs-3 fw-bold mb-1 text-truncate" style="color: #AF9771;">Ovo Milo</h3>
-                        <p class="font-primary fs-5 fw-semibold" style="color: #604A33;">Size : 20cm x 30cm</p>
-                        <div class="d-flex align-items-center gap-2 mt-5">
-                            <div class="d-flex border max-content py-1 rounded-pill p-3 align-items-center" style="border-color: #AF9771 !important;">
-                                <button class="bg-transparent border-0 p-0 fs-4 d-flex align-items-center" style="color: #604A33;" type="button" id="decrement"><iconify-icon icon="ic:outline-minus"></iconify-icon></button>
-                                <input type="text" class="p-0 text-center border-0 poppins fs-4 outline-none lh-0" id="quantity" style="width: 3.3rem !important; color: #604A33;" value="1" readonly>
-                                <button class="bg-transparent border-0 px-0 p-0 fs-4 d-flex align-items-center" style="color: #604A33;" type="button" id="increment"><iconify-icon icon="ic:outline-plus"></iconify-icon></button>
-                            </div>
-                            <button class="border-0 outline-none bg-transparent fs-1 p-0 m-0 d-flex align-items-center"><iconify-icon style="color: #604A33;" icon="ph:trash"></iconify-icon></button>
-                        </div>
-                    </div>
-                    <div class="col-sm-5 text-end pt-3">
-                        <h3 class="poppins fs-1 fw-bold mt-3 mt-md-0" style="color: #604A33;">RP. 1.500.000 ,-</h3>
-                    </div>
-                </div>
+                <?php endforeach; ?>
             </div>
 
             <div>
                 <div class="col mt-5">
-                    <h2 class="fs-4 poppins text-md-start text-center fw-semibold mb-3" style="color: #8E623A">Produk yang serupa :</h2>
+                    <h2 class="fs-3 poppins text-md-start text-center fw-semibold mb-3" style="color: #8E623A">Produk yang serupa :</h2>
                 </div>
                 <div class="col mt-4">
-                    <div class="row row-cols-2 row-cols-lg-3">
-                        <div class="col text-center mb-4 mb-md-5">
-                            <a href="detail-page.html">
-                                <div class="p-0 p-md-2">
-                                    <img src="images/promosi-1.png" class="img-fluid" alt="...">
+                    <div class="row row-cols-2 pb-5 row-cols-lg-3 w-100">
+                        <?php foreach ([1, 2, 3] as $index): ?>
+                        <div class="p-3">
+                            <div class="text-center border border-1 rounded-5" style="border-color: #A99685 !important;">
+                                <a href="detail-page.php">
+                                    <div class="p-0 image-card-custom">
+                                        <img src="images/product-1.jpg" class="rounded-top-5" alt="...">
+                                        <img src="images/adeline.jpg" class="rounded-top-5 img-hover" alt="...">
+                                    </div>
+                                </a>
+                                <div class="p-3">
+                                    <h3 class="poppins fs-4 grey-color">Mango Coconut</h3>
+                                    <p class="poppins fs-6 grey-color">Start From Rp. 150.000</p>
+                                    <button type="button" class="btn poppins px-4 px-md-2 py-1 py-md-2 rounded-5 mt-2 fs-6 text-light w-100" style="background: #1EB9A7;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">Add To Cart</button>
                                 </div>
-                            </a>
-                            <button type="button" class="btn poppins px-4 px-md-5 py-1 py-md-2 rounded-5 mt-4 custom-size-font text-light" style="background: #8E623A;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">Add To Cart</button>
+                            </div>
                         </div>
-                        <div class="col text-center mb-4 mb-md-5">
-                            <a href="detail-page.html">
-                                <div class="p-0 p-md-2">
-                                    <img src="images/promosi-2.png" class="img-fluid" alt="...">
-                                </div>
-                            </a>
-                            <button type="button" class="btn poppins px-4 px-md-5 py-1 py-md-2 rounded-5 mt-4 custom-size-font text-light" style="background: #8E623A;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">Add To Cart</button>
-                        </div>
-                        <div class="col text-center mb-4 mb-md-5">
-                            <a href="detail-page.html">
-                                <div class="p-0 p-md-2">
-                                    <img src="images/promosi-3.png" class="img-fluid" alt="...">
-                                </div>
-                            </a>
-                            <button type="button" class="btn poppins px-4 px-md-5 py-1 py-md-2 rounded-5 mt-4 custom-size-font text-light" style="background: #8E623A;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">Add To Cart</button>
-                        </div>
+                        <?php endforeach; ?>
                     </div>
                 </div>
             </div>
         </div>
         <div class="col-5 px-4">
-            <h1 class="fs-05 poppins fw-bold mb-3" style="color: #604A33;">Order Summary</h1>
+            <h1 class="fs-05 font-primary fw-bold mb-3" style="color: #A99685 !important;">Order Summary</h1>
             <div class="col rounded-4 p-4" style="background-color: #F2F4F7;">
                 <div class="d-flex w-100 justify-content-between align-items-center border-bottom border-1 pb-2" style="border-color: #604A33 !important;">
                     <span class="poppins fs-5 fw-semibold">Add order note</span>
@@ -182,8 +137,8 @@
                         <textarea class="height-input-custom rounded-4 w-100 outline-none border-1 px-3 py-3 poppins" style="resize: none; border-color: #604A33 !important;"></textarea>
                     </div>
                 </div>
-                <div class="col mt-5">
-                    <button class="w-100 border-0 outline-none poppins text-light fs-3 py-3 rounded-pill" style="background-color: #604A33;">Checkout</button>
+                <div class="col mt-3">
+                    <button class="w-100 border-0 outline-none poppins text-light fs-4 py-3 rounded-pill" style="background: #1EB9A7;">Checkout</button>
                 </div>
             </div>
         </div>

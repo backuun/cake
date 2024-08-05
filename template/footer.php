@@ -137,21 +137,39 @@
         });
       </script>
 
-        <script>
-            var swiper = new Swiper(".bestSeller", {
-            slidesPerView: 4,
-            spaceBetween: 33,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
+      <script>
+          var swiper = new Swiper(".bestSeller", {
+          slidesPerView: 2,
+          spaceBetween: 33,
+          breakpoints: {
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
             },
-            });
-        </script>
+            768: {
+              slidesPerView: 4,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 27,
+            },
+            1440: {
+              slidesPerView: 5,
+              spaceBetween: 27,
+            },
+          },
+          navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+          },
+          });
+      </script>
 
-<script>
+      <script>
         var swiper = new Swiper(".mySwiperDetail", {
           spaceBetween: 10,
-          slidesPerView: 4,
+          slidesPerView: 8,
           freeMode: true,
           watchSlidesProgress: true,
         });
@@ -170,6 +188,10 @@
       </script>
       
       <script src="js/slide.js"></script>
+      <script src="js/partner_slide.js"></script>
+      <script src="js/search.js"></script>
+      <script src="js/search_result.js"></script>
+      <script src="js/overflow_custom.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
