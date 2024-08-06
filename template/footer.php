@@ -186,6 +186,13 @@
           },
         });
       </script>
+
+      <script>
+        $(document).ready(function(){
+          $('.zoom-slide').zoom();
+        });
+      </script>
+
       
       <script src="js/slide.js"></script>
       <script src="js/partner_slide.js"></script>

@@ -6,19 +6,19 @@
             <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
                 <!-- Gambar yang besar -->
                 <div class="swiper-wrapper pb-2">
-                  <div class="swiper-slide">
+                  <div class="swiper-slide zoom-slide">
                     <img src="https://swiperjs.com/demos/images/nature-1.jpg" class="img-height-custom rounded-5 img-fluid w-100"/>
                   </div>
-                  <div class="swiper-slide">
+                  <div class="swiper-slide zoom-slide">
                     <img src="https://swiperjs.com/demos/images/nature-2.jpg" class="img-height-custom rounded-5 img-fluid w-100"/>
                   </div>
-                  <div class="swiper-slide">
+                  <div class="swiper-slide zoom-slide">
                     <img src="https://swiperjs.com/demos/images/nature-3.jpg" class="img-height-custom rounded-5 img-fluid w-100"/>
                   </div>
-                  <div class="swiper-slide">
+                  <div class="swiper-slide zoom-slide">
                     <img src="https://swiperjs.com/demos/images/nature-4.jpg" class="img-height-custom rounded-5 img-fluid w-100"/>
                   </div>
-                  <div class="swiper-slide">
+                  <div class="swiper-slide zoom-slide">
                     <img src="https://swiperjs.com/demos/images/nature-4.jpg" class="img-height-custom rounded-5 img-fluid w-100"/>
                   </div>
                 </div>

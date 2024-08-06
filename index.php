@@ -241,7 +241,7 @@
                             <div class="p-4">
                                 <h3 class="poppins fs-4 grey-color fw-semibold text-truncate">5 Kue Ulang Tahun Terfavorit</h3>
                                 <p class="poppins fs-6 grey-color truncate-3-row">Jakarta, 24 June 2023, Setiap tahun, kue ulang tahun menjadi pusat perhatian dalam perayaan yang meriah. Dengan beragam pilihan rasa</p>
-                                <button type="button" class="btn poppins px-4 px-md-4 py-1 py-md-2 rounded-5 mt-2 fs-6 text-light" style="background: #1EB9A7;">Selengkapnya</button>
+                                <a href="detail-news.php"><button type="button" class="btn poppins px-4 px-md-4 py-1 py-md-2 rounded-5 mt-2 fs-6 text-light" style="background: #1EB9A7;">Selengkapnya</button></a>
                             </div>
                         </div>
                     </div>
