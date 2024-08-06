@@ -370,7 +370,7 @@
                     </div>
                 </div>
                 <div class="col text-center px-2"><button type="button" class="btn border w-100 py-2 fs-6 poppins rounded-pill px-2 fw-medium" style="color: #604A33; border-color: #AF9771 !important; background-color: #F2F4F7;">Add To Cart</button></div>
-                <div class="col text-center px-2"><button type="button" class="btn border w-100 py-2 fs-6 poppins rounded-pill px-2 fw-medium" style="color: white; border-color: #604A33 !important; background-color: #604A33;">Buy Now</button></div>
+                <div class="col text-center px-2"><a href="checkout.php"><button type="button" class="btn border w-100 py-2 fs-6 poppins rounded-pill px-2 fw-medium" style="color: white; border-color: #604A33 !important; background-color: #604A33;">Buy Now</button></a></div>
             </div>
         </div>
     </div>

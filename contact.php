@@ -5,9 +5,9 @@
         
     </div>
     <div class="d-flex justify-content-center mt-5">
-        <div class="row row-cols-lg-2 w-100 px-5">
+        <div class="row row-cols-lg-2 w-100 px-lg-2 px-xl-5">
             <div class="p-3">
-                <div class="col bg-overlay p-5 rounded-5 pb-4 border border-1" style="background:url(images/retail-bg.png), #fffbf783; background-position:center;">
+                <div class="col bg-overlay p-xl-5 p-lg-3 rounded-5 pb-4 border border-1" style="background:url(images/retail-bg.png), #fffbf783; background-position:center;">
                     <h2 class="font-primary fw-bold fs-1 grey-color">Retail Order</h2>
                     <ul class="list-group list-group-flush bg-transparent fs-4 text-light">
                         <li class="list-group-item bg-transparent grey-color d-flex align-items-center gap-2 poppins px-2 py-4 fw-medium" style="border-color: #A99685 !important;"><iconify-icon icon="ic:baseline-phone"></iconify-icon> +6221 425 5851</li>
@@ -17,7 +17,7 @@
                 </div>
             </div>
             <div class="p-3">
-                <div class="col bg-overlay p-5 rounded-5 pb-4 border border-1" style="background:url(images/corporate-bg.png), #fffbf783; background-position:center;">
+                <div class="col bg-overlay p-xl-5 p-lg-3 rounded-5 pb-4 border border-1" style="background:url(images/corporate-bg.png), #fffbf783; background-position:center;">
                     <h2 class="font-primary fw-bold fs-1 grey-color">Corporate Order</h2>
                     <ul class="list-group list-group-flush bg-transparent fs-4 text-light">
                         <li class="list-group-item bg-transparent grey-color d-flex align-items-center gap-2 poppins px-2 py-4 fw-medium" style="border-color: #A99685 !important;"><iconify-icon icon="ic:baseline-phone"></iconify-icon> +62 878-8000-7101</li>

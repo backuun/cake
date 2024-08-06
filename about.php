@@ -46,7 +46,7 @@
             </div>
         </div>
         <div class="row px-5 mt-5 pt-3 justify-content-start w-100" style="position:relative;">
-            <img src="images/circle_right.svg" class="img-decoration-right"/>
+            <img src="images/circle_right.svg" class="img-decoration-right-about"/>
             <div class="col-4">
                 <img src="images/founder_image.png" alt="Andrye Setiawan" class="img-fluid rounded-4"/>
             </div>

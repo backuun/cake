@@ -654,7 +654,7 @@ body{
 .image-card-custom{
   width: 100%;
   position: relative;
-  height: 14vw;
+  height: 25vh;
   border-bottom: .1vw solid #A99685;
 }
 .image-card-custom-store{
@@ -796,10 +796,24 @@ body{
 
 .img-decoration-right{
   position: absolute;
-  right: -4vw;
+  right: -2vw;
   bottom: -14vw;
   z-index: -1;
   width: 16vw !important;
+}
+.img-decoration-right-about{
+  position: absolute;
+  right: -2vw;
+  bottom: -14vw;
+  z-index: -1;
+  width: 16vw !important;
+}
+.img-decoration-right-news{
+  position: absolute;
+  right: -15.6vw;
+  top: 19vw;
+  z-index: -1;
+  width: 14vw !important;
 }
 
 .img-decoration-left{
@@ -809,9 +823,16 @@ body{
   width: 18vw !important;
 }
 
+.img-decoration-left-news{
+  position: absolute;
+  left: -17vw;
+  bottom: 94vw;
+  width: 14vw !important;
+}
+
 .circle-decoration-left{
   position: absolute;
-  left: -2.4vw;
+  left: -17vw;
   bottom: 8vw;
   width: 18vw !important;
   z-index: -1;
@@ -836,6 +857,22 @@ body{
   /* background:  #fffbf783; */
   background-size: cover;
   background-blend-mode: overlay;
+}
+
+.image-news-custom{
+  width: 100%;
+  height: 32vw;
+  overflow: hidden;
+  position: relative;
+}
+.image-news-custom img{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 @media (max-width:768px) {
