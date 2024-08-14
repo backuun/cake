@@ -51,8 +51,8 @@
             <div class="col mb-md-4 mb-lg-0 mb-4">
                 <h3 class="poppins fs-5 text-uppercase mb-3 fw-bold grey-color">Legal & Privacy</h3>
                 <ul class="list-group poppins">
-                    <li class="list-group-item  p-0 border border-0 py-2">Terms & Conditions</li>
-                    <li class="list-group-item  p-0 border border-0 py-2">Privacy Policy</li>
+                    <li class="list-group-item  p-0 border border-0 py-2"><a href="term-condition.php" class="text-dark text-decoration-none">Terms & Conditions</a></li>
+                    <li class="list-group-item  p-0 border border-0 py-2"><a href="privacy-policy.php" class="text-dark text-decoration-none">Privacy Policy</a></li>
                     <li class="list-group-item  p-0 border border-0 py-2">Cookie Policy</li>
                 </ul>
             </div>

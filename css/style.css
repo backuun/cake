@@ -902,7 +902,17 @@ body{
 .placeholder_corporate::placeholder{
   color: rgba(0, 0, 0, 0.26);
 }
-
+.privacy-policy-text h1, .privacy-policy-text h2, .privacy-policy-text h3, .privacy-policy-text h4, .privacy-policy-text h5{
+  color: #8E623A;
+  font-family: "Nanum Myeongjo", serif !important;
+}
+.privacy-policy-text p, .privacy-policy-text ul li, .privacy-policy-text a{
+  color: #919191;
+}
+.privacy-policy-text strong{
+  font-weight: 600;
+  color: #8E623A;
+}
 @media (max-width:767px) {
   .font_sizing_big{
     font-size: 8vw;

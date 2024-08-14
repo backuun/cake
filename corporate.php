@@ -67,7 +67,7 @@
         </div>
         </div>
     </div>
-    <div class="row text-center p-4 m-0 py-5 py-md-5 p-md-4 m-md-3 p-lg-5 m-lg-3 p-xl-5 m-xl-5 pb-5 pb-md-5 pb-lg-3 pb-xl-3">
+    <div class="row text-center p-4 m-0 py-5 py-md-5 p-md-4 m-md-3 p-lg-5 m-lg-3 p-xl-5 m-xl-5 pb-5 pb-md-3 pb-lg-2 pb-xl-1">
         <h3 class="heading_corporate font_sizing_big mb-3" style="color:#4E4E4E;">Our Satisfied Customers</h3>
         <p class="poppins fs-6 px-0 px-md-5 m-auto fw-light container-lg" style="color:#4E4E4E;">At Exquise Patisserie, we believe that the best measure of our success is the happiness of our customers.</p>
     </div>
