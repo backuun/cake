@@ -1,7 +1,7 @@
 <?php include 'template/header.php' ?>
     <div class=" w-100 px-3 overflow-x-hidden pt-1 pt-md-2 pt-lg-2 px-lg-3 px-xl-5 px-md-2 py-3 mt-3 pb-3">
         <div class="col px-5 d-flex align-items-center justify-content-between mt-2 pt-3" style="position: relative;">
-            <h2 class="fs-05 poppins text-md-start text-center fw-bold px-4 text-uppercase" style="color: #8E623A; background: white !important; z-index: 5 ;">Checkout Page</h2>
+            <h2 class="fs-05 poppins text-md-start text-center fw-bold px-4 text-uppercase" style="color: #8E623A; background: white !important; z-index: 2 ;">Checkout Page</h2>
             <div class="heading-divider"></div>
         </div>
         <div class="row w-100 row-cols-1 row-cols-lg-2 m-auto mt-0 mt-md-1 mt-lg-2 mt-xl-3">
@@ -12,7 +12,7 @@
                         <a href="#" class="fs-5 text-primary">Log in</a>
                     </div>
                     <div class="mb-5">
-                        <input type="email" placeholder="Email" class="poppins fs-5 w-100 outline-none border border-2 rounded-3 p-3 placeholder-color mb-3" required>
+                        <input type="email" placeholder="Email" class="poppins fs-6 w-100 outline-none border border-2 rounded-3 p-3 py-2 placeholder-color mb-3" required>
                         <label class="checkbox_layout poppins fs-6">Email me with news and offers
                             <input type="checkbox" checked="checked">
                             <span class="checkmark"></span>
@@ -23,7 +23,7 @@
                     </div>
                     <div class="mb-4">
                         <div class="d-flex justify-content-between align-items-center border border-2 px-3 rounded-3">
-                            <select name="" id="" class="w-100 poppins fs-5 outline-none border border-0 py-3">
+                            <select name="" id="" class="w-100 poppins fs-6 outline-none border border-0 py-2">
                                 <option value="" selected disabled hidden>Country</option>
                                 <option value="Indonesia">Indonesia</option>
                                 <option value="Malaysia">Malaysia</option>
@@ -37,28 +37,28 @@
                     </div>
                     <div class="row row-cols-2 mb-4">
                         <div class="col">
-                            <input type="text" placeholder="First Name" class="placeholder-color fs-5 w-100 rounded-3 p-3 border border-2 outline-none poppins" required>
+                            <input type="text" placeholder="First Name" class="placeholder-color fs-6 w-100 rounded-3 p-3 py-2 border border-2 outline-none poppins" required>
                         </div>
                         <div class="col">
-                            <input type="text" placeholder="Last Name" class="placeholder-color fs-5 w-100 rounded-3 p-3 border border-2 outline-none poppins" required>
+                            <input type="text" placeholder="Last Name" class="placeholder-color fs-6 w-100 rounded-3 p-3 py-2 border border-2 outline-none poppins" required>
                         </div>
                     </div>
                     <div class="mb-4">
-                        <input type="text" placeholder="Company (Optional)" class="poppins fs-5 w-100 outline-none border border-2 rounded-3 p-3 placeholder-color" required>
+                        <input type="text" placeholder="Company (Optional)" class="poppins fs-6 w-100 outline-none border border-2 rounded-3 p-3 py-2 placeholder-color" required>
                     </div>
                     <div class="mb-4">
-                        <input type="text" placeholder="Address" class="poppins fs-5 w-100 outline-none border border-2 rounded-3 p-3 placeholder-color" required>
+                        <input type="text" placeholder="Address" class="poppins fs-6 w-100 outline-none border border-2 rounded-3 p-3 py-2 placeholder-color" required>
                     </div>
                     <div class="mb-4">
-                        <input type="text" placeholder="Apartment, Suite, etc. (optional)" class="poppins fs-5 w-100 outline-none border border-2 rounded-3 p-3 placeholder-color" required>
+                        <input type="text" placeholder="Apartment, Suite, etc. (optional)" class="poppins fs-6 w-100 outline-none border border-2 rounded-3 p-3 py-2 placeholder-color" required>
                     </div>
                     <div class="mb-4">
-                        <input type="text" placeholder="City" class="poppins fs-5 w-100 outline-none border border-2 rounded-3 p-3 placeholder-color" required>
+                        <input type="text" placeholder="City" class="poppins fs-6 w-100 outline-none border border-2 rounded-3 p-3 py-2 placeholder-color" required>
                     </div>
                     <div class="row row-cols-2 mb-4">
                         <div class="col">
                             <div class="d-flex justify-content-between align-items-center border border-2 px-3 rounded-3">
-                                <select name="" id="" class="w-100 poppins fs-5 outline-none border border-0 py-3">
+                                <select name="" id="" class="w-100 poppins fs-6 outline-none border border-0 py-2">
                                     <option value="" selected disabled hidden>Province</option>
                                     <option value="DKI Jakarta">DKI Jakarta</option>
                                     <option value="Jawa Barat">Jawa Barat</option>
@@ -69,12 +69,12 @@
                             </div>
                         </div>
                         <div class="col">
-                            <input type="text" placeholder="Postal Code" class="placeholder-color fs-5 w-100 rounded-3 p-3 border border-2 outline-none poppins" required>
+                            <input type="text" placeholder="Postal Code" class="placeholder-color fs-6 w-100 rounded-3 p-3 py-2 border border-2 outline-none poppins" required>
                         </div>
                     </div> 
                     <div class="mb-5">
                         <div class="d-flex justify-content-between align-items-center border border-2 px-3 rounded-3 mb-3">
-                            <input type="number" placeholder="Phone" class="poppins fs-5 w-100 outline-none border border-0 placeholder-color py-3 hide-arrow" required>
+                            <input type="number" placeholder="Phone" class="poppins fs-6 w-100 outline-none border border-0 placeholder-color py-2 hide-arrow" required>
                             <iconify-icon icon="eva:question-mark-circle-outline" class="fs-4" style="color: #969696;"></iconify-icon>
                         </div>
                         <label class="checkbox_layout poppins fs-6">Save this information for next time
@@ -86,7 +86,7 @@
                         <h4 class="font-primary fs-3 fw-semibold m-0">Delivery Method</h4>
                     </div>
                     <div class="mb-5">
-                        <input type="text" placeholder="Enter your shipping address to view available shipping methods." class="poppins fs-5 w-100 outline-none border border-1 border-bg-secondary bg-body-secondary rounded-3 p-3 placeholder-color mb-3" required>
+                        <input type="text" placeholder="Enter your shipping address to view available shipping methods." class="poppins fs-6 w-100 outline-none border border-1 border-bg-secondary bg-body-secondary rounded-3 p-3 py-2 placeholder-color mb-3" required>
                     </div>
                 </form>
             </div>
@@ -115,7 +115,7 @@
                         <h1 class="poppins fw-bold fs-3" style="color: #604A33;">Rp. 1.500.000,-</h1>
                     </div>
                 </div>
-                <button class="text-center fs-3 mt-4 w-100 border border-0 text-light py-3 py-md-2 py-lg-2 py-xl-3 rounded-pill text-uppercase outline-none poppins"  style="background: #1EB9A7;">Pay Now</button>
+                <button class="text-center fs-4 mt-4 w-100 border border-0 text-light py-3 py-md-2 py-lg-2 py-xl-2 rounded-pill text-uppercase outline-none poppins"  style="background: #1EB9A7;">Pay Now</button>
             </div>
         </div>
     </div>

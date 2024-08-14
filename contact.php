@@ -50,16 +50,16 @@
                 <form>
                     <div class="row row-cols-1">
                         <div class="col p-2">
-                            <input type="text" placeholder="Your Name" class="w-100 poppins fs-5 p-3 py-2 rounded-3 text-light outline-none border border-1 custom-placeholder" style="background-color:rgba(255, 255, 255, 0.267);"/>
+                            <input type="text" placeholder="Your Name" class="w-100 poppins fs-6 p-3 py-2 rounded-3 text-light outline-none border border-1 custom-placeholder" style="background-color:rgba(255, 255, 255, 0.267);"/>
                         </div>
                         <div class="col p-2">
-                            <input type="email" placeholder="Your Email" class="w-100 poppins fs-5 p-3 py-2 rounded-3 text-light outline-none border border-1 custom-placeholder" style="background-color:rgba(255, 255, 255, 0.267);"/>
+                            <input type="email" placeholder="Your Email" class="w-100 poppins fs-6 p-3 py-2 rounded-3 text-light outline-none border border-1 custom-placeholder" style="background-color:rgba(255, 255, 255, 0.267);"/>
                         </div>
                         <div class="col p-2">
-                            <input type="text" placeholder="Your Message" class="w-100 poppins fs-5 p-3 py-2 rounded-3 text-light outline-none border border-1 custom-placeholder" style="background-color:rgba(255, 255, 255, 0.267);"/>
+                            <input type="text" placeholder="Your Message" class="w-100 poppins fs-6 p-3 py-2 rounded-3 text-light outline-none border border-1 custom-placeholder" style="background-color:rgba(255, 255, 255, 0.267);"/>
                         </div>
                     </div>
-                    <button class="poppins fs-5 mt-4 outline-none border-0 rounded-pill p-4 py-2 bg-light" style="color:#1F4F63;">Send Message</button>
+                    <button class="poppins fs-6 mt-4 outline-none border-0 rounded-pill p-4 py-2 bg-light" style="color:#1F4F63;">Send Message</button>
                 </form>
             </div>
         </div>

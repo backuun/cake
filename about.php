@@ -1,12 +1,12 @@
 <?php include 'template/header.php' ?>
     
-    <div class="mt-2 mt-md-4 mt-md-lg-4 px-2 px-md-4 px-lg-4">
-        <div class="bg-footer text-center py-md-13 rounded-5">
+    <div>
+        <div class="bg-footer text-center py-md-13">
             <h1 class="text-light text-uppercase fs-1 fw-light poppins letter-spacing-1 mb-3">Priority Gift For Priority People</h1>
             <p class="w-custom text-light poppins fs-13">We are a patisserie that believe qualities bring the best out of a product, people and our valuable Customers. We use premium ingredients and contribute long hours to put the little details to satisfy our crave, using a combination of culinary ability and creativity in baking, decorating and flavoring.</p>
             <a href="#"><button class="btn btn-light mt-5 rounded-pill text-light poppins text-uppercase px-5 bg-transparent py-2 py-md-3">Get Your Cake</button></a>
         </div>
-        <div class="row flex-md-column flex-lg-row px-2 px-md-2 px-lg-2 px-xl-5 pt-3 mt-4 mt-md-5 mt-lg-5 mb-5">
+        <div class="row flex-md-column flex-lg-row px-3 px-md-5 px-lg-5 px-xl-5 pt-3 mt-4 mt-md-5 mt-lg-5 mb-5">
             <div class="col-12 col-md-12 col-lg-7 pe-0 pe-md-0 pe-lg-2 pe-xl-5">
                 <h1 class="font-primary fs-05 fw-semibold mb-3" style="color: #8E623A !important;">About Us</h1>
                 <p class="poppins fs-6 fw-light mb-4 pe-3" style="color: #604A33 !important;">EXQUISE, inspired from the French word itself meant possessing qualities of unusual delicacy and fine craftsmanship, those are the essence of what we pursuit.</p>
@@ -73,7 +73,7 @@
             </div>
           </div>
         </div>
-        <div class="row flex-column flex-column-reverse flex-lg-row px-3 px-md-2 px-lg-2 px-xl-5 pb-3 w-100 ms-auto mt-5 pt-5 pt-md-5 pt-lg-5 pt-xl-3 justify-content-end align-items-md-end align-items-lg-start" style="position:relative;">
+        <div class="row flex-column flex-column-reverse flex-lg-row px-3 px-md-2 px-lg-2 px-xl-5 pb-3 pb-md-5 w-100 ms-auto mt-5 pt-5 pt-md-5 pt-lg-5 pt-xl-3 justify-content-end align-items-md-end align-items-lg-start" style="position:relative;">
             <img src="images/circle_left.png" class="img-decoration-left"/>
             <div class="col-12 col-md-11 col-lg-8 col-xl-7 pe-3 pe-md-3 pe-lg-3 pe-xl-5 pt-5 pt-lg-0 pt-xl-5 ps-1 ps-md-0 ps-lg-5 ps-xl-5 mt-2 mt-md-2 mt-xl-5 text-end">
               <h1 class="font-primary fs-05 fw-semibold mb-4" style="color: #8E623A !important;">Making The Local Global</h1>
