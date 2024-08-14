@@ -1,11 +1,11 @@
 <?php include 'template/header.php' ?>
-    <div class="px-5 pt-5 px-md-5 py-3 mt-3 pb-3">
+    <div class=" w-100 px-3 overflow-x-hidden pt-1 pt-md-2 pt-lg-2 px-lg-3 px-xl-5 px-md-2 py-3 mt-3 pb-3">
         <div class="col px-5 d-flex align-items-center justify-content-between mt-2 pt-3" style="position: relative;">
             <h2 class="fs-05 poppins text-md-start text-center fw-bold px-4 text-uppercase" style="color: #8E623A; background: white !important; z-index: 5 ;">Checkout Page</h2>
             <div class="heading-divider"></div>
         </div>
-        <div class="row row-cols-2 mt-3">
-            <div class="col px-5 pe-3 mt-5">
+        <div class="row w-100 row-cols-1 row-cols-lg-2 m-auto mt-0 mt-md-1 mt-lg-2 mt-xl-3">
+            <div class="col px-1 px-md-5 px-lg-3 px-xl-5 pe-1 pe-md-5 pe-lg-5 mt-5">
                 <form action="">
                     <div class="d-flex justify-content-between align-items-end mb-4">
                         <h4 class="font-primary fs-3 fw-semibold m-0">Contact</h4>
@@ -71,7 +71,7 @@
                         <div class="col">
                             <input type="text" placeholder="Postal Code" class="placeholder-color fs-5 w-100 rounded-3 p-3 border border-2 outline-none poppins" required>
                         </div>
-                    </div>
+                    </div> 
                     <div class="mb-5">
                         <div class="d-flex justify-content-between align-items-center border border-2 px-3 rounded-3 mb-3">
                             <input type="number" placeholder="Phone" class="poppins fs-5 w-100 outline-none border border-0 placeholder-color py-3 hide-arrow" required>
@@ -90,32 +90,32 @@
                     </div>
                 </form>
             </div>
-            <div class="col px-5 mt-5">
+            <div class="col px-2 px-md-5 px-lg-3 px-xl-5 mt-0 mt-md-5 mt-lg-5">
                 <div>
                     <?php foreach ([1, 2, 3] as $index): ?>
                     <div class="row border-bottom py-4 px-2" style="border-color: #604A33 !important;">
                         <div class="col-sm-3 p-0 mb-3 mb-md-0">
                             <img src="images/promosi-4.png" class="img-fluid height-full rounded-5" alt="Kue">
                         </div>
-                        <div class="col-sm-4 pt-2 ps-4">
+                        <div class="col-sm-4 pt-2 ps-2 ps-md-3 ps-lg-2 ps-xl-4">
                             <h3 class="poppins fs-4 fw-semibold mb-1 text-truncate" style="color: #AF9771;">Ovo Milo</h3>
                             <p class="font-primary fs-6 fw-semibold" style="color: #604A33;">Size : 20cm x 30cm</p>
                         </div>
-                        <div class="col-sm-5 text-end">
-                            <h3 class="poppins fs-3 fw-bold mt-3 mt-md-0" style="color: #604A33;">RP. 1.500.000 ,-</h3>
+                        <div class="col-sm-5 text-start text-md-end text-md-lg-end">
+                            <h3 class="poppins fs-4 fw-bold mt-1 mt-md-3 mt-lg-3" style="color: #604A33;">RP. 500.000 ,-</h3>
                         </div>
                     </div>
                     <?php endforeach; ?>
                 </div>
                 <div class="row row-cols-2 py-4 border-bottom border-1 pb-3"  style="border-color: #604A33 !important;">
                     <div class="col text-center">
-                        <h3 class="poppins fs-3 fw-bold" style="color: #604A33;">Grand Total</h3>
+                        <h3 class="poppins fs-3 fw-bold" style="color: #604A33;">Grand Total :</h3>
                     </div>
                     <div class="col text-start">
-                        <h1 class="poppins fw-bold fs-2" style="color: #604A33;">Rp. 1.500.000,-</h1>
+                        <h1 class="poppins fw-bold fs-3" style="color: #604A33;">Rp. 1.500.000,-</h1>
                     </div>
                 </div>
-                <button class="text-center fs-3 mt-4 w-100 border border-0 text-light py-3 rounded-pill text-uppercase outline-none poppins"  style="background: #1EB9A7;">Pay Now</button>
+                <button class="text-center fs-3 mt-4 w-100 border border-0 text-light py-3 py-md-2 py-lg-2 py-xl-3 rounded-pill text-uppercase outline-none poppins"  style="background: #1EB9A7;">Pay Now</button>
             </div>
         </div>
     </div>

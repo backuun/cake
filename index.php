@@ -15,25 +15,25 @@
     ?>
 
     <div class="slide-layout">
-        <section class="slideshow">
+        <section class="slideshow" data-transition="fade">
           <div class="slideshow-inner">
             <div class="slides">
-              <div class="slide-box is-active ">
+              <div class="slide-box is-active">
                 <div class="slide-content">
                   <div class="caption">
-                    <!-- Jika title, text, button kosong maka hanya gambar saja -->
-                    <div class="title">
-                        <!-- <h1 class="font-heading text-dark">Exquisite taste <br/>for true <br/>connoisseurs</h1> -->
+                    <!-- jika slide hanya gambar saja -->
+                    <!-- <div class="title">
+                        <h1 class="font-heading text-dark">Exquisite taste <br/>for true <br/>connoisseurs</h1>
                     </div>
                     <div class="text">
-                      <!-- <p>Slide description 1</p> -->
+                      <p class="poppins text-dark fs-6 px-0 px-md-5">We offer you to experience true pleasure. And not only from the taste of our desserts, but also from exclusive dishes prepared by high-level chefs and, of course, unique drinks created by the best bartenders!</p>
                     </div> 
-                    <!-- <a href="#" class="btn">
-                      <span class="btn-inner">Learn More</span>
+                    <a href="#" class="btn btn-danger poppins mt-3 mt-md-5 px-3 px-md-4 py-1 py-md-2 rounded-pill red-shadow fs-6">
+                      <span class="btn-inner">Open Catalog</span>
                     </a> -->
                   </div>
                 </div>
-                <div class="image-container"> 
+                <div class="image-container">
                   <img src="images/banner_1.jpg" alt="" class="image" />
                 </div>
               </div>
@@ -44,9 +44,9 @@
                         <h1 class="font-heading text-dark">Exquisite taste <br/>for true <br/>connoisseurs</h1>
                     </div>
                     <div class="text">
-                      <p class="poppins text-dark fs-6 px-5">We offer you to experience true pleasure. And not only from the taste of our desserts, but also from exclusive dishes prepared by high-level chefs and, of course, unique drinks created by the best bartenders!</p>
+                      <p class="poppins text-dark fs-6 px-0 px-md-5">We offer you to experience true pleasure. And not only from the taste of our desserts, but also from exclusive dishes prepared by high-level chefs and, of course, unique drinks created by the best bartenders!</p>
                     </div> 
-                    <a href="#" class="btn btn-danger poppins mt-5 px-4 py-2 rounded-pill red-shadow fs-5">
+                    <a href="#" class="btn btn-danger poppins mt-3 mt-md-2 mt-lg-3 mt-xl-5 px-3 px-md-4 py-1 py-md-2 rounded-pill red-shadow fs-6">
                       <span class="btn-inner">Open Catalog</span>
                     </a>
                   </div>
@@ -81,35 +81,71 @@
           </div> 
         </section>
     </div>
-    <div class="p-4 p-md-5 py-md-3 m-2 m-md-5 mx-3 mx-md-5 rounded-5 border border-2 " style="background-image: url(images/bg_best_seller.png); background-size: cover; border-color: #EEEDE9 !important;">
+    <!-- Kategori Pada Home Mobile Responsive Only -->
+    <div class="py-4 d-flex d-md-none row row-cols-4 m-auto w-100">
+      <div class="col p-0 text-center">
+          <a href="shop.html">
+              <div class="p-3 pb-0">
+                  <img src="images/best-seller-1.png" class="img-fluid rounded-circle border border-3" style="border-color: #A99685 !important;" alt="...">
+              </div>
+          </a>
+          <h2 class="text-uppercase fs-small fw-bold mt-3 mb-3 mb-md-4 poppins" style="color: #604A33">Signature Cake</h2>
+      </div>
+      <div class="col p-0 text-center">
+          <a href="shop.html">
+              <div class="p-3 pb-0">
+              <img src="images/best-seller-2.png" class="img-fluid rounded-circle border border-3" style="border-color: #A99685 !important;" alt="...">
+              </div>
+          </a>
+          <h2 class="text-uppercase fs-small fw-bold mt-3 mb-3 mb-md-4 poppins" style="color: #604A33">Croissant</h2>
+      </div>
+      <div class="col p-0 text-center">
+          <a href="shop.html">
+              <div class="p-3 pb-0">
+                  <img src="images/best-seller-3.png" class="img-fluid rounded-circle border border-3" style="border-color: #A99685 !important;" alt="...">
+              </div>
+          </a>
+          <h2 class="text-uppercase fs-small fw-bold mt-3 mb-3 mb-md-4 poppins" style="color: #604A33">Hampers</h2>
+      </div>
+      <div class="col p-0 text-center">
+          <a href="shop.html">
+              <div class="p-3 pb-0">
+                  <img src="images/best-seller-4.png" class="img-fluid rounded-circle border border-3" style="border-color: #A99685 !important;" alt="...">
+              </div>
+          </a>
+          <h2 class="text-uppercase fs-small fw-bold mt-3 mb-3 mb-md-4 poppins" style="color: #604A33">Cookies</h2>
+      </div>
+    </div>
+    <!-- Kategori Pada Home Dekstop Only -->
+    <div class="d-none d-md-block p-4 p-md-3 p-lg-2 p-xl-5 py-md-3 m-2 m-md-5 mx-3 mx-md-5 rounded-5 border border-2 " style="background-image: url(images/bg_best_seller.png); background-size: cover; border-color: #EEEDE9 !important;">
         <div class="col mt-4 px-3">
-            <div class="row row-cols-2 row-cols-lg-4 flex-column flex-md-row gap-4 gap-md-0">
-                <div class="col text-center col-12">
-                    <a href="detail-page.php">
+            <div class="row row-cols-sm-2 row-cols-lg-4 flex-md-row gap-4 gap-md-0">
+                <div class="col text-center">
+                    <a href="shop.html">
                         <div class="p-4 pb-2">
                             <img src="images/best-seller-1.png" class="img-fluid rounded-circle border border-3" style="border-color: #A99685 !important;" alt="...">
                         </div>
                     </a>
                     <h2 class="text-uppercase fs-2 fw-bold mt-4 mb-3 mb-md-4 poppins" style="color: #604A33">Signature Cake</h2>
                 </div>
-                <div class="col text-center col-12">
-                    <a href="detail-page.php">
+                <div class="col text-center">
+                    <a href="shop.html">
                         <div class="p-4 pb-2">
                             <img src="images/best-seller-2.png" class="img-fluid rounded-circle border border-3" style="border-color: #A99685 !important;" alt="...">
                         </div>
                     </a>
                     <h2 class="text-uppercase fs-2 fw-bold mt-4 mb-3 mb-md-4 poppins" style="color: #604A33">CROISSANT</h2>
                 </div>
-                <div class="col text-center col-12">
-                    <a href="detail-page.php">
+                <div class="col text-center">
+                    <a href="shop.html">
                         <div class="p-4 pb-2">
                             <img src="images/best-seller-3.png" class="img-fluid rounded-circle border border-3" style="border-color: #A99685 !important;" alt="...">
                         </div>
                     </a>
                     <h2 class="text-uppercase fs-2 fw-bold mt-4 mb-3 mb-md-4 poppins" style="color: #604A33">Hampers</h2>
                 </div>
-                <div class="col text-center col-12">
-                    <a href="detail-page.php">
+                <div class="col text-center">
+                    <a href="shop.html">
                         <div class="p-4 pb-2">
                             <img src="images/best-seller-4.png" class="img-fluid rounded-circle border border-3" style="border-color: #A99685 !important;" alt="...">
                         </div>
@@ -119,12 +155,12 @@
             </div>
         </div>
     </div>
-    <div class="pt-5 py-1 py-md-0 mt-5">
-        <div class="col px-5 d-flex align-items-center justify-content-between mt-5 pt-5" style="position: relative;">
+    <div class="pt-0 pt-md-0 py-1 py-md-0 mt-0 mt-md-1 mb-md-0 mb-4">
+        <div class="col px-2 px-md-5 d-flex align-items-center justify-content-between mt-0 mt-md-4 pt-0 pt-md-4" style="position: relative;">
             <h2 class="fs-05 poppins text-md-start text-center fw-semibold px-4" style="color: #8E623A; background: white !important; z-index: 5;">Best Seller</h2>
             <div class="heading-divider"></div>
         </div>
-        <div class="swiper bestSeller mt-3 px-5">
+        <div class="swiper bestSeller mt-3 px-3 px-md-5">
             <div class="swiper-wrapper pb-0">
               <!-- foreach disini -->
               <?php foreach ([1, 2, 3, 5, 6, 7, 8, 9, 10] as $index): ?>
@@ -137,9 +173,9 @@
                             </div>
                         </a>
                         <div class="p-3">
-                            <h3 class="poppins fs-4 grey-color">Mango Coconut</h3>
-                            <p class="poppins fs-6 grey-color">Start From Rp. 150.000</p>
-                            <button type="button" class="btn poppins px-4 px-md-2 py-1 py-md-2 rounded-5 mt-2 fs-6 text-light w-100" style="background: #1EB9A7;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">Add To Cart</button>
+                            <h3 class="poppins fs-4 grey-color text-truncate">Mango Coconut</h3>
+                            <p class="poppins fs-6 grey-color text-truncate">Rp. 150.000</p>
+                            <button type="button" class="btn poppins px-1 px-md-2 px-lg-1 px-xl-2 py-1 py-md-2 rounded-5 mt-0 mt-md-2 mt-lg-0 mt-xl-2 fs-6 text-light w-100" style="background: #1EB9A7;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">Add To Cart</button>
                         </div>
                     </div>
                 </div>
@@ -150,12 +186,12 @@
             <div class="swiper-button-prev"></div>
         </div>
     </div>
-    <div class="pt-5 py-1 py-md-0 mt-5">
-        <div class="col px-5 d-flex align-items-center justify-content-between" style="position: relative;">
+    <div class="pt-0 pt-md-0 py-1 py-md-0 mt-0 mt-md-1 mb-md-0 mb-4">
+        <div class="col px-2 px-md-5 d-flex align-items-center justify-content-between mt-0 mt-md-4 pt-0 pt-md-4" style="position: relative;">
             <h2 class="fs-05 poppins text-md-start text-center fw-semibold px-4" style="color: #8E623A; background: white !important; z-index: 5;">Promotions</h2>
             <div class="heading-divider"></div>
         </div>
-        <div class="swiper bestSeller mt-3 px-5">
+        <div class="swiper bestSeller mt-3 px-3 px-md-5">
             <div class="swiper-wrapper pb-0">
               <!-- foreach disini -->
               <?php foreach ([1, 2, 3, 5, 6, 7, 8, 9, 10] as $index): ?>
@@ -168,9 +204,9 @@
                             </div>
                         </a>
                         <div class="p-3">
-                            <h3 class="poppins fs-4 grey-color">Mango Coconut</h3>
-                            <p class="poppins fs-6 grey-color">Start From Rp. 150.000</p>
-                            <button type="button" class="btn poppins px-4 px-md-2 py-1 py-md-2 rounded-5 mt-2 fs-6 text-light w-100" style="background: #1EB9A7;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">Add To Cart</button>
+                            <h3 class="poppins fs-4 grey-color text-truncate">Mango Coconut</h3>
+                            <p class="poppins fs-6 grey-color text-truncate">Rp. 150.000</p>
+                            <button type="button" class="btn poppins px-1 px-md-2 px-lg-1 px-xl-2 py-1 py-md-2 rounded-5 mt-0 mt-md-2 mt-lg-0 mt-xl-2 fs-6 text-light w-100" style="background: #1EB9A7;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">Add To Cart</button>
                         </div>
                     </div>
                 </div>
@@ -181,12 +217,12 @@
             <div class="swiper-button-prev"></div>
         </div>
     </div>
-    <div class="pt-5 py-1 py-md-0 mt-5">
-        <div class="col px-5 d-flex align-items-center justify-content-between" style="position: relative;">
+    <div class="pt-0 pt-md-0 py-1 py-md-0 mt-0 mt-md-1 mb-md-0 mb-4">
+        <div class="col px-2 px-md-5 d-flex align-items-center justify-content-between mt-0 mt-md-4 pt-0 pt-md-4" style="position: relative;">
             <h2 class="fs-05 poppins text-md-start text-center fw-semibold px-4" style="color: #8E623A; background: white !important; z-index: 5;">Cookies & Croissant</h2>
             <div class="heading-divider"></div>
         </div>
-        <div class="swiper bestSeller mt-3 px-5">
+        <div class="swiper bestSeller mt-3 px-3 px-md-5">
             <div class="swiper-wrapper pb-0">
               <!-- foreach disini -->
               <?php foreach ([1, 2, 3, 5, 6, 7, 8, 9, 10] as $index): ?>
@@ -199,9 +235,9 @@
                             </div>
                         </a>
                         <div class="p-3">
-                            <h3 class="poppins fs-4 grey-color">Mango Coconut</h3>
-                            <p class="poppins fs-6 grey-color">Start From Rp. 150.000</p>
-                            <button type="button" class="btn poppins px-4 px-md-2 py-1 py-md-2 rounded-5 mt-2 fs-6 text-light w-100" style="background: #1EB9A7;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">Add To Cart</button>
+                            <h3 class="poppins fs-4 grey-color text-truncate">Mango Coconut</h3>
+                            <p class="poppins fs-6 grey-color text-truncate">Rp. 150.000</p>
+                            <button type="button" class="btn poppins px-1 px-md-2 px-lg-1 px-xl-2 py-1 py-md-2 rounded-5 mt-0 mt-md-2 mt-lg-0 mt-xl-2 fs-6 text-light w-100" style="background: #1EB9A7;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">Add To Cart</button>
                         </div>
                     </div>
                 </div>
@@ -212,7 +248,7 @@
             <div class="swiper-button-prev"></div>
         </div>
     </div>
-    <div class="swiper myPromo p-3 p-md-5">
+    <div class="swiper myPromo bg-grey p-3 py-md-5 py-5 p-md-5">
         <div class="swiper-wrapper">
         <?php foreach ([1, 2, 3,] as $index): ?>
           <div class="swiper-slide">
@@ -222,12 +258,12 @@
         </div>
         <div class="swiper-pagination"></div>
     </div>
-    <div class="pt-5 py-1 py-md-0 mt-5">
-        <div class="col px-5 d-flex align-items-center justify-content-between" style="position: relative;">
+    <div class="pt-md-0 pt-5 py-1 py-md-0 mt-2 mt-md-5">
+        <div class="col px-2 px-md-5 d-flex align-items-center justify-content-between" style="position: relative;">
             <h2 class="fs-05 poppins text-md-start text-center fw-semibold px-4" style="color: #8E623A; background: white !important; z-index: 5;">News & CSR</h2>
             <div class="heading-divider"></div>
         </div>
-        <div class="swiper bestSeller mt-3 px-5">
+        <div class="swiper bestSeller mt-3 px-3 px-md-5">
             <div class="swiper-wrapper pb-0">
               <!-- foreach disini -->
                 <?php foreach ([1, 2, 3, 4, 5, 6, 7] as $index): ?>
@@ -238,10 +274,10 @@
                                     <img src="images/news_artikel_1.jpg" class="rounded-top-5" alt="...">
                                 </div>
                             </a>
-                            <div class="p-4">
+                            <div class="p-3 p-md-3">
                                 <h3 class="poppins fs-4 grey-color fw-semibold text-truncate">5 Kue Ulang Tahun Terfavorit</h3>
                                 <p class="poppins fs-6 grey-color truncate-3-row">Jakarta, 24 June 2023, Setiap tahun, kue ulang tahun menjadi pusat perhatian dalam perayaan yang meriah. Dengan beragam pilihan rasa</p>
-                                <a href="detail-news.php"><button type="button" class="btn poppins px-4 px-md-4 py-1 py-md-2 rounded-5 mt-2 fs-6 text-light" style="background: #1EB9A7;">Selengkapnya</button></a>
+                                <a href="detail-news.php"><button type="button" class="btn poppins px-3 w-100 px-md-4 py-1 py-md-2 rounded-5 mt-2 fs-6 text-light" style="background: #1EB9A7;">Read More</button></a>
                             </div>
                         </div>
                     </div>
@@ -252,8 +288,8 @@
             <div class="swiper-button-prev"></div>
         </div>
     </div>
-    <div class="pt-5 py-1 py-md-0 mt-5">
-        <div class="col px-5 d-flex align-items-center justify-content-between" style="position: relative;">
+    <div class="pt-2 pt-md-2 pt-lg-3 pt-xl-5 py-1 py-md-0 mt-3 mt-md-5">
+        <div class="col px-2 px-md-5 d-flex align-items-center justify-content-between" style="position: relative;">
             <h2 class="fs-05 poppins text-md-start text-center fw-semibold px-4" style="color: #8E623A; background: white !important; z-index: 5;">Our Satisfied Customers</h2>
             <div class="heading-divider"></div>
         </div>

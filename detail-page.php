@@ -1,9 +1,9 @@
 <?php include 'template/header.php' ?>
 
-    <div class="mt-5">
-        <div class="row row-cols-2 gx-0 px-5 mx-3 pb-4">
-          <div class="col">
-            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+    <div class="mt-2 mt-md-4 mt-lg-5 mt-xl-5">
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2 gx-0 px-1 px-md-2 px-lg-2 px-xl-5 pe-xl-5 pe-lg-0 mx-1 mx-md-3 mx-lg-3 mx-xl-3 pb-4">
+          <div class="col product-detail">
+              <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
                 <!-- Gambar yang besar -->
                 <div class="swiper-wrapper pb-2">
                   <div class="swiper-slide zoom-slide rounded-5">
@@ -46,44 +46,44 @@
                 </div>
               </div>
           </div>
-          <div class="col px-5">
+          <div class="col px-1 px-md-1 px-lg-4 pe-lg-2 px-xl-5 pe-xl-5">
             <div class="col mb-4 border-bottom border-1 pb-1"  style="border-color: #A99685 !important;">
                 <h1 class="text-uppercase fw-semibold fs-1 font-primary" style="color: #604A33;">COOKIES LOREM IPSUM</h1>
                 <h4 class="poppins fst-normal fs-4 text-truncate" style="color: #AF9771; font-weight: 600 !important;">Lorem ipsum dolor sit amet vestibulum ante ipsum</h4>
                 <p class="poppins fw-light fs-6" style="color: #604A33; font-weight: 600;">Donec pulvinar nibh eros, nec pretium felis auctor sit amet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse sed condimentum ex. Etiam euismod ultricies justo, sit amet maximus libero. Pellentesque malesuada gravida ligula at ullamcorper. Proin rutrum felis eu tristique efficitur. Etiam tincidunt vehicula nunc, non sollicitudin sem lacinia id. Cras vel lorem urna. Ut id bibendum lorem, a</p>
             </div>
-            <div class="col border-bottom border-1 pb-1 mb-4"  style="border-color: #A99685 !important;">
+            <div class="col border-bottom border-1 pb-1 mb-4 pe-0 pe-lg-0 pe-xl-2"  style="border-color: #A99685 !important;">
                 <h3 class="poppins fs-5 mb-3 fw-semibold" style="color: #604A33;">Size :</h3>
-                <div class="row row-cols-3 w-63-custom">
-                  <div class="col btn-custom">
+                <div class="row row-cols-2 row-cols-md-3 justify-content-start">
+                  <div class="btn-custom px-lg-2">
                     <input type="radio" id="size10" name="size" value="20cm x 30cm" class="d-none" />
-                    <label for="size10" class="btn mb-4 border py-2 fs-6 poppins rounded-pill px-3 fw-medium" style="color: #604A33; border-color: #AF9771 !important;">20cm x 30cm</label>
+                    <label for="size10" class="btn mb-4 border py-2 fs-6 poppins rounded-pill px-3 px-lg-1 px-xl-3 fw-medium w-100" style="color: #604A33; border-color: #AF9771 !important;">20cm x 30cm</label>
                   </div>
-                  <div class="col btn-custom">
+                  <div class="btn-custom px-lg-2">
                     <input type="radio" id="size20" name="size" value="20cm x 30cm" class="d-none" />
-                    <label for="size20" class="btn mb-4 border py-2 fs-6 poppins rounded-pill px-3 fw-medium" style="color: #604A33; border-color: #AF9771 !important;">20cm x 30cm</label>
+                    <label for="size20" class="btn mb-4 border py-2 fs-6 poppins rounded-pill px-3 px-lg-1 px-xl-3 fw-medium w-100" style="color: #604A33; border-color: #AF9771 !important;">20cm x 30cm</label>
                   </div>
-                  <div class="col btn-custom">
+                  <div class="btn-custom px-lg-2">
                     <input type="radio" id="size30" name="size" value="20cm x 30cm" class="d-none" />
-                    <label for="size30" class="btn mb-4 border py-2 fs-6 poppins rounded-pill px-3 fw-medium" style="color: #604A33; border-color: #AF9771 !important;">20cm x 30cm</label>
+                    <label for="size30" class="btn mb-4 border py-2 fs-6 poppins rounded-pill px-3 px-lg-1 px-xl-3 fw-medium w-100" style="color: #604A33; border-color: #AF9771 !important;">20cm x 30cm</label>
                   </div>
-                  <div class="col btn-custom">
+                  <div class="btn-custom px-lg-2">
                     <input type="radio" id="size40" name="size" value="20cm x 30cm" class="d-none" />
-                    <label for="size40" class="btn mb-4 border py-2 fs-6 poppins rounded-pill px-3 fw-medium" style="color: #604A33; border-color: #AF9771 !important;">20cm x 30cm</label>
+                    <label for="size40" class="btn mb-4 border py-2 fs-6 poppins rounded-pill px-3 px-lg-1 px-xl-3 fw-medium w-100" style="color: #604A33; border-color: #AF9771 !important;">20cm x 30cm</label>
                   </div>
-                  <div class="col btn-custom">
+                  <div class="btn-custom px-lg-2">
                     <input type="radio" id="size50" name="size" value="20cm x 30cm" class="d-none" />
-                    <label for="size50" class="btn mb-4 border py-2 fs-6 poppins rounded-pill px-3 fw-medium" style="color: #604A33; border-color: #AF9771 !important;">20cm x 30cm</label>
+                    <label for="size50" class="btn mb-4 border py-2 fs-6 poppins rounded-pill px-3 px-lg-1 px-xl-3 fw-medium w-100" style="color: #604A33; border-color: #AF9771 !important;">20cm x 30cm</label>
                   </div>
-                  <div class="col btn-custom">
+                  <div class="btn-custom px-lg-2">
                     <input type="radio" id="size60" name="size" value="20cm x 30cm" class="d-none" />
-                    <label for="size60" class="btn mb-4 border py-2 fs-6 poppins rounded-pill px-3 fw-medium" style="color: #604A33; border-color: #AF9771 !important;">20cm x 30cm</label>
+                    <label for="size60" class="btn mb-4 border py-2 fs-6 poppins rounded-pill px-3 px-lg-1 px-xl-3 fw-medium w-100" style="color: #604A33; border-color: #AF9771 !important;">20cm x 30cm</label>
                   </div>
                 </div>
             </div>
-            <div class="col p-4 mt-2 me-5 rounded-4" style="background-color: #F2F4F7;">
-              <div class="row">
-                <div class="col-4">
+            <div class="col p-4 mt-2 me-0 me-md-0 me-lg-0 me-xl-2 rounded-4" style="background-color: #F2F4F7;">
+              <div class="row flex-column flex-md-row">
+                <div class="col-4 mb-4 mb-md-0">
                   <h3 class="poppins fs-5 fw-semibold mb-3" style="color: #604A33;">Total :</h3>
                   <div class="d-flex border max-content py-1 rounded-pill p-3 align-items-center bg-light" style="border-color: #AF9771 !important; background-color: white !important;">
                     <button class="bg-transparent border-0 p-0 fs-5 d-flex align-items-center" style="color: #604A33;" type="button" id="decrement"><iconify-icon icon="ic:outline-minus"></iconify-icon></button>
@@ -91,7 +91,7 @@
                     <button class="bg-transparent border-0 px-0 p-0 fs-5 d-flex align-items-center" style="color: #604A33;" type="button" id="increment"><iconify-icon icon="ic:outline-plus"></iconify-icon></button>
                   </div>
                 </div>
-                <div class="col-8">
+                <div class="col-12 col-md-8 mb-4 mb-md-0">
                   <h3 class="poppins fs-5 fw-semibold mb-3" style="color: #604A33;">Add Note :</h3>
                   <input type="text" class="fs-5 px-3 poppins py-2 rounded-pill outline-none border border-1 w-100" style="border-color: #AF9771 !important; color: #604A33 ;"/>
                 </div>
@@ -105,20 +105,20 @@
                 </div>
             </div>
           </div>
-          <div class="col d-flex gap-4 mt-4 row-cols-2 pe-5 me-3">
-            <button class="fs-5 border border-1 px-4 py-3 fw-medium poppins outline-none rounded-pill bg-transparent" style="border-color: #1EB9A7 !important; color: #1EB9A7 !important;">Add To Cart</button>
-            <a href="checkout.php"><button class="w-100 fs-5 border border-1 px-4 py-3 fw-medium rounded-pill outline-none poppins text-light" style=" background-color: #1EB9A7;">Buy Now</button></a>
+          <div class="col d-flex gap-4 mt-4 row-cols-2 row-cols-md-2 pe-0 pe-md-5 me-4 me-md-3">
+            <button class="fs-5 border border-1 px-2 px-md-4 py-2 fw-medium poppins outline-none rounded-pill " style="border-color: #1EB9A7 !important; color: #1EB9A7 !important; background-color:#1eb9a71c;">Add To Cart</button>
+            <a href="checkout.php"><button class="w-100 fs-5 border border-1 px-2 px-md-4 py-2 fw-medium rounded-pill outline-none poppins text-light" style=" background-color: #1EB9A7;">Buy Now</button></a>
           </div>
         </div>
     </div>
-    <div class="px-3 pt-5 px-md-5 py-3 py-md-2 pt-md-5 border-top border-1" style="border-color: #A99685 !important;">
+    <div class="px-1 pt-5 px-md-5 py-3 py-md-2 pt-md-5 border-top border-1" style="border-color: #A99685 !important;">
         <div class="col px-3">
-            <h2 class="fs-05 poppins text-md-start text-center fw-semibold mb-3" style="color: #8E623A">Produk yang serupa</h2>
+            <h2 class="fs-05 font-primary text-md-start text-center fw-semibold mb-3" style="color: #8E623A">Produk yang serupa</h2>
         </div>
         <div class="col mt-4 d-flex justify-content-center">
-            <div class="row row-cols-2 pb-5 row-cols-lg-5 w-100">
+            <div class="row row-cols-2 row-cols-md-2 pb-5 row-cols-lg-3 row-cols-xl-5 w-100">
                 <?php foreach ([1, 2, 3, 4, 5] as $index): ?>
-                <div class="p-3">
+                <div class="p-2 p-md-3">
                     <div class="text-center border border-1 rounded-5" style="border-color: #A99685 !important;">
                         <a href="detail-page.php">
                             <div class="p-0 image-card-custom">
@@ -126,10 +126,10 @@
                                 <img src="images/adeline.jpg" class="rounded-top-5 img-hover" alt="...">
                             </div>
                         </a>
-                        <div class="p-3">
-                            <h3 class="poppins fs-4 grey-color">Mango Coconut</h3>
+                        <div class="p-3 p-md-3">
+                            <h3 class="poppins fs-4 grey-color text-truncate">Mango Coconut</h3>
                             <p class="poppins fs-6 grey-color">Start From Rp. 150.000</p>
-                            <button type="button" class="btn poppins px-4 px-md-2 py-1 py-md-2 rounded-5 mt-2 fs-6 text-light w-100" style="background: #1EB9A7;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">Add To Cart</button>
+                            <button type="button" class="btn poppins px-2 px-md-2 py-1 py-md-2 rounded-5 mt-0 mt-md-2 fs-6 text-light w-100" style="background: #1EB9A7;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">Add To Cart</button>
                         </div>
                     </div>
                 </div>

@@ -1,13 +1,13 @@
 <?php include 'template/header.php' ?>
     
-    <div class="mt-4 px-4">
-        <div class=" bg-footer text-center py-md-13 rounded-5">
+    <div class="mt-2 mt-md-4 mt-md-lg-4 px-2 px-md-4 px-lg-4">
+        <div class="bg-footer text-center py-md-13 rounded-5">
             <h1 class="text-light text-uppercase fs-1 fw-light poppins letter-spacing-1 mb-3">Priority Gift For Priority People</h1>
             <p class="w-custom text-light poppins fs-13">We are a patisserie that believe qualities bring the best out of a product, people and our valuable Customers. We use premium ingredients and contribute long hours to put the little details to satisfy our crave, using a combination of culinary ability and creativity in baking, decorating and flavoring.</p>
             <a href="#"><button class="btn btn-light mt-5 rounded-pill text-light poppins text-uppercase px-5 bg-transparent py-2 py-md-3">Get Your Cake</button></a>
         </div>
-        <div class="row px-5 pt-3 mt-5 mb-5">
-            <div class="col-sm-7 pe-5">
+        <div class="row flex-md-column flex-lg-row px-2 px-md-2 px-lg-2 px-xl-5 pt-3 mt-4 mt-md-5 mt-lg-5 mb-5">
+            <div class="col-12 col-md-12 col-lg-7 pe-0 pe-md-0 pe-lg-2 pe-xl-5">
                 <h1 class="font-primary fs-05 fw-semibold mb-3" style="color: #8E623A !important;">About Us</h1>
                 <p class="poppins fs-6 fw-light mb-4 pe-3" style="color: #604A33 !important;">EXQUISE, inspired from the French word itself meant possessing qualities of unusual delicacy and fine craftsmanship, those are the essence of what we pursuit.</p>
                 <p class="poppins fs-6 fw-light mb-4 pe-3" style="color: #604A33 !important;">Here in “Exquise Patisserie”, we believe that qualities bring the best out of a product, people and the most important of all, the best for our valuable customers. That is why, we use premium ingredients on our products and we contribute long hours to put the little details that are often missed just to satisfy our crave on these products we commonly called “little pleasures”, using a combination of culinary ability and creativity in baking, decorating and flavoring with ingredients, not many people realized that baked good requires a lot of time and focus.</p>
@@ -16,27 +16,27 @@
                     Because we believe that, “life deserves little pleasures”.</p>
                 <p class="text-uppercase fs-6 poppins pe-3" style="color: #19A594 !important;">Happiness is best enjoyed when it is shared.</p>
             </div>
-            <div class="col-sm-5 pe-5">
-                <div class="row row-cols-2 mt-5">
-                    <div class="col p-3">
+            <div class="col-md-12 col-lg-5 pe-md-4 pe-lg-5">
+                <div class="row row-cols-2 row-cols-lg-1 row-cols-xl-2 mt-2 mt-md-5 mt-lg-5">
+                    <div class="col p-2 p-lg-3 p-xl-3">
                         <div class="shadow-custom box-hover px-4 py-4 rounded-4">
                             <h1 class="fs-custom fw-semibold poppins mb-0" style="color: #8E623A;">50.000</h1>
                             <h3 class="poppins fs-5" style="color: #8E623A;">Konsumen</h3>
                         </div>
                     </div>
-                    <div class="col p-3 pe-1">
+                    <div class="col p-2 pe-1 pe-lg-4 pe-xl-1 p-lg-3 p-xl-3">
                         <div class="shadow-custom box-hover px-4 py-4 rounded-4">
                             <h1 class="fs-custom fw-semibold poppins mb-0" style="color: #8E623A;">152.000</h1>
                             <h3 class="poppins fs-5" style="color: #8E623A;">Partnership</h3>
                         </div>
                     </div>
-                    <div class="col p-3">
+                    <div class="col p-2 pe-lg-4 pe-xl-1 p-lg-3 p-xl-3">
                         <div class="shadow-custom box-hover px-4 py-4 rounded-4">
                             <h1 class="fs-custom fw-semibold poppins mb-0" style="color: #8E623A;">50.000</h1>
                             <h3 class="poppins fs-5" style="color: #8E623A;">Konsumen</h3>
                         </div>
                     </div>
-                    <div class="col p-3 pe-1">
+                    <div class="col p-2 pe-1 pe-lg-4 pe-xl-1 p-lg-3 p-xl-3">
                         <div class="shadow-custom box-hover px-4 py-4 rounded-4">
                             <h1 class="fs-custom fw-semibold poppins mb-0" style="color: #8E623A;">152.000</h1>
                             <h3 class="poppins fs-5" style="color: #8E623A;">Partnership</h3>
@@ -45,14 +45,14 @@
                 </div>
             </div>
         </div>
-        <div class="row px-5 mt-5 pt-3 justify-content-start w-100" style="position:relative;">
+        <div class="row px-2 flex-column flex-md-row px-md-2 px-lg-2 px-xl-5 mt-2 mt-md-5 mt-lg-5 pt-3 justify-content-start w-100" style="position:relative;">
             <img src="images/circle_right.svg" class="img-decoration-right-about"/>
-            <div class="col-4">
+            <div class="col-12 col-md-6 col-lg-4 mb-md-4 mb-lg-0">
                 <img src="images/founder_image.png" alt="Andrye Setiawan" class="img-fluid rounded-4"/>
             </div>
-            <div class="col-7 ps-5 mt-5">
+            <div class="col-12 col-md-12 col-lg-7 ps-3 ps-md-2 ps-lg-3 ps-xl-5 mt-5 mt-md-2 mt-xl-5">
                 <h1 class="font-primary fs-05 fw-semibold mb-4" style="color: #8E623A !important;">Bankers to bakers</h1>
-              <p class="poppins fs-6 fw-light pe-5" style="color: #724F2E;"><b>Andrye Setiawan</b>, CEO Of Exquise Group
+              <p class="poppins fs-6 fw-light pe-0 pe-md-0 pe-xl-5" style="color: #724F2E;"><b>Andrye Setiawan</b>, CEO Of Exquise Group
                 Established in 2014, Andrye Setiawan builds and leads the
                 brand independently. Nowadays, Exquise Patisserie has
                 been successfully managed to stay in the radar of Indonesian 
@@ -61,7 +61,7 @@
                 The ultimate vision is to become the leading F&B Company
                 within Asian market.
               </p>
-              <p class="poppins fs-6 fw-light pe-5" style="color: #724F2E;">He is consident in the growth and expansion of this patisserie 
+              <p class="poppins fs-6 fw-light pe-0 pe-md-0 pe-xl-5" style="color: #724F2E;">He is consident in the growth and expansion of this patisserie 
                 and his other brands. Speaking of his strategy, he already
                 set the blue print in creating another brand and becoming
                 the largest cake shop chain in Indonesia.
@@ -73,9 +73,9 @@
             </div>
           </div>
         </div>
-        <div class="row px-5 pb-3 w-100 mt-5 pt-3 justify-content-end" style="position:relative;">
+        <div class="row flex-column flex-column-reverse flex-lg-row px-3 px-md-2 px-lg-2 px-xl-5 pb-3 w-100 ms-auto mt-5 pt-5 pt-md-5 pt-lg-5 pt-xl-3 justify-content-end align-items-md-end align-items-lg-start" style="position:relative;">
             <img src="images/circle_left.png" class="img-decoration-left"/>
-            <div class="col-7 pe-5 pt-5 ps-5 mt-5 text-end">
+            <div class="col-12 col-md-11 col-lg-8 col-xl-7 pe-3 pe-md-3 pe-lg-3 pe-xl-5 pt-5 pt-lg-0 pt-xl-5 ps-1 ps-md-0 ps-lg-5 ps-xl-5 mt-2 mt-md-2 mt-xl-5 text-end">
               <h1 class="font-primary fs-05 fw-semibold mb-4" style="color: #8E623A !important;">Making The Local Global</h1>
               <p class="poppins fs-6 fw-light" style="color: #724F2E;"><b>Devi Tandri</b>, Executive Pastry Chef.
                 With more than 10 years of working experience in the
@@ -92,7 +92,7 @@
                 to a memorable dessert experience with our creations.</p>
                 <a href="https://www.instagram.com/devi_tandri/" target="blank_"><button class="mt-4 poppins fs-5 outline-none border-0 px-5 py-2 rounded-pill text-light" style="background-color:#8E623A;">See Profile</button></a>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-md-6 col-lg-4 mb-md-0 mb-lg-0">
                 <img src="images/chef_image.png" alt="Devi Oktavia Tandri" class="img-fluid rounded-4"/>
             </div>
           </div>

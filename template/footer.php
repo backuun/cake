@@ -1,7 +1,7 @@
-<div class="border-top border-bottom border-1 m-5 mb-4 py-5" style="border-color: #604A33 !important;">
-        <div class="row">
-            <div class="col-3 px-5">
-              <img src="images/logo.png" class="img-fluid px-4"/>
+<div class="border-top border-bottom border-1 m-4 m-md-5 m-lg-5 m-xl-0 mb-xl-4 mb-4 py-5" style="border-color: #604A33 !important;">
+        <div class="row justify-content-between row-cols-md-2 flex-md-row flex-lg-row row-cols-lg-6 flex-column pt-3">
+            <div class="col-5 col-md-6 col-lg-3 px-2 mb-md-0 mb-5 text-md-start text-lg-center text-start px-md-1 px-lg-5">
+              <img src="images/logo.png" class="img-fluid px-0 px-md-1 pe-md-5 pe-lg-4 px-lg-4"/>
               <div class="social-media-costum">
                 <a href="#">
                     <div class="social-media-box">
@@ -30,7 +30,7 @@
                 </a>
               </div>
             </div>
-            <div class="col">
+            <div class="col mb-md-4 mb-lg-0 mb-4">
               <h3 class="poppins fs-5 text-uppercase mb-3 fw-bold grey-color">About Us</h3>
               <ul class="list-group poppins">
                 <li class="list-group-item  p-0 border border-0 py-2">Our Story</li>
@@ -39,7 +39,7 @@
                 <li class="list-group-item  p-0 border border-0 py-2">Company Profile</li>
               </ul>
             </div>
-            <div class="col">
+            <div class="col mb-md-4 mb-lg-0 mb-4">
                 <h3 class="poppins fs-5 text-uppercase mb-3 fw-bold grey-color">Customer Service</h3>
                 <ul class="list-group poppins">
                     <li class="list-group-item  p-0 border border-0 py-2">Shipping Information</li>
@@ -48,7 +48,7 @@
                     <li class="list-group-item  p-0 border border-0 py-2">Contact Us</li>
                 </ul>
             </div>
-            <div class="col">
+            <div class="col mb-md-4 mb-lg-0 mb-4">
                 <h3 class="poppins fs-5 text-uppercase mb-3 fw-bold grey-color">Legal & Privacy</h3>
                 <ul class="list-group poppins">
                     <li class="list-group-item  p-0 border border-0 py-2">Terms & Conditions</li>
@@ -56,21 +56,13 @@
                     <li class="list-group-item  p-0 border border-0 py-2">Cookie Policy</li>
                 </ul>
             </div>
-            <div class="col">
+            <div class="col mb-md-4 mb-lg-0 mb-4">
                 <h3 class="poppins fs-5 text-uppercase mb-3 fw-bold grey-color">Special Programs</h3>
                 <ul class="list-group poppins">
                     <li class="list-group-item  p-0 border border-0 py-2">Affiliate Program</li>
                     <li class="list-group-item  p-0 border border-0 py-2">Student Discount</li>
                 </ul>
             </div>
-            <div class="col">
-                <h3 class="poppins fs-5 text-uppercase mb-3 fw-bold grey-color">Resources</h3>
-                <ul class="list-group poppins">
-                    <li class="list-group-item  p-0 border border-0 py-2">Blog</li>
-                    <li class="list-group-item  p-0 border border-0 py-2">Site Map</li>
-                    <li class="list-group-item  p-0 border border-0 py-2">Testimoni</li>
-                </ul>
-            </div> 
         </div>
     </div>
     <div class="text-center pb-4">
@@ -79,7 +71,7 @@
     
     <script src="js/submenu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
+    <!-- <script>
         const toggleButton = document.querySelector('.btn-custom-click');
         const toggleIcon = document.getElementById('toggleIcon');
         const menu = document.getElementById('navbarSupportedContent');
@@ -95,7 +87,7 @@
                 toggleIcon.setAttribute('icon', 'quill:hamburger');
             }
         });
-    </script>
+    </script> -->
     <script>
         var swiper = new Swiper(".mySwiper", {
             spaceBetween: 50,
@@ -140,19 +132,19 @@
       <script>
           var swiper = new Swiper(".bestSeller", {
           slidesPerView: 2,
-          spaceBetween: 33,
+          spaceBetween: 15,
           breakpoints: {
             640: {
               slidesPerView: 2,
               spaceBetween: 20,
             },
             768: {
-              slidesPerView: 4,
-              spaceBetween: 40,
+              slidesPerView: 2,
+              spaceBetween: 30,
             },
             1024: {
               slidesPerView: 4,
-              spaceBetween: 27,
+              spaceBetween: 20,
             },
             1440: {
               slidesPerView: 5,
@@ -169,9 +161,27 @@
       <script>
         var swiper = new Swiper(".mySwiperDetail", {
           spaceBetween: 10,
-          slidesPerView: 8,
+          slidesPerView: 6,
           freeMode: true,
           watchSlidesProgress: true,
+          breakpoints: {
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 6,
+              spaceBetween: 10,
+            },
+            1024: {
+              slidesPerView: 8,
+              spaceBetween: 10,
+            },
+            1440: {
+              slidesPerView: 7,
+              spaceBetween: 10,
+            },
+          },
         });
         var swiper2 = new Swiper(".mySwiper2", {
           spaceBetween: 10,
@@ -199,6 +209,7 @@
       <script src="js/search.js"></script>
       <script src="js/search_result.js"></script>
       <script src="js/overflow_custom.js"></script>
+      <script src="js/slide_corporate.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
