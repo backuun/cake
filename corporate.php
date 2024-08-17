@@ -71,7 +71,7 @@
         <h3 class="heading_corporate font_sizing_big mb-3" style="color:#4E4E4E;">Our Satisfied Customers</h3>
         <p class="poppins fs-6 px-0 px-md-5 m-auto fw-light container-lg" style="color:#4E4E4E;">At Exquise Patisserie, we believe that the best measure of our success is the happiness of our customers.</p>
     </div>
-    <div class="swiper myPartner px-2 mt-0 mt-md-3 mt-lg-2 mt-xl-0 px-md-5">
+    <div class="swiper myPartner px-2 mt-0 mt-md-3 mt-lg-2 mt-xl-0 px-md-5 mb-2 mb-lg-3 mb-xl-5">
         <div class="swiper-wrapper">
             <?php 
             $totalImages = count($dataPartner);

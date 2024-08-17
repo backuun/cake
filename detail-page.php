@@ -129,7 +129,7 @@
                         <div class="p-3 p-md-3">
                             <h3 class="poppins fs-4 grey-color text-truncate">Mango Coconut</h3>
                             <p class="poppins fs-6 grey-color">Start From Rp. 150.000</p>
-                            <button type="button" class="btn poppins px-2 px-md-2 py-1 py-md-2 rounded-5 mt-0 mt-md-2 fs-6 text-light w-100" style="background: #1EB9A7;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">Add To Cart</button>
+                            <button type="button" class="btn poppins px-2 px-md-2 py-1 py-md-2 rounded-5 mt-0 mt-md-2 fs-6 text-light w-100" style="background: #1EB9A7;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasAdd" aria-controls="offcanvasLeft">Add To Cart</button>
                         </div>
                     </div>
                 </div>

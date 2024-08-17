@@ -17,7 +17,7 @@
                             <img src="images/store_pik.webp" class="rounded-top-5" alt="...">
                             <iframe class="img-hover rounded-top-5" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15868.638012646607!2d106.7403832!3d-6.1092154!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a1d687a750b21%3A0x85ef001f0f5e58e7!2sExquise%20Patisserie%20Cake%20%26%20Bakery%20PIK!5e0!3m2!1sen!2sid!4v1722883890534!5m2!1sen!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
-                        <div class="p-4 pb-3 bg-light">
+                        <div class="p-4 pb-3 bg-light height_store_custom">
                             <ul class="text-start list-group list-group-flush p-0 m-0">
                                 <li class="list-group-item p-0 d-flex justify-content-start align-items-start gap-2 bg-light">
                                     <iconify-icon icon="fluent:location-28-filled" class="fs-4 grey-color"></iconify-icon>
@@ -43,7 +43,7 @@
                             <img src="images/store_gunawarman.jpg" class="rounded-top-5" alt="...">
                             <iframe class="img-hover rounded-top-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2102143085717!2d106.8073754!3d-6.2359988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1a97df18ba7%3A0x78812c67b2964a61!2sExquise%20Bistro%20%26%20Patisserie%20-%20Gunawarman!5e0!3m2!1sen!2sid!4v1722884565364!5m2!1sen!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
-                        <div class="p-4 pb-3 bg-light">
+                        <div class="p-4 pb-3 bg-light height_store_custom">
                             <ul class="text-start list-group list-group-flush p-0 m-0 bg-transparent">
                                 <li class="list-group-item p-0 d-flex justify-content-start align-items-start gap-2 bg-light">
                                     <iconify-icon icon="fluent:location-28-filled" class="fs-4 grey-color"></iconify-icon>
@@ -68,7 +68,7 @@
                             <img src="images/store_menteng.jpg" class="rounded-top-5" alt="...">
                             <iframe class="img-hover rounded-top-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.54090136646!2d106.82882099999999!3d-6.192127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f422a78162c7%3A0x120cfc339af22856!2sExquise%20Patisserie%20Cake%20%26%20Bakery%20-%20Menteng!5e0!3m2!1sen!2sus!4v1722884697606!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
-                        <div class="p-4 pb-3 bg-light">
+                        <div class="p-4 pb-3 bg-light height_store_custom">
                             <ul class="text-start list-group list-group-flush p-0 m-0">
                                 <li class="list-group-item p-0 d-flex justify-content-start align-items-start gap-2 bg-light">
                                     <iconify-icon icon="fluent:location-28-filled" class="fs-4 grey-color"></iconify-icon>
@@ -99,7 +99,7 @@
                             <img src="images/store_serpong.jpg" class="rounded-top-5" alt="...">
                             <iframe class="img-hover rounded-top-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.1091041981895!2d106.62615559999999!3d-6.2493517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fdfdf42d25d9%3A0x3235b43518ad1d68!2sExquise%20Patisserie%20Cake%20%26%20Bakery%20-%20Gading%20Serpong!5e0!3m2!1sen!2sus!4v1722884359318!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
-                        <div class="p-4 pb-3 bg-light">
+                        <div class="p-4 pb-3 bg-light height_store_custom">
                             <ul class="text-start list-group list-group-flush p-0 m-0">
                                 <li class="list-group-item p-0 d-flex justify-content-start align-items-start gap-2 bg-light">
                                     <iconify-icon icon="fluent:location-28-filled" class="fs-4 grey-color"></iconify-icon>
@@ -131,7 +131,7 @@
                             <img src="images/store_kelapa_gading.jpg" class="rounded-top-5" alt="...">
                             <iframe class="img-hover rounded-top-5" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1983.3809215554647!2d106.903317!3d-6.1626416!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f59b76a396b1%3A0x958880abbb691723!2sExquise%20Patisserie%20Cake%20%26%20Bakery%20Kelapa%20Gading!5e0!3m2!1sen!2sid!4v1722884801294!5m2!1sen!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
-                        <div class="p-4 pb-3 bg-light">
+                        <div class="p-4 pb-3 bg-light height_store_custom">
                             <ul class="text-start list-group list-group-flush p-0 m-0">
                                 <li class="list-group-item p-0 d-flex justify-content-start align-items-start gap-2 bg-light">
                                     <iconify-icon icon="fluent:location-28-filled" class="fs-4 grey-color"></iconify-icon>
@@ -162,7 +162,7 @@
                             <img src="images/store_delivery.jpg" class="rounded-top-5" alt="...">
                             <iframe class="img-hover rounded-top-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.7237983901396!2d106.84084960000001!3d-6.167728800000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f51b75cadae3%3A0xb173509b36b7dae6!2sExquise%20Patisserie%20HQ!5e0!3m2!1sen!2sus!4v1722884890917!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
-                        <div class="p-4 pb-3 bg-light">
+                        <div class="p-4 pb-3 bg-light height_store_custom">
                             <ul class="text-start list-group list-group-flush p-0 m-0 bg-transparent">
                                 <li class="list-group-item p-0 d-flex justify-content-start align-items-start gap-2 bg-transparent">
                                     <iconify-icon icon="fluent:location-28-filled" class="fs-4 grey-color"></iconify-icon>

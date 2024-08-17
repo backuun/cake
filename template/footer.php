@@ -196,12 +196,54 @@
           },
         });
       </script>
+      
+      <script>
+        var swiper = new Swiper(".myPeople", {
+          slidesPerView: 1,
+          spaceBetween: 14,
+          autoHeight: true,
+          loop:true,
+          autoplay: {
+            delay: 3500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          breakpoints: {
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 30,
+            },
+          },
+        });
+      </script>
 
       <script>
         $(document).ready(function(){
           $('.zoom-slide').zoom();
         });
       </script>
+
+      <script>
+          var promoBanner = new Swiper(".myPromoBanner", {
+            autoplay: {
+              delay: 3500,
+              disableOnInteraction: false,
+            },
+            effect: "fade",
+            loop: true,
+          });
+        </script>
 
       
       <script src="js/slide.js"></script>
@@ -210,6 +252,11 @@
       <script src="js/search_result.js"></script>
       <script src="js/overflow_custom.js"></script>
       <script src="js/slide_corporate.js"></script>
+      <script src="js/tabs_delivery.js"></script>
+      <script src="js/filter.js"></script>
+    <script src="js/date-time.js"></script>
+    <script src="js/date-time-pickup.js"></script>
+    <script src="js/popup-responsive-add.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -9,7 +9,7 @@
     </div>
     <div class="row row-cols-1 row-cols-lg-2 gap-0">
         <div class="images_contact">
-            <img src="images/retail-bg.png" class="images_cover" alt="Exquise">
+            <img src="images/retail_bg.png" class="images_cover" alt="Exquise">
         </div>
         <div class="col p-4 px-md-5 p-md-5 p-lg-2 py-lg-5 py-xl-5 p-xl-5 d-flex align-items-start justify-content-center flex-column " style="background-color:#A99685;">
             <div class="ms-2 ms-md-5 py-0 py-md-0 py-lg-0 py-xl-4">
@@ -24,7 +24,7 @@
     </div>
     <div class="row row-cols-1 row-cols-lg-2 gap-0">
         <div class="images_contact d-block d-lg-none">
-            <img src="images/corporate-bg.png" class="images_cover" alt="Exquise">
+            <img src="images/corporate_bg.png" class="images_cover" alt="Exquise">
         </div>
         <div class="col p-2 py-4 py-md-5 p-md-5 p-lg-2 py-lg-5 py-xl-5 p-xl-5 d-flex align-items-start justify-content-center flex-column"  style="background-color:#AD4329;">
             <div class="ms-2 ps-3 ps-md-5 ms-md-2 ms-lg-3 py-0 py-md-0 py-lg-0 py-xl-4 ms-xl-5">
@@ -37,12 +37,12 @@
             </div>
         </div>
         <div class="images_contact d-none d-lg-block">
-            <img src="images/corporate-bg.png" class="images_cover" alt="Exquise">
+            <img src="images/corporate_bg.png" class="images_cover" alt="Exquise">
         </div>
     </div>
     <div class="row row-cols-1 row-cols-lg-2 gap-0">
         <div class="images_contact">
-            <img src="images/store_delivery.jpg" class="images_cover" alt="Exquise">
+            <img src="images/store_delivery.png" class="images_cover" alt="Exquise">
         </div>
         <div class="col p-5 p-lg-2 ps-lg-4 py-lg-5 py-xl-5 p-xl-5 d-flex align-items-start justify-content-center flex-column" style="background-color:#1F4F63;">
             <div class="mx-1 mx-md-5 pe-0 pe-md-2 pe-lg-3 pe-xl-4 py-0 py-md-0 py-lg-0 py-xl-4">

@@ -22,15 +22,6 @@
                 <div class="slide-content">
                   <div class="caption">
                     <!-- jika slide hanya gambar saja -->
-                    <!-- <div class="title">
-                        <h1 class="font-heading text-dark">Exquisite taste <br/>for true <br/>connoisseurs</h1>
-                    </div>
-                    <div class="text">
-                      <p class="poppins text-dark fs-6 px-0 px-md-5">We offer you to experience true pleasure. And not only from the taste of our desserts, but also from exclusive dishes prepared by high-level chefs and, of course, unique drinks created by the best bartenders!</p>
-                    </div> 
-                    <a href="#" class="btn btn-danger poppins mt-3 mt-md-5 px-3 px-md-4 py-1 py-md-2 rounded-pill red-shadow fs-6">
-                      <span class="btn-inner">Open Catalog</span>
-                    </a> -->
                   </div>
                 </div>
                 <div class="image-container">
@@ -82,82 +73,82 @@
         </section>
     </div>
     <!-- Kategori Pada Home Mobile Responsive Only -->
-    <div class="py-4 d-flex d-md-none row row-cols-4 m-auto w-100">
+    <div class="py-4 d-flex d-md-none row row-cols-4 m-auto w-100 px-3">
       <div class="col p-0 text-center">
           <a href="shop.html">
-              <div class="p-3 pb-0">
-                  <img src="images/best-seller-1.png" class="img-fluid rounded-circle border border-3" style="border-color: #A99685 !important;" alt="...">
-              </div>
+                <div class="p-2 pb-2 category_image">
+                    <img src="images/cake_category.png" alt="Signature Cake Exquise">
+                </div>
           </a>
-          <h2 class="text-uppercase fs-small fw-bold mt-3 mb-3 mb-md-4 poppins" style="color: #604A33">Signature Cake</h2>
+          <h2 class="text-uppercase fs-small fw-bold mt-3 mb-3 mb-md-4 font-primary" style="color: #A99685">Signature Cake</h2>
       </div>
       <div class="col p-0 text-center">
           <a href="shop.html">
-              <div class="p-3 pb-0">
-              <img src="images/best-seller-2.png" class="img-fluid rounded-circle border border-3" style="border-color: #A99685 !important;" alt="...">
-              </div>
+                <div class="p-2 pb-2 category_image">
+                    <img src="images/croissant_category.png" alt="Signature Cake Exquise">
+                </div>
           </a>
-          <h2 class="text-uppercase fs-small fw-bold mt-3 mb-3 mb-md-4 poppins" style="color: #604A33">Croissant</h2>
+          <h2 class="text-uppercase fs-small fw-bold mt-3 mb-3 mb-md-4 font-primary" style="color: #A99685">Croissant</h2>
       </div>
       <div class="col p-0 text-center">
           <a href="shop.html">
-              <div class="p-3 pb-0">
-                  <img src="images/best-seller-3.png" class="img-fluid rounded-circle border border-3" style="border-color: #A99685 !important;" alt="...">
-              </div>
+                <div class="p-2 pb-2 category_image">
+                    <img src="images/hampers_category.png" alt="Signature Cake Exquise">
+                </div>
           </a>
-          <h2 class="text-uppercase fs-small fw-bold mt-3 mb-3 mb-md-4 poppins" style="color: #604A33">Hampers</h2>
+          <h2 class="text-uppercase fs-small fw-bold mt-3 mb-3 mb-md-4 font-primary" style="color: #A99685">Hampers</h2>
       </div>
       <div class="col p-0 text-center">
           <a href="shop.html">
-              <div class="p-3 pb-0">
-                  <img src="images/best-seller-4.png" class="img-fluid rounded-circle border border-3" style="border-color: #A99685 !important;" alt="...">
-              </div>
+                <div class="p-2 pb-2 category_image">
+                    <img src="images/cookies_category.png" alt="Signature Cake Exquise">
+                </div>
           </a>
-          <h2 class="text-uppercase fs-small fw-bold mt-3 mb-3 mb-md-4 poppins" style="color: #604A33">Cookies</h2>
+          <h2 class="text-uppercase fs-small fw-bold mt-3 mb-3 mb-md-4 font-primary" style="color: #A99685">Cookies</h2>
       </div>
     </div>
     <!-- Kategori Pada Home Dekstop Only -->
-    <div class="d-none d-md-block p-4 p-md-3 p-lg-2 p-xl-5 py-md-3 m-2 m-md-5 mx-3 mx-md-5 rounded-5 border border-2 " style="background-image: url(images/bg_best_seller.png); background-size: cover; border-color: #EEEDE9 !important;">
-        <div class="col mt-4 px-3">
+    <div class="d-none d-md-block p-4 p-md-3 p-lg-2 p-xl-5 py-md-3 py-xl-3 m-2 m-md-5 mx-3 mx-md-5 rounded-5 border border-1 " style="background-image: url(images/bg_best_seller.png); background-size: cover; border-color: #A99685 !important;">
+        <div class="col mt-4 px-5">
             <div class="row row-cols-sm-2 row-cols-lg-4 flex-md-row gap-4 gap-md-0">
                 <div class="col text-center">
-                    <a href="shop.html">
-                        <div class="p-4 pb-2">
-                            <img src="images/best-seller-1.png" class="img-fluid rounded-circle border border-3" style="border-color: #A99685 !important;" alt="...">
+                    <a href="shop.php">
+                        <div class="p-4 pb-2 category_image">
+                            <img src="images/cake_category.png" alt="Signature Cake Exquise">
                         </div>
                     </a>
-                    <h2 class="text-uppercase fs-2 fw-bold mt-4 mb-3 mb-md-4 poppins" style="color: #604A33">Signature Cake</h2>
+                    <h2 class="text-uppercase fs-3 fw-bold mt-4 mb-3 mb-md-4 font-primary" style="color: #A99685">Signature Cake</h2>
                 </div>
                 <div class="col text-center">
-                    <a href="shop.html">
-                        <div class="p-4 pb-2">
-                            <img src="images/best-seller-2.png" class="img-fluid rounded-circle border border-3" style="border-color: #A99685 !important;" alt="...">
+                    <a href="shop.php">
+                        <div class="p-4 pb-2 category_image">
+                            <img src="images/croissant_category.png" alt="Croisant Cake Exquise">
                         </div>
                     </a>
-                    <h2 class="text-uppercase fs-2 fw-bold mt-4 mb-3 mb-md-4 poppins" style="color: #604A33">CROISSANT</h2>
+                    <h2 class="text-uppercase fs-3 fw-bold mt-4 mb-3 mb-md-4 font-primary" style="color: #A99685">CROISSANT</h2>
                 </div>
                 <div class="col text-center">
-                    <a href="shop.html">
-                        <div class="p-4 pb-2">
-                            <img src="images/best-seller-3.png" class="img-fluid rounded-circle border border-3" style="border-color: #A99685 !important;" alt="...">
+                    <a href="shop.php">
+                        <div class="p-4 pb-2 category_image">
+                            <img src="images/hampers_category.png" alt="Hampers Cake Exquise">
                         </div>
                     </a>
-                    <h2 class="text-uppercase fs-2 fw-bold mt-4 mb-3 mb-md-4 poppins" style="color: #604A33">Hampers</h2>
+                    <h2 class="text-uppercase fs-3 fw-bold mt-4 mb-3 mb-md-4 font-primary" style="color: #A99685">Hampers</h2>
                 </div>
                 <div class="col text-center">
-                    <a href="shop.html">
-                        <div class="p-4 pb-2">
-                            <img src="images/best-seller-4.png" class="img-fluid rounded-circle border border-3" style="border-color: #A99685 !important;" alt="...">
+                    <a href="shop.php">
+                        <div class="p-4 pb-2 category_image">
+                            <img src="images/cookies_category.png" alt="Cookies Cake Exquise">
                         </div>
                     </a>
-                    <h2 class="text-uppercase fs-2 fw-bold mt-4 mb-3 mb-md-4 poppins" style="color: #604A33">Cookies</h2>
+                    <h2 class="text-uppercase fs-3 fw-bold mt-4 mb-3 mb-md-4 font-primary" style="color: #A99685">Cookies</h2>
                 </div>
             </div>
         </div>
     </div>
     <div class="pt-0 pt-md-0 py-1 py-md-0 mt-0 mt-md-1 mb-md-0 mb-4">
         <div class="col px-2 px-md-5 d-flex align-items-center justify-content-between mt-0 mt-md-4 pt-0 pt-md-4" style="position: relative;">
-            <h2 class="fs-05 poppins text-md-start text-center fw-semibold px-4" style="color: #8E623A; background: white !important; z-index: 5;">Best Seller</h2>
+            <h2 class="fs-1 poppins text-md-start text-center fw-semibold px-4" style="color: #A99685; background: white !important; z-index: 5;">Best Seller</h2>
             <div class="heading-divider"></div>
         </div>
         <div class="swiper bestSeller mt-3 px-3 px-md-5">
@@ -175,7 +166,7 @@
                         <div class="p-3">
                             <h3 class="poppins fs-4 grey-color text-truncate">Mango Coconut</h3>
                             <p class="poppins fs-6 grey-color text-truncate">Rp. 150.000</p>
-                            <button type="button" class="btn poppins px-1 px-md-2 px-lg-1 px-xl-2 py-1 py-md-2 rounded-5 mt-0 mt-md-2 mt-lg-0 mt-xl-2 fs-6 text-light w-100" style="background: #1EB9A7;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">Add To Cart</button>
+                            <button type="button" class="btn poppins px-1 px-md-2 px-lg-1 px-xl-2 py-1 py-md-2 rounded-5 mt-0 mt-md-2 mt-lg-0 mt-xl-2 fs-6 text-light w-100" style="background: #1EB9A7;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasAdd" aria-controls="offcanvasLeft">Add To Cart</button>
                         </div>
                     </div>
                 </div>
@@ -188,7 +179,7 @@
     </div>
     <div class="pt-0 pt-md-0 py-1 py-md-0 mt-0 mt-md-1 mb-md-0 mb-4">
         <div class="col px-2 px-md-5 d-flex align-items-center justify-content-between mt-0 mt-md-4 pt-0 pt-md-4" style="position: relative;">
-            <h2 class="fs-05 poppins text-md-start text-center fw-semibold px-4" style="color: #8E623A; background: white !important; z-index: 5;">Promotions</h2>
+            <h2 class="fs-1 poppins text-md-start text-center fw-semibold px-4" style="color: #A99685; background: white !important; z-index: 5;">Exclusive Deals</h2>
             <div class="heading-divider"></div>
         </div>
         <div class="swiper bestSeller mt-3 px-3 px-md-5">
@@ -206,7 +197,7 @@
                         <div class="p-3">
                             <h3 class="poppins fs-4 grey-color text-truncate">Mango Coconut</h3>
                             <p class="poppins fs-6 grey-color text-truncate">Rp. 150.000</p>
-                            <button type="button" class="btn poppins px-1 px-md-2 px-lg-1 px-xl-2 py-1 py-md-2 rounded-5 mt-0 mt-md-2 mt-lg-0 mt-xl-2 fs-6 text-light w-100" style="background: #1EB9A7;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">Add To Cart</button>
+                            <button type="button" class="btn poppins px-1 px-md-2 px-lg-1 px-xl-2 py-1 py-md-2 rounded-5 mt-0 mt-md-2 mt-lg-0 mt-xl-2 fs-6 text-light w-100" style="background: #1EB9A7;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasAdd" aria-controls="offcanvasLeft">Add To Cart</button>
                         </div>
                     </div>
                 </div>
@@ -219,7 +210,7 @@
     </div>
     <div class="pt-0 pt-md-0 py-1 py-md-0 mt-0 mt-md-1 mb-md-0 mb-4">
         <div class="col px-2 px-md-5 d-flex align-items-center justify-content-between mt-0 mt-md-4 pt-0 pt-md-4" style="position: relative;">
-            <h2 class="fs-05 poppins text-md-start text-center fw-semibold px-4" style="color: #8E623A; background: white !important; z-index: 5;">Cookies & Croissant</h2>
+            <h2 class="fs-1 poppins text-md-start text-center fw-semibold px-4" style="color: #A99685; background: white !important; z-index: 5;">Cookies & Croissant</h2>
             <div class="heading-divider"></div>
         </div>
         <div class="swiper bestSeller mt-3 px-3 px-md-5">
@@ -237,7 +228,7 @@
                         <div class="p-3">
                             <h3 class="poppins fs-4 grey-color text-truncate">Mango Coconut</h3>
                             <p class="poppins fs-6 grey-color text-truncate">Rp. 150.000</p>
-                            <button type="button" class="btn poppins px-1 px-md-2 px-lg-1 px-xl-2 py-1 py-md-2 rounded-5 mt-0 mt-md-2 mt-lg-0 mt-xl-2 fs-6 text-light w-100" style="background: #1EB9A7;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">Add To Cart</button>
+                            <button type="button" class="btn poppins px-1 px-md-2 px-lg-1 px-xl-2 py-1 py-md-2 rounded-5 mt-0 mt-md-2 mt-lg-0 mt-xl-2 fs-6 text-light w-100" style="background: #1EB9A7;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasAdd" aria-controls="offcanvasLeft">Add To Cart</button>
                         </div>
                     </div>
                 </div>
@@ -260,7 +251,7 @@
     </div>
     <div class="pt-md-0 pt-5 py-1 py-md-0 mt-2 mt-md-5">
         <div class="col px-2 px-md-5 d-flex align-items-center justify-content-between" style="position: relative;">
-            <h2 class="fs-05 poppins text-md-start text-center fw-semibold px-4" style="color: #8E623A; background: white !important; z-index: 5;">News & CSR</h2>
+            <h2 class="fs-1 poppins text-md-start text-center fw-semibold px-4" style="color: #A99685; background: white !important; z-index: 5;">News & CSR</h2>
             <div class="heading-divider"></div>
         </div>
         <div class="swiper bestSeller mt-3 px-3 px-md-5">
@@ -290,8 +281,90 @@
     </div>
     <div class="pt-2 pt-md-2 pt-lg-3 pt-xl-5 py-1 py-md-0 mt-3 mt-md-5">
         <div class="col px-2 px-md-5 d-flex align-items-center justify-content-between" style="position: relative;">
-            <h2 class="fs-05 poppins text-md-start text-center fw-semibold px-4" style="color: #8E623A; background: white !important; z-index: 5;">Our Satisfied Customers</h2>
+            <h2 class="fs-1 poppins text-md-start text-center fw-semibold px-4" style="color: #A99685; background: white !important; z-index: 5;">Our Satisfied Customers</h2>
             <div class="heading-divider"></div>
+        </div>
+        <div class="col px-3 py-2 px-md-5 py-md-4">
+            <div class="swiper myPeople m-auto w-100 mt-3">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="col border border-1 p-3 p-md-4 rounded-3 testimoni_box" style="border-color:#A99685 !important;">
+                        <div class="col d-flex align-items-center mb-4 gap-2 rating_testimonial">
+                            <img src="images/star_rating.png" alt="">
+                            <img src="images/star_rating.png" alt="">
+                            <img src="images/star_rating.png" alt="">
+                            <img src="images/star_rating.png" alt="">
+                            <img src="images/star_rating.png" alt="">
+                        </div>
+                        <p class="poppins fs-6 fw-light text-dark height_p_3">Aku pesan kue ulang tahun di sini, dan hasilnya luar biasa! Dekorasinya cantik sekali, dan rasanya juga enak banget.</p>
+                        <div class="col">
+                            <span class="poppins fs-6 fw-medium" style="color:#A99685;">Aug 15, 2024 - By Maria.s</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="col border border-1 p-3 p-md-4 rounded-3 testimoni_box" style="border-color:#A99685 !important;">
+                        <div class="col d-flex align-items-center mb-4 gap-2 rating_testimonial">
+                            <img src="images/star_rating.png" alt="">
+                            <img src="images/star_rating.png" alt="">
+                            <img src="images/star_rating.png" alt="">
+                            <img src="images/star_rating.png" alt="">
+                            <img src="images/star_rating.png" alt="">
+                        </div>
+                        <p class="poppins fs-6 fw-light text-dark height_p_3">Setiap gigitan terasa lembut dan pas di lidah. Favoritku adalah tiramisu mereka, bener-bener bikin nagih!</p>
+                        <div class="col">
+                            <span class="poppins fs-6 fw-medium" style="color:#A99685;">Aug 15, 2024 - By Andi Wijaya</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="col border border-1 p-3 p-md-4 rounded-3 testimoni_box" style="border-color:#A99685 !important;">
+                        <div class="col d-flex align-items-center mb-4 gap-2 rating_testimonial">
+                            <img src="images/star_rating.png" alt="">
+                            <img src="images/star_rating.png" alt="">
+                            <img src="images/star_rating.png" alt="">
+                            <img src="images/star_rating.png" alt="">
+                            <img src="images/star_rating.png" alt="">
+                        </div>
+                        <p class="poppins fs-6 fw-light text-dark height_p_3">Pelayanan di toko kue ini sangat ramah dan cepat.</p>
+                        <div class="col">
+                            <span class="poppins fs-6 fw-medium" style="color:#A99685;">Aug 15, 2024 - By Rina T</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="col border border-1 p-3 p-md-4 rounded-3 testimoni_box" style="border-color:#A99685 !important;">
+                        <div class="col d-flex align-items-center mb-4 gap-2 rating_testimonial">
+                            <img src="images/star_rating.png" alt="">
+                            <img src="images/star_rating.png" alt="">
+                            <img src="images/star_rating.png" alt="">
+                            <img src="images/star_rating.png" alt="">
+                            <img src="images/star_rating.png" alt="">
+                        </div>
+                        <p class="poppins fs-6 fw-light text-dark height_p_3">Saya coba banyak kue di tempat lain, tapi toko kue ini yang paling top! Selain kualitas yang prima, harganya juga terjangkau.</p>
+                        <div class="col">
+                            <span class="poppins fs-6 fw-medium" style="color:#A99685;">Aug 15, 2024 - By Budi A</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="col border border-1 p-3 p-md-4 rounded-3 testimoni_box" style="border-color:#A99685 !important;">
+                        <div class="col d-flex align-items-center mb-4 gap-2 rating_testimonial">
+                            <img src="images/star_rating.png" alt="">
+                            <img src="images/star_rating.png" alt="">
+                            <img src="images/star_rating.png" alt="">
+                            <img src="images/star_rating.png" alt="">
+                            <img src="images/star_rating.png" alt="">
+                        </div>
+                        <p class="poppins fs-6 fw-light text-dark height_p_3">Saya sudah beberapa kali pesan kue di sini, dan selalu puas dengan rasanya.</p>
+                        <div class="col">
+                            <span class="poppins fs-6 fw-medium" style="color:#A99685;">Aug 15, 2024 - By Yusuf Maulana</span>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
         </div>
         <div class="swiper myPartner px-5 mt-3">
             <div class="swiper-wrapper">
