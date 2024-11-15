@@ -11,6 +11,8 @@
     <script src="https://unpkg.com/gijgo@1.9.14/js/gijgo.min.js" type="text/javascript"></script>
     <link href="https://unpkg.com/gijgo@1.9.14/css/gijgo.min.css" rel="stylesheet" type="text/css" />
     <style>
+        /* Hide the submenu by default */
+
         .bg-custom{
             background-image: url(images/bg-banner.png) !important;
         }
@@ -38,6 +40,18 @@
         .border-none-dekstop{
             border-bottom:none !important;
         }
+        /*Perubahan revisi disini*/
+        .submenu {
+            max-height: 0;
+            overflow: hidden;
+            flex-wrap: wrap;
+            transition: max-height .6s ease;
+        }
+        .main-menu:hover .submenu {
+            max-height: 200px;
+        }
+        /*Perubahan revisi disini*/
+
         @media (max-width:768px) {
             .bg-custom{
             background-image: url(images/bg-banner-mobile.png) !important;
@@ -54,22 +68,19 @@
         <div class="row d-flex flex-row width-custom-nav m-auto justify-content-between align-items-center">
             <div class="col swiper myPromoBanner p-0 m-0">
                 <div class="swiper-wrapper p-0 m-0">
+                    <!-- Perubahan revisi disini -->
                     <div class="swiper-slide" style="background-color:#A99685;">
                         <div class="col p-0 d-flex align-items-center justify-content-center d-md-block text-center text-md-start">
-                            <span class="poppins text-light fs-small-custom fw-light">Available for delivery within <b>JABODETABEK</b></span>
+                            <span class="poppins text-light fs-6 fw-light">Available for delivery within <b>JABODETABEK</b></span>
                         </div>
                     </div>
                     <div class="swiper-slide" style="background-color:#A99685;">
                         <div class="col p-0 d-flex align-items-center justify-content-center d-md-block text-center text-md-start">
-                            <span class="poppins text-light fs-small-custom fw-light"><b>Cashback</b>: Earn 10% cashback on next order</span>
+                            <span class="poppins text-light fs-6 fw-light"><b>Cashback</b>: Earn 10% cashback on next order</span>
                         </div>
                     </div>
+                    <!-- Perubahan revisi disini -->
                 </div>
-            </div>
-            <div class="col p-0 text-end d-none d-md-flex gap-3 justify-content-end align-items-center">
-                <span class="poppins text-light fs-small-custom fw-light">Hi, Muhamad Rafli</span>
-                <span class="poppins text-light fs-small-custom fw-light">|</span>
-                <span class="poppins text-light fs-small-custom fw-light"> Poin Kamu : 200</span>
             </div>
         </div>
     </div>
@@ -173,8 +184,14 @@
                 </div>
             </div>
             <div class="search-overlay" id="searchOverlay"></div>
-            <div class="col d-flex justify-content-end justify-content-md-end align-items-center mt-md-0 gap-2 gap-md-2 gap-lg-4 w-100">
-                <button class="nav-link fs-3 p-3 p-md-1 p-lg-2 border border-1 d-none d-md-flex align-items-center justify-content-center rounded-circle" style="background-color: #eeede99a; border-color: #A99685 !important;"><iconify-icon icon="solar:user-outline" style="color: #A99685" class="p-1"></iconify-icon></button>
+            <!-- Perubahan revisi disini -->
+            <div class="col d-flex justify-content-end justify-content-md-end align-items-center mt-md-0 gap-2 gap-md-2 gap-lg-3 w-100">
+                <button class="nav-link fs-3 p-3 p-md-1 p-lg-2 border border-1 d-none d-md-flex align-items-center justify-content-center rounded-circle" style="background-color: #eeede99a; border-color: #A99685 !important;"><iconify-icon icon="solar:user-outline" style="color: #A99685" class="p-1"></iconify-icon> 
+                </button>
+                <div class="col p-0 text-start d-none d-md-flex gap-0 justify-content-start align-items-start flex-column" style="width:max-content;">
+                    <span class="poppins text-dark fs-small-custom fw-light">Hi, Muhamad Rafli</span>
+                    <span class="poppins text-dark fs-small-custom fw-light"> Poin Kamu : 200</span>
+                </div>
                 <!-- BUTTON UNTUK CART -->
                 <button class="nav-link fs-3 p-1 p-md-1 p-lg-2 border border-1 d-flex align-items-center justify-content-center rounded-circle" style="background-color: #eeede99a; border-color: #A99685 !important;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasRight"><iconify-icon icon="solar:bag-4-linear" style="color: #A99685" class="p-1 p-md-1"></iconify-icon></button>
 
@@ -182,6 +199,7 @@
                     <iconify-icon icon="quill:hamburger" style="color: #A99685"></iconify-icon>
                 </button>
             </div>
+            <!-- Perubahan revisi disini -->
         </div>
         <div class="collapse navbar-collapse col fixed-menu py-0 py-md-3 overflow-custom-y-scroll" id="navbarSupportedContent">
             <div class="d-flex d-md-flex d-lg-none align-items-center gap-2 p-3 border-1 border-bottom" style="border-color: #a9968594 !important; background-color:#AF9771;">
@@ -193,7 +211,7 @@
                     <a href="#" class="nav-link p-3 pe-0 m-0"><button class="w-100 border-1 border outline-none fs-5 py-2 py-md-3 rounded-3 poppins" style="color: #1EB9A7; border-color: #1EB9A7 !important; background-color: #1eb9a71c;">Masuk</button></a>
                     <a href="#" class="nav-link p-3 m-0"><button class="w-100 border-1 border outline-none fs-5 text-light py-2 py-md-3 rounded-3 poppins" style="border-color: #1EB9A7 !important; background-color: #1EB9A7;">Daftar</button></a>
                 </li>
-                <!-- Setelah Login -->
+                <!-- Setelah Login Mobile -->
                 <!-- <li class="nav-item p-4 border-color-menu d-flex d-md-flex d-lg-none">
                     <div class="row m-0 p-0 border border-1 p-3 w-100" style="border-color: #1EB9A7 !important; background-color: #1eb9a71c;">
                         <h3 class="poppins fs-4 text-capitalize px-0" style="color: #1EB9A7;">Hi, Muhamad Rafli</h3>
@@ -209,71 +227,70 @@
                     <div class="submenu-custom px-0 px-md-0 px-lg-5">
                         <ul class="list-group poppins text-capitalize fs-6 px-0 px-md-0 px-lg-5 list-end-custom">
                             <li class="list-group-item py-4 px-1 px-md-4 border-top-0 border-start-0 border-end-0 d-flex flex-column gap-2">
-                                <div class="grey-color d-flex align-items-center gap-1">
-                                    Cake <iconify-icon icon="system-uicons:chevron-right-circle" class="fs-5"></iconify-icon>
-                                </div>
-                                <!-- Jika di dalam submenu ada lagi kategori -->
-                                    <div class="d-flex flex-wrap gap-3 gap-md-2">
+                                <!-- Perubahan revisi disini -->
+                                <div class="main-menu">
+                                    <div class="grey-color d-flex align-items-center gap-1 ">
+                                        Cake <iconify-icon icon="system-uicons:chevron-right-circle" class="fs-5"></iconify-icon>
+                                    </div>
+                                    <!-- Jika di dalam submenu ada lagi kategori -->
+                                    <div class="submenu d-flex flex-wrap gap-3 gap-md-2 mt-2">
                                         <a href="shop.php"><button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent fw-light">Individual Cake</button></a>
                                         <a href="shop.php"><button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent fw-light">Cake To Go</button></a>
                                         <a href="shop.php"><button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent fw-light">Tart</button></a>
                                         <a href="shop.php"><button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent fw-light">Whole Cake</button></a>
                                         <a href="shop.php"><button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent fw-light">Healthy Cake</button></a>
                                     </div>
+                                </div>
+                                <!-- Perubahan revisi disini -->
                             </li>
                             <li class="list-group-item py-4 px-1 px-md-4 border-top-0 border-start-0 border-end-0 d-flex flex-column gap-2">
-                                <div class="grey-color d-flex align-items-center gap-1">
-                                    Hampers <iconify-icon icon="system-uicons:chevron-right-circle" class="fs-5"></iconify-icon>
-                                </div>
-                                <!-- Jika di dalam submenu ada lagi kategori -->
-                                    <div class="d-flex flex-wrap gap-3 gap-md-2">
+                                <!-- Perubahan revisi disini -->
+                                <div class="main-menu">
+                                    <div class="grey-color d-flex align-items-center gap-1">
+                                        Hampers <iconify-icon icon="system-uicons:chevron-right-circle" class="fs-5"></iconify-icon>
+                                    </div>
+                                    <!-- Jika di dalam submenu ada lagi kategori -->
+                                    <div class="submenu d-flex flex-wrap gap-3 gap-md-2 mt-2">
                                         <a href=""><button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent fw-light">Natal</button></a>
                                         <a href=""><button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent fw-light">Reguler Hampers</button></a>
                                         <a href=""><button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent fw-light">Fruit Hampers</button></a>
                                     </div>
+                                </div>
+                                <!-- Perubahan revisi disini -->
                             </li>
                             <li class="list-group-item py-4 px-1 px-md-4 border-top-0 border-start-0 border-end-0 grey-color"><a href="#" class="text-decoration-none grey-color d-flex align-items-center gap-1">Cookies <iconify-icon icon="system-uicons:chevron-right-circle" class="fs-5"></iconify-icon></a></li>
                             <li class="list-group-item py-4 px-1 px-md-4 border-top-0 border-start-0 border-end-0 d-flex flex-column gap-2">
-                                <div class="grey-color d-flex align-items-center gap-1">
-                                    Pastry <iconify-icon icon="system-uicons:chevron-right-circle" class="fs-5"></iconify-icon>
-                                </div>
-                                <!-- Jika di dalam submenu ada lagi kategori -->
-                                    <div class="d-flex flex-wrap gap-3 gap-md-2">
+                                <!-- Perubahan revisi disini -->
+                                <div class="main-menu">
+                                    <div class="grey-color d-flex align-items-center gap-1">
+                                        Pastry <iconify-icon icon="system-uicons:chevron-right-circle" class="fs-5"></iconify-icon>
+                                    </div>
+                                    <!-- Jika di dalam submenu ada lagi kategori -->
+                                    <div class="submenu d-flex flex-wrap gap-3 gap-md-2 mt-2">
                                         <a href=""><button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent fw-light">Croissant</button></a>
                                         <a href=""><button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent fw-light">Quiche</button></a>
                                     </div>
+                                </div>
+                                <!-- Perubahan revisi disini -->
                             </li>
                             <li class="list-group-item py-4 px-1 px-md-4 border-top-0 border-start-0 border-end-0 grey-color">
                                 <a href="#" class="text-decoration-none grey-color d-flex align-items-center gap-1">Snack Box<iconify-icon icon="system-uicons:chevron-right-circle" class="fs-5"></iconify-icon></a>
                             </li>
                             <li class="list-group-item py-4 px-1 px-md-4 border-top-0 border-start-0 border-end-0 d-flex flex-column gap-2">
-                                <div class="grey-color d-flex align-items-center gap-1">
-                                    Flowers <iconify-icon icon="system-uicons:chevron-right-circle" class="fs-5"></iconify-icon>
+                                <!-- Perubahan revisi disini -->
+                                <div class="main-menu">
+                                    <div class="grey-color d-flex align-items-center gap-1">
+                                        Flowers <iconify-icon icon="system-uicons:chevron-right-circle" class="fs-5"></iconify-icon>
+                                    </div>
+                                    <!-- Jika di dalam submenu ada lagi kategori -->
+                                    <div class="submenu d-flex flex-wrap gap-3 gap-md-2 mt-2">
+                                        <a href=""><button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent fw-light">Bouquet Flowers</button></a>
+                                    </div>
                                 </div>
-                                <!-- Jika di dalam submenu ada lagi kategori -->
-                                <div class="d-flex flex-wrap gap-3 gap-md-2">
-                                    <a href=""><button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent fw-light">Bouquet Flowers</button></a>
-                                </div>
+                                <!-- Perubahan revisi disini -->
                             </li>
                         </ul>
                     </div>
-
-                    <!-- submenu 2 -->
-                    <!-- <span class="nav-link grey-color submenu-button" style="cursor:pointer;">Shop</span>
-                    <div class="submenu-custom px-5">
-                        <ul class="list-group poppins text-capitalize fs-6 px-5">
-                            <li class="list-group-item py-4 px-4 border-top-0 border-start-0 border-end-0 d-flex flex-column gap-2">
-                                    <div class="d-flex gap-2">
-                                    <a href=""><button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent">Hampers Cadeau</button></a>
-                                    <a href=""><button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent">General Hampers</button></a>
-                                    <a href=""><button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent">Hampers Cadeau</button></a>
-                                    <a href=""><button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent">General Hampers</button></a>
-                                    <a href=""><button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent">Hampers Cadeau</button></a>
-                                    <a href=""><button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent">General Hampers</button></a>
-                                    </div>
-                            </li>
-                        </ul>
-                    </div> -->
                 </li>
                 <li class="nav-item p-lg-0 p-4 p-md-4 py-md-1 py-1 border-color-menu" style="border-color: #a9968594 !important;">
                     <a class="nav-link grey-color" aria-current="page" href="about.php">Tentang Kami</a>
