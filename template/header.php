@@ -40,7 +40,7 @@
         .border-none-dekstop{
             border-bottom:none !important;
         }
-        /*Perubahan revisi disini*/
+        /* Perubahan revisi disini */
         .submenu {
             max-height: 0;
             overflow: hidden;
@@ -50,7 +50,7 @@
         .main-menu:hover .submenu {
             max-height: 200px;
         }
-        /*Perubahan revisi disini*/
+        /* Perubahan revisi disini */
 
         @media (max-width:768px) {
             .bg-custom{
