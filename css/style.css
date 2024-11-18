@@ -711,7 +711,6 @@ body{
   background-color: white;
   height: 70vh !important;
   overflow-y: scroll !important;
-
   z-index: 50;
 }
 

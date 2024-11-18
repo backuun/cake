@@ -40,15 +40,28 @@
         .border-none-dekstop{
             border-bottom:none !important;
         }
+
         /* Perubahan revisi disini */
         .submenu {
             max-height: 0;
             overflow: hidden;
-            flex-wrap: wrap;
-            transition: max-height .6s ease;
+            position: relative;
+            width: max-content;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            padding: 0;
         }
-        .main-menu:hover .submenu {
+
+        .btn_sub_menu {
+            position: relative;
+        }
+
+        .submenu.open {
             max-height: 200px;
+            padding: 0 0; 
+            margin-top:17px;
+        }
+        .submenu-custom {
+            height:max-content !important;
         }
         /* Perubahan revisi disini */
 
@@ -233,62 +246,33 @@
                                         Cake <iconify-icon icon="system-uicons:chevron-right-circle" class="fs-5"></iconify-icon>
                                     </div>
                                     <!-- Jika di dalam submenu ada lagi kategori -->
-                                    <div class="submenu d-flex flex-wrap gap-3 gap-md-2 mt-2">
-                                        <a href="shop.php"><button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent fw-light">Individual Cake</button></a>
-                                        <a href="shop.php"><button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent fw-light">Cake To Go</button></a>
-                                        <a href="shop.php"><button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent fw-light">Tart</button></a>
-                                        <a href="shop.php"><button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent fw-light">Whole Cake</button></a>
-                                        <a href="shop.php"><button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent fw-light">Healthy Cake</button></a>
-                                    </div>
-                                </div>
-                                <!-- Perubahan revisi disini -->
-                            </li>
-                            <li class="list-group-item py-4 px-1 px-md-4 border-top-0 border-start-0 border-end-0 d-flex flex-column gap-2">
-                                <!-- Perubahan revisi disini -->
-                                <div class="main-menu">
-                                    <div class="grey-color d-flex align-items-center gap-1">
-                                        Hampers <iconify-icon icon="system-uicons:chevron-right-circle" class="fs-5"></iconify-icon>
-                                    </div>
-                                    <!-- Jika di dalam submenu ada lagi kategori -->
-                                    <div class="submenu d-flex flex-wrap gap-3 gap-md-2 mt-2">
-                                        <a href=""><button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent fw-light">Natal</button></a>
-                                        <a href=""><button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent fw-light">Reguler Hampers</button></a>
-                                        <a href=""><button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent fw-light">Fruit Hampers</button></a>
+                                    <div class="d-flex flex-wrap gap-3 gap-md-2 mt-2">
+                                        <div class="d-block btn_sub_menu">
+
+                                            <div class="tab-buttons d-flex gap-3">
+                                                <button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent fw-light" onclick="toggleSubmenu(this)" data-target="1">Individual Cake</button>
+                                                <button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent fw-light" onclick="toggleSubmenu(this)" data-target="2">Tart</button>
+                                            </div>
+
+                                            <div class="submenu d-flex flex-wrap gap-3 gap-md-2" data-index="1">
+                                                <button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent fw-light">Individual Cake 1</button>
+                                                <button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent fw-light">Individual Cake 2</button>
+                                                <button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent fw-light">Individual Cake 3</button>
+                                                <button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent fw-light">Individual Cake 4</button>
+                                            </div>
+
+                                            <div class="submenu d-flex flex-wrap gap-3 gap-md-2" data-index="2">
+                                                <button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent fw-light">Tart 1</button>
+                                                <button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent fw-light">Tart 2</button>
+                                                <button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent fw-light">Tart 3</button>
+                                                <button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent fw-light">Tart 4</button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <!-- Perubahan revisi disini -->
                             </li>
                             <li class="list-group-item py-4 px-1 px-md-4 border-top-0 border-start-0 border-end-0 grey-color"><a href="#" class="text-decoration-none grey-color d-flex align-items-center gap-1">Cookies <iconify-icon icon="system-uicons:chevron-right-circle" class="fs-5"></iconify-icon></a></li>
-                            <li class="list-group-item py-4 px-1 px-md-4 border-top-0 border-start-0 border-end-0 d-flex flex-column gap-2">
-                                <!-- Perubahan revisi disini -->
-                                <div class="main-menu">
-                                    <div class="grey-color d-flex align-items-center gap-1">
-                                        Pastry <iconify-icon icon="system-uicons:chevron-right-circle" class="fs-5"></iconify-icon>
-                                    </div>
-                                    <!-- Jika di dalam submenu ada lagi kategori -->
-                                    <div class="submenu d-flex flex-wrap gap-3 gap-md-2 mt-2">
-                                        <a href=""><button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent fw-light">Croissant</button></a>
-                                        <a href=""><button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent fw-light">Quiche</button></a>
-                                    </div>
-                                </div>
-                                <!-- Perubahan revisi disini -->
-                            </li>
-                            <li class="list-group-item py-4 px-1 px-md-4 border-top-0 border-start-0 border-end-0 grey-color">
-                                <a href="#" class="text-decoration-none grey-color d-flex align-items-center gap-1">Snack Box<iconify-icon icon="system-uicons:chevron-right-circle" class="fs-5"></iconify-icon></a>
-                            </li>
-                            <li class="list-group-item py-4 px-1 px-md-4 border-top-0 border-start-0 border-end-0 d-flex flex-column gap-2">
-                                <!-- Perubahan revisi disini -->
-                                <div class="main-menu">
-                                    <div class="grey-color d-flex align-items-center gap-1">
-                                        Flowers <iconify-icon icon="system-uicons:chevron-right-circle" class="fs-5"></iconify-icon>
-                                    </div>
-                                    <!-- Jika di dalam submenu ada lagi kategori -->
-                                    <div class="submenu d-flex flex-wrap gap-3 gap-md-2 mt-2">
-                                        <a href=""><button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent fw-light">Bouquet Flowers</button></a>
-                                    </div>
-                                </div>
-                                <!-- Perubahan revisi disini -->
-                            </li>
                         </ul>
                     </div>
                 </li>
@@ -310,6 +294,26 @@
             </ul>
         </div>
     </nav>
+
+    <!-- perubahan revisi disini -->
+    <script>
+        function toggleSubmenu(button) {
+            const targetIndex = button.getAttribute('data-target');
+
+            const allSubmenus = document.querySelectorAll('.submenu');
+
+            allSubmenus.forEach(submenu => {
+                submenu.classList.remove('open');
+                submenu.classList.remove('target');
+            });
+
+            const submenu = document.querySelector(`.submenu[data-index="${targetIndex}"]`);
+
+            submenu.classList.add('open');
+            submenu.classList.add('target');
+        }
+    </script>
+    <!-- perubahan revisi disini -->
 
     <?php include 'components/popup-cart.php' ?>
 
