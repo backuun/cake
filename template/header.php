@@ -42,7 +42,8 @@
         }
 
         /* Perubahan revisi disini */
-        .submenu {
+        /* dihapus */
+        /* .submenu {
             max-height: 0;
             overflow: hidden;
             position: relative;
@@ -50,11 +51,9 @@
             transition: max-height 0.3s ease, padding 0.3s ease;
             padding: 0;
         }
-
         .btn_sub_menu {
             position: relative;
         }
-
         .submenu.open {
             max-height: 200px;
             padding: 0 0; 
@@ -62,6 +61,32 @@
         }
         .submenu-custom {
             height:max-content !important;
+        } */
+        /* dihapus */
+        /* Perubahan revisi disini */
+
+        /* Perubahan revisi disini */
+        .bg-grey{
+            background:#B19D7D !important;
+        }
+        .bg-grey-2{
+            background:#8a795f !important;
+        }
+        .bg-grey-3{
+            background:#443b2e !important;
+        }
+        .dropdown-submenu{
+            position: relative;
+        }
+        .dropdown-menu-sc{
+            position: absolute;
+            left: 100%;
+            top:0;
+        }
+        .dropdown-menu-th{
+            position: absolute;
+            left: 100%;
+            top:0;
         }
         /* Perubahan revisi disini */
 
@@ -234,48 +259,48 @@
                 <li class="nav-item p-lg-0 p-4 p-md-4 py-md-1 py-lg-0 py-1 border-color-menu">
                     <a class="nav-link grey-color active" aria-current="page" href="index.php">Beranda</a>
                 </li>
-                <li class="nav-item p-lg-0 p-4 p-md-4 py-md-1 py-1 border-color-menu" style="border-color: #a9968594 !important;">
-                    <!-- submenu 1 -->
-                    <span class="nav-link grey-color submenu-button" style="cursor:pointer;">Katalog</span>
-                    <div class="submenu-custom px-0 px-md-0 px-lg-5">
-                        <ul class="list-group poppins text-capitalize fs-6 px-0 px-md-0 px-lg-5 list-end-custom">
-                            <li class="list-group-item py-4 px-1 px-md-4 border-top-0 border-start-0 border-end-0 d-flex flex-column gap-2">
-                                <!-- Perubahan revisi disini -->
-                                <div class="main-menu">
-                                    <div class="grey-color d-flex align-items-center gap-1 ">
-                                        Cake <iconify-icon icon="system-uicons:chevron-right-circle" class="fs-5"></iconify-icon>
-                                    </div>
-                                    <!-- Jika di dalam submenu ada lagi kategori -->
-                                    <div class="d-flex flex-wrap gap-3 gap-md-2 mt-2">
-                                        <div class="d-block btn_sub_menu">
-
-                                            <div class="tab-buttons d-flex gap-3">
-                                                <button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent fw-light" onclick="toggleSubmenu(this)" data-target="1">Individual Cake</button>
-                                                <button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent fw-light" onclick="toggleSubmenu(this)" data-target="2">Tart</button>
-                                            </div>
-
-                                            <div class="submenu d-flex flex-wrap gap-3 gap-md-2" data-index="1">
-                                                <button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent fw-light">Individual Cake 1</button>
-                                                <button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent fw-light">Individual Cake 2</button>
-                                                <button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent fw-light">Individual Cake 3</button>
-                                                <button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent fw-light">Individual Cake 4</button>
-                                            </div>
-
-                                            <div class="submenu d-flex flex-wrap gap-3 gap-md-2" data-index="2">
-                                                <button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent fw-light">Tart 1</button>
-                                                <button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent fw-light">Tart 2</button>
-                                                <button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent fw-light">Tart 3</button>
-                                                <button class="poppins fs-6 px-4 py-1 grey-color rounded-pill outline-none border border-1 bg-transparent fw-light">Tart 4</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Perubahan revisi disini -->
+                <!-- Perubahan revisi disini -->
+                <li class="nav-item p-lg-0 p-4 p-md-4 py-md-1 py-lg-0 py-1 border-color-menu">
+                    <div class="dropdown">
+                        <!-- Dropdown utama -->
+                        <button
+                            class="nav-link grey-color active text-uppercase dropdown-toggle"
+                            type="button"
+                            id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Katalog
+                        </button>
+                        <ul class="dropdown-menu rounded-0 border-0 bg-grey py-0 " aria-labelledby="dropdownMenuButton1">
+                            <li class="border-bottom py-1"><a class="dropdown-item poppins bg-grey text-white" href="#">Cookies</a></li>
+                            <!-- Dropdown Kedua -->
+                            <li class="dropdown-submenu border-bottom py-1">
+                                <a
+                                    class="dropdown-item dropdown-toggle poppins bg-grey text-white d-flex justify-content-between align-items-center"
+                                    href="#">
+                                    Cake
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-sc rounded-0 border-0 bg-grey-2 py-0">
+                                    <li class="border-bottom py-1"><a class="dropdown-item poppins bg-grey-2 text-white" href="#">Individual Cake</a></li>
+                                    <!-- Dropdown Ketiga -->
+                                    <li class="dropdown-submenu dropdown-submenu-sc border-bottom py-1">
+                                        <a
+                                            class="dropdown-item dropdown-toggle poppins bg-grey-2 d-flex justify-content-between align-items-center text-white"
+                                            href="#">
+                                            Individual Cake 2
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-th rounded-0 border-0 bg-grey-3 py-0">
+                                            <li class="border-bottom py-1"><a class="dropdown-item poppins bg-grey-3 text-white" href="#">Sub Individual Cake</a></li>
+                                            <li class="border-bottom py-1"><a class="dropdown-item poppins bg-grey-3 text-white" href="#">Sub Layer Roti</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </li>
-                            <li class="list-group-item py-4 px-1 px-md-4 border-top-0 border-start-0 border-end-0 grey-color"><a href="#" class="text-decoration-none grey-color d-flex align-items-center gap-1">Cookies <iconify-icon icon="system-uicons:chevron-right-circle" class="fs-5"></iconify-icon></a></li>
+                            
                         </ul>
                     </div>
                 </li>
+                <!-- Perubahan revisi disini -->
                 <li class="nav-item p-lg-0 p-4 p-md-4 py-md-1 py-1 border-color-menu" style="border-color: #a9968594 !important;">
                     <a class="nav-link grey-color" aria-current="page" href="about.php">Tentang Kami</a>
                 </li>
@@ -293,10 +318,11 @@
                 </li>
             </ul>
         </div>
-    </nav>
+    </nav>  
 
     <!-- perubahan revisi disini -->
-    <script>
+    <!-- hapus ini -->
+    <!-- <script>
         function toggleSubmenu(button) {
             const targetIndex = button.getAttribute('data-target');
 
@@ -312,8 +338,57 @@
             submenu.classList.add('open');
             submenu.classList.add('target');
         }
-    </script>
+    </script> -->
+    <!-- hapus ini -->
     <!-- perubahan revisi disini -->
+
+    <!-- Perubahan revisi disini -->
+    <script>
+        // Tangani klik atau hover untuk dropdown bertingkat
+        document.addEventListener('DOMContentLoaded', function () {
+            // Pilih semua elemen dengan kelas dropdown-submenu
+            const dropdowns = document.querySelectorAll('.dropdown-submenu');
+
+            dropdowns.forEach(function (dropdown) {
+                dropdown.addEventListener('mouseenter', function () {
+                    const submenu = this.querySelector('.dropdown-menu-sc');
+                    if (submenu) {
+                        submenu.classList.add('show');
+                    }
+                });
+
+                dropdown.addEventListener('mouseleave', function () {
+                    const submenu = this.querySelector('.dropdown-menu-sc');
+                    if (submenu) {
+                        submenu.classList.remove('show');
+                    }
+                });
+            });
+        });
+
+        // Tangani klik atau hover untuk dropdown bertingkat
+        document.addEventListener('DOMContentLoaded', function () {
+            // Pilih semua elemen dengan kelas dropdown-submenu
+            const dropdowns = document.querySelectorAll('.dropdown-submenu-sc');
+
+            dropdowns.forEach(function (dropdown) {
+                dropdown.addEventListener('mouseenter', function () {
+                    const submenu = this.querySelector('.dropdown-menu-th');
+                    if (submenu) {
+                        submenu.classList.add('show');
+                    }
+                });
+
+                dropdown.addEventListener('mouseleave', function () {
+                    const submenu = this.querySelector('.dropdown-menu-th');
+                    if (submenu) {
+                        submenu.classList.remove('show');
+                    }
+                });
+            });
+        });
+    </script>
+    <!-- Perubahan revisi disini -->
 
     <?php include 'components/popup-cart.php' ?>
 
